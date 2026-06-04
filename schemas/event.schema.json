@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-deprecation-archive.example/schemas/event.schema.json",
+  "title": "API Deprecation Archive Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "entity_id",
+    "type",
+    "date",
+    "title",
+    "summary",
+    "affected_versions",
+    "affected_endpoints",
+    "affected_sdks",
+    "affected_surface",
+    "action_required",
+    "user_impact",
+    "impact_level",
+    "production_risk",
+    "evidence_ids",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^apidep_event_[0-9]{6}$"
+    },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^apidep_entity_[0-9]{6}$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "api_deprecated",
+        "api_removed",
+        "version_sunset",
+        "sdk_deprecated",
+        "sdk_removed",
+        "cli_deprecated",
+        "cli_removed",
+        "webhook_changed",
+        "webhook_removed",
+        "auth_method_deprecated",
+        "auth_method_removed",
+        "scope_changed",
+        "rate_limit_changed",
+        "free_tier_removed",
+        "pricing_changed",
+        "breaking_change",
+        "migration_deadline",
+        "replacement_announced",
+        "docs_removed_or_moved",
+        "deadline_extended",
+        "removal_confirmed",
+        "unknown_status",
+        "other"
+      ]
+    },
+    "date": { "$ref": "#/$defs/date" },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "affected_versions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "affected_endpoints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "affected_sdks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "affected_surface": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["api_version", "endpoint", "sdk", "cli", "webhook", "auth", "model", "pricing", "rate_limit", "docs"]
+      },
+      "uniqueItems": true
+    },
+    "deadline": { "$ref": "#/$defs/nullableDate" },
+    "removal_date": { "$ref": "#/$defs/nullableDate" },
+    "replacement": {
+      "type": ["string", "null"]
+    },
+    "replacement_type": {
+      "type": ["string", "null"],
+      "enum": ["official", "recommended", "partial", "community", "none", "unknown", null]
+    },
+    "replacement_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "migration_path": {
+      "type": ["string", "null"]
+    },
+    "action_required": {
+      "type": "string",
+      "enum": ["none", "monitor", "migrate", "update_sdk", "replace_endpoint", "rotate_auth", "remove_usage", "unknown"]
+    },
+    "user_impact": {
+      "type": "string"
+    },
+    "impact_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical", "unknown"]
+    },
+    "production_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical", "unknown"]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^apidep_evidence_[0-9]{6}$"
+      },
+      "uniqueItems": true
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "nullableDate": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}

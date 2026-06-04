@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-deprecation-archive.example/schemas/evidence.schema.json",
+  "title": "API Deprecation Archive Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "entity_id",
+    "event_id",
+    "type",
+    "url",
+    "title",
+    "publisher",
+    "published_at",
+    "archived_url",
+    "quote_or_summary",
+    "reliability",
+    "claim_scope",
+    "last_checked_at",
+    "is_primary",
+    "is_official_domain"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^apidep_evidence_[0-9]{6}$"
+    },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^apidep_entity_[0-9]{6}$"
+    },
+    "event_id": {
+      "type": ["string", "null"],
+      "pattern": "^apidep_event_[0-9]{6}$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "official_docs",
+        "official_changelog",
+        "official_blog",
+        "official_release_notes",
+        "official_migration_guide",
+        "official_github",
+        "official_forum",
+        "official_social",
+        "archive_capture",
+        "standards_document",
+        "trusted_news",
+        "research_report",
+        "secondary_source",
+        "other"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "published_at": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "archived_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "quote_or_summary": {
+      "type": "string"
+    },
+    "reliability": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "claim_scope": {
+      "type": "string",
+      "enum": [
+        "entity",
+        "deprecation",
+        "removal",
+        "deadline",
+        "replacement",
+        "migration",
+        "still_usable",
+        "production_risk",
+        "pricing",
+        "rate_limit",
+        "auth",
+        "webhook",
+        "docs",
+        "status",
+        "other"
+      ]
+    },
+    "last_checked_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "is_primary": {
+      "type": "boolean"
+    },
+    "is_official_domain": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  }
+}

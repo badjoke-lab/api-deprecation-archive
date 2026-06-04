@@ -4,9 +4,11 @@ Last updated: 2026-06-04
 
 ## Current phase
 
-PR-001: repository bootstrap and public-safe documentation.
+PR-002: data schema and enums.
 
-## Completed in this phase
+## Completed so far
+
+### PR-001
 
 - Repository initialized
 - Public README drafted
@@ -16,12 +18,23 @@ PR-001: repository bootstrap and public-safe documentation.
 - Status definitions draft added
 - Report corrections guide added
 - Disclaimer added
+- Current status runbook added
+
+### PR-002
+
+- Entity JSON Schema drafted
+- Event JSON Schema drafted
+- Evidence JSON Schema drafted
+- Provider JSON Schema drafted
+- Data schema guide added
+- Domain enum guide added
+- Schema notes added
 
 ## Next planned PRs
 
-- PR-002: data schema and enums
 - PR-003: validation script
 - PR-004: five sample records
+- PR-005: static site shell
 
 ## v0 target
 
