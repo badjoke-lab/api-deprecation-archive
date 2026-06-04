@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-deprecation-archive.example/schemas/entity.schema.json",
+  "title": "API Deprecation Archive Entity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "canonical_name",
+    "aliases",
+    "provider",
+    "category",
+    "record_unit",
+    "status",
+    "deprecation_stage",
+    "deadline_status",
+    "still_usable",
+    "action_required",
+    "impact_level",
+    "production_risk",
+    "freshness_status",
+    "summary",
+    "current_state",
+    "affected_surface",
+    "affected_users",
+    "replacement_type",
+    "source_status",
+    "confidence",
+    "last_checked_at",
+    "known_unknowns",
+    "related_records"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^apidep_entity_[0-9]{6}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider_id": {
+      "type": ["string", "null"],
+      "pattern": "^apidep_provider_[0-9]{6}$"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ai_api",
+        "cloud_hosting_api",
+        "social_platform_api",
+        "payment_commerce_api",
+        "developer_tool_api",
+        "other"
+      ]
+    },
+    "record_unit": {
+      "type": "string",
+      "enum": [
+        "api_group",
+        "api_version",
+        "sdk",
+        "cli",
+        "webhook",
+        "auth_method",
+        "developer_feature",
+        "model_api",
+        "pricing_or_limit_change",
+        "docs_change"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "limited", "deprecated", "sunsetting", "removed", "replaced", "unknown"]
+    },
+    "deprecation_stage": {
+      "type": "string",
+      "enum": ["active", "announced", "deprecated", "sunsetting", "removed", "replaced", "unknown"]
+    },
+    "deadline_status": {
+      "type": "string",
+      "enum": ["no_deadline", "upcoming", "passed_unverified", "passed_removed", "extended", "unknown"]
+    },
+    "still_usable": {
+      "type": "string",
+      "enum": ["yes", "no", "partial", "unknown"]
+    },
+    "still_usable_note": {
+      "type": ["string", "null"]
+    },
+    "action_required": {
+      "type": "string",
+      "enum": ["none", "monitor", "migrate", "update_sdk", "replace_endpoint", "rotate_auth", "remove_usage", "unknown"]
+    },
+    "impact_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical", "unknown"]
+    },
+    "production_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical", "unknown"]
+    },
+    "freshness_status": {
+      "type": "string",
+      "enum": ["fresh", "watch", "stale", "unknown"]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "current_state": {
+      "type": "string"
+    },
+    "affected_surface": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["api_version", "endpoint", "sdk", "cli", "webhook", "auth", "model", "pricing", "rate_limit", "docs"]
+      },
+      "uniqueItems": true
+    },
+    "affected_users": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "official_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "docs_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "migration_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "replacement": {
+      "type": ["string", "null"]
+    },
+    "replacement_type": {
+      "type": "string",
+      "enum": ["official", "recommended", "partial", "community", "none", "unknown"]
+    },
+    "replacement_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "source_status": {
+      "type": "string",
+      "enum": ["official", "secondary_confirmed", "archived_only", "unclear"]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "announced_at": { "$ref": "#/$defs/nullableDate" },
+    "deprecated_at": { "$ref": "#/$defs/nullableDate" },
+    "sunset_at": { "$ref": "#/$defs/nullableDate" },
+    "last_supported_at": { "$ref": "#/$defs/nullableDate" },
+    "removal_effective_at": { "$ref": "#/$defs/nullableDate" },
+    "migration_deadline_at": { "$ref": "#/$defs/nullableDate" },
+    "first_seen_at": { "$ref": "#/$defs/nullableDate" },
+    "last_checked_at": { "$ref": "#/$defs/date" },
+    "next_check_recommended_at": { "$ref": "#/$defs/nullableDate" },
+    "known_unknowns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["project", "record_id", "relationship"],
+        "properties": {
+          "project": { "type": "string" },
+          "record_id": { "type": "string" },
+          "relationship": { "type": "string" }
+        }
+      }
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "nullableDate": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  }
+}
