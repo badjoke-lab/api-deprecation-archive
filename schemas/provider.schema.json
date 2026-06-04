@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-deprecation-archive.example/schemas/provider.schema.json",
+  "title": "API Deprecation Archive Provider",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "aliases",
+    "categories",
+    "official_url",
+    "developer_url",
+    "docs_url",
+    "changelog_url",
+    "summary",
+    "last_checked_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^apidep_provider_[0-9]{6}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ai_api",
+          "cloud_hosting_api",
+          "social_platform_api",
+          "payment_commerce_api",
+          "developer_tool_api",
+          "other"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "official_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "developer_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "docs_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "changelog_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "last_checked_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "notes": {
+      "type": ["string", "null"]
+    }
+  }
+}
