@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000004",
+  "entity_id": "apidep_entity_000004",
+  "event_id": "apidep_event_000004",
+  "type": "official_docs",
+  "url": "https://shopify.dev/docs/api/admin-rest",
+  "title": "REST Admin API reference",
+  "publisher": "Shopify Developers",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Official documentation describes REST Admin API legacy status and migration direction to GraphQL Admin API.",
+  "reliability": "high",
+  "claim_scope": "migration",
+  "last_checked_at": "2026-06-05",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
