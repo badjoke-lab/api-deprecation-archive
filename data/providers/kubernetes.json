@@ -1,0 +1,14 @@
+{
+  "id": "apidep_provider_000005",
+  "slug": "kubernetes",
+  "name": "Kubernetes",
+  "aliases": [],
+  "categories": ["developer_tool_api"],
+  "official_url": "https://kubernetes.io/",
+  "developer_url": "https://kubernetes.io/docs/",
+  "docs_url": "https://kubernetes.io/docs/",
+  "changelog_url": "https://kubernetes.io/releases/",
+  "summary": "Kubernetes provides container orchestration APIs and developer documentation.",
+  "last_checked_at": "2026-06-05",
+  "notes": null
+}
