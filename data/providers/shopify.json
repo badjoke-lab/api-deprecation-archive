@@ -1,0 +1,14 @@
+{
+  "id": "apidep_provider_000004",
+  "slug": "shopify",
+  "name": "Shopify",
+  "aliases": [],
+  "categories": ["payment_commerce_api"],
+  "official_url": "https://www.shopify.com/",
+  "developer_url": "https://shopify.dev/",
+  "docs_url": "https://shopify.dev/docs",
+  "changelog_url": "https://shopify.dev/changelog",
+  "summary": "Shopify provides commerce platform APIs and developer tools.",
+  "last_checked_at": "2026-06-05",
+  "notes": null
+}
