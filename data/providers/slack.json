@@ -1,0 +1,14 @@
+{
+  "id": "apidep_provider_000003",
+  "slug": "slack",
+  "name": "Slack",
+  "aliases": [],
+  "categories": ["social_platform_api"],
+  "official_url": "https://slack.com/",
+  "developer_url": "https://api.slack.com/",
+  "docs_url": "https://api.slack.com/",
+  "changelog_url": "https://api.slack.com/changelog",
+  "summary": "Slack is a communication platform with developer APIs.",
+  "last_checked_at": "2026-06-05",
+  "notes": null
+}
