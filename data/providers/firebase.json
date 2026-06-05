@@ -1,0 +1,14 @@
+{
+  "id": "apidep_provider_000002",
+  "slug": "firebase",
+  "name": "Firebase",
+  "aliases": ["Google Firebase"],
+  "categories": ["cloud_hosting_api"],
+  "official_url": "https://firebase.google.com/",
+  "developer_url": "https://firebase.google.com/docs",
+  "docs_url": "https://firebase.google.com/docs",
+  "changelog_url": null,
+  "summary": "Firebase provides application development services and developer platform features.",
+  "last_checked_at": "2026-06-05",
+  "notes": null
+}
