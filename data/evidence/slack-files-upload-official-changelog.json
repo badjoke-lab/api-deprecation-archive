@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000003",
+  "entity_id": "apidep_entity_000003",
+  "event_id": "apidep_event_000003",
+  "type": "official_changelog",
+  "url": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay",
+  "title": "A better way to upload files is here to stay",
+  "publisher": "Slack API",
+  "published_at": "2024-04-09",
+  "archived_url": null,
+  "quote_or_summary": "Official changelog describes files.upload deprecation and replacement upload flow guidance.",
+  "reliability": "high",
+  "claim_scope": "deprecation",
+  "last_checked_at": "2026-06-05",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
