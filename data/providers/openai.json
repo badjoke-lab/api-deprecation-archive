@@ -1,0 +1,14 @@
+{
+  "id": "apidep_provider_000001",
+  "slug": "openai",
+  "name": "OpenAI",
+  "aliases": [],
+  "categories": ["ai_api"],
+  "official_url": "https://openai.com/",
+  "developer_url": "https://developers.openai.com/",
+  "docs_url": "https://developers.openai.com/",
+  "changelog_url": null,
+  "summary": "OpenAI provides developer APIs for AI models and platform features.",
+  "last_checked_at": "2026-06-05",
+  "notes": null
+}
