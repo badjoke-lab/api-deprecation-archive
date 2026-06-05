@@ -1,10 +1,10 @@
 # Current Status
 
-Last updated: 2026-06-04
+Last updated: 2026-06-05
 
 ## Current phase
 
-PR-002: data schema and enums.
+PR-003: validation script.
 
 ## Completed so far
 
@@ -30,11 +30,18 @@ PR-002: data schema and enums.
 - Domain enum guide added
 - Schema notes added
 
+### PR-003
+
+- `package.json` scripts added
+- `scripts/validate-data.mjs` added
+- Data directory placeholders added
+- Validation guide added
+
 ## Next planned PRs
 
-- PR-003: validation script
 - PR-004: five sample records
 - PR-005: static site shell
+- PR-006: API list page
 
 ## v0 target
 
