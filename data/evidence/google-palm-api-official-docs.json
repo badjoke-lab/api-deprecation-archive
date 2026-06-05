@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000001",
+  "entity_id": "apidep_entity_000001",
+  "event_id": "apidep_event_000001",
+  "type": "official_docs",
+  "url": "https://ai.google.dev/palm_docs/deprecation",
+  "title": "PaLM API deprecation",
+  "publisher": "Google AI for Developers",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Official documentation describes the PaLM API deprecation and migration path to Gemini API.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-06-05",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
