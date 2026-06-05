@@ -4,7 +4,7 @@ Last updated: 2026-06-05
 
 ## Current phase
 
-PR-003: validation script.
+PR-004: five sample records.
 
 ## Completed so far
 
@@ -37,11 +37,26 @@ PR-003: validation script.
 - Data directory placeholders added
 - Validation guide added
 
+### PR-004
+
+- Five sample entities added
+- Five matching lifecycle events added
+- Five official evidence records added
+- Provider records added for the sample set
+
+## Current sample entities
+
+- Google PaLM API
+- Firebase Dynamic Links
+- Slack files.upload API method
+- Shopify REST Admin API
+- Kubernetes v1.22 Removed APIs
+
 ## Next planned PRs
 
-- PR-004: five sample records
 - PR-005: static site shell
 - PR-006: API list page
+- PR-007: API detail page
 
 ## v0 target
 
