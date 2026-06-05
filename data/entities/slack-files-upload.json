@@ -9,7 +9,7 @@
   "record_unit": "api_group",
   "status": "deprecated",
   "deprecation_stage": "deprecated",
-  "deadline_status": "upcoming",
+  "deadline_status": "passed_unverified",
   "still_usable": "partial",
   "still_usable_note": "Official Slack changelog describes files.upload deprecation and a retirement timeline.",
   "action_required": "replace_endpoint",
@@ -17,7 +17,7 @@
   "production_risk": "high",
   "freshness_status": "fresh",
   "summary": "Slack files.upload is tracked as a deprecated API method with replacement upload flow guidance.",
-  "current_state": "Deprecated with a planned retirement timeline.",
+  "current_state": "Deprecated with a passed deadline that should be rechecked before public v0 launch.",
   "affected_surface": ["endpoint"],
   "affected_users": ["developers", "api_integrators"],
   "official_url": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay",
@@ -37,7 +37,7 @@
   "first_seen_at": "2026-06-05",
   "last_checked_at": "2026-06-05",
   "next_check_recommended_at": "2026-07-05",
-  "known_unknowns": ["Current retirement status should be rechecked close to public launch."],
+  "known_unknowns": ["Current retirement status should be rechecked before public v0 launch."],
   "related_records": [],
   "notes": "Sample v0 record."
 }
