@@ -1,0 +1,14 @@
+{
+  "id": "apidep_provider_000006",
+  "slug": "google-ai",
+  "name": "Google AI",
+  "aliases": ["Google AI for Developers"],
+  "categories": ["ai_api"],
+  "official_url": "https://ai.google.dev/",
+  "developer_url": "https://ai.google.dev/",
+  "docs_url": "https://ai.google.dev/docs",
+  "changelog_url": null,
+  "summary": "Google AI provides developer APIs and documentation for AI models.",
+  "last_checked_at": "2026-06-05",
+  "notes": null
+}
