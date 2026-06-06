@@ -81,7 +81,7 @@ function render() {
   els.body.innerHTML = records.map((record) => `
     <tr>
       <td>
-        <strong>${escapeHtml(record.name)}</strong><br />
+        <strong><a href="${escapeHtml(record.slug)}/">${escapeHtml(record.name)}</a></strong><br />
         <span class="muted">${escapeHtml(record.deadlineStatus)}</span>
       </td>
       <td>${escapeHtml(record.provider)}</td>
