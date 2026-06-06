@@ -14,6 +14,16 @@ The project helps developers answer:
 
 This project is not a replacement for official provider documentation. It is a cross-provider index that points users to official notices, migration guides, changelogs, and archived sources.
 
+## Static site shell
+
+The repository currently includes a plain white-background static shell:
+
+- `index.html`
+- `styles.css`
+- `app.js`
+
+The shell is intentionally simple and table-first. Data-driven list and detail pages will be added in later PRs.
+
 ## Scope
 
 Initial v0 scope focuses on high-impact developer-facing lifecycle changes in:
@@ -64,4 +74,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-Project bootstrap is in progress. v0 will begin with a small set of high-confidence sample records before expanding to the initial 20-record seed dataset.
+The repository has public-safe docs, schemas, validation infrastructure, sample records, and a static site shell. Next work focuses on data-driven list and detail pages.

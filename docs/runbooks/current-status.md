@@ -4,7 +4,7 @@ Last updated: 2026-06-05
 
 ## Current phase
 
-PR-004: five sample records.
+PR-005: static site shell.
 
 ## Completed so far
 
@@ -44,6 +44,14 @@ PR-004: five sample records.
 - Five official evidence records added
 - Provider records added for the sample set
 
+### PR-005
+
+- White-background static shell added
+- `index.html` added
+- `styles.css` added
+- `app.js` added
+- README updated for static shell
+
 ## Current sample entities
 
 - Google PaLM API
@@ -54,9 +62,9 @@ PR-004: five sample records.
 
 ## Next planned PRs
 
-- PR-005: static site shell
 - PR-006: API list page
 - PR-007: API detail page
+- PR-008: deadlines page
 
 ## v0 target
 
