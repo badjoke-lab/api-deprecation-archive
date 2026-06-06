@@ -4,7 +4,7 @@ Last updated: 2026-06-06
 
 ## Current phase
 
-PR-009: deprecated / removed pages.
+PR-010: replacement matrix.
 
 ## Completed so far
 
@@ -83,6 +83,13 @@ PR-009: deprecated / removed pages.
 - Home and API list navigation updated
 - README updated for deprecated / removed pages
 
+### PR-010
+
+- `/replacements/` page added
+- Replacement matrix script added
+- Home and API list navigation updated
+- README updated for replacement matrix
+
 ## Current sample entities
 
 - Google PaLM API
@@ -93,9 +100,9 @@ PR-009: deprecated / removed pages.
 
 ## Next planned PRs
 
-- PR-010: replacement matrix
 - PR-011: provider index and provider pages
 - PR-012: timeline page
+- PR-013: seed records batch 1
 
 ## v0 target
 
