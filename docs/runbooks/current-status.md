@@ -4,7 +4,7 @@ Last updated: 2026-06-06
 
 ## Current phase
 
-PR-006: API list page.
+PR-007: API detail pages.
 
 ## Completed so far
 
@@ -60,6 +60,13 @@ PR-006: API list page.
 - Home page links updated to point to the API list
 - CSS updated for filters and result count
 
+### PR-007
+
+- Five sample API detail pages added
+- API list rows now link to detail pages
+- CSS updated for detail cards, timeline, and detail sections
+- README updated for detail pages
+
 ## Current sample entities
 
 - Google PaLM API
@@ -70,9 +77,9 @@ PR-006: API list page.
 
 ## Next planned PRs
 
-- PR-007: API detail page
 - PR-008: deadlines page
 - PR-009: deprecated / removed pages
+- PR-010: replacement matrix
 
 ## v0 target
 
