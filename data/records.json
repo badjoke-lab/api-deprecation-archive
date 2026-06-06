@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "google-palm-api",
+    "name": "Google PaLM API",
+    "provider": "Google AI",
+    "category": "AI API",
+    "stage": "removed",
+    "deadlineStatus": "passed_removed",
+    "stillUsable": "no",
+    "actionRequired": "migrate",
+    "replacement": "Gemini API",
+    "productionRisk": "critical",
+    "lastChecked": "2026-06-05",
+    "evidenceUrl": "https://ai.google.dev/palm_docs/deprecation"
+  },
+  {
+    "slug": "firebase-dynamic-links",
+    "name": "Firebase Dynamic Links",
+    "provider": "Firebase",
+    "category": "Cloud / hosting API",
+    "stage": "removed",
+    "deadlineStatus": "passed_removed",
+    "stillUsable": "no",
+    "actionRequired": "migrate",
+    "replacement": "Partial / see official FAQ",
+    "productionRisk": "critical",
+    "lastChecked": "2026-06-05",
+    "evidenceUrl": "https://firebase.google.com/support/dynamic-links-faq"
+  },
+  {
+    "slug": "slack-files-upload",
+    "name": "Slack files.upload API method",
+    "provider": "Slack",
+    "category": "Social / platform API",
+    "stage": "deprecated",
+    "deadlineStatus": "passed_unverified",
+    "stillUsable": "partial",
+    "actionRequired": "replace_endpoint",
+    "replacement": "External upload flow",
+    "productionRisk": "high",
+    "lastChecked": "2026-06-05",
+    "evidenceUrl": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay"
+  },
+  {
+    "slug": "shopify-rest-admin-api",
+    "name": "Shopify REST Admin API",
+    "provider": "Shopify",
+    "category": "Payment / commerce API",
+    "stage": "deprecated",
+    "deadlineStatus": "passed_unverified",
+    "stillUsable": "partial",
+    "actionRequired": "migrate",
+    "replacement": "GraphQL Admin API",
+    "productionRisk": "high",
+    "lastChecked": "2026-06-05",
+    "evidenceUrl": "https://shopify.dev/docs/api/admin-rest"
+  },
+  {
+    "slug": "kubernetes-v1-22-removed-apis",
+    "name": "Kubernetes v1.22 Removed APIs",
+    "provider": "Kubernetes",
+    "category": "Developer tool API",
+    "stage": "removed",
+    "deadlineStatus": "passed_removed",
+    "stillUsable": "no",
+    "actionRequired": "migrate",
+    "replacement": "Supported API versions",
+    "productionRisk": "critical",
+    "lastChecked": "2026-06-05",
+    "evidenceUrl": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/"
+  }
+]

@@ -1,10 +1,10 @@
 # Current Status
 
-Last updated: 2026-06-05
+Last updated: 2026-06-06
 
 ## Current phase
 
-PR-005: static site shell.
+PR-006: API list page.
 
 ## Completed so far
 
@@ -52,6 +52,14 @@ PR-005: static site shell.
 - `app.js` added
 - README updated for static shell
 
+### PR-006
+
+- `data/records.json` manifest added for the list page
+- `/apis/` page added
+- API list search and filters added
+- Home page links updated to point to the API list
+- CSS updated for filters and result count
+
 ## Current sample entities
 
 - Google PaLM API
@@ -62,9 +70,9 @@ PR-005: static site shell.
 
 ## Next planned PRs
 
-- PR-006: API list page
 - PR-007: API detail page
 - PR-008: deadlines page
+- PR-009: deprecated / removed pages
 
 ## v0 target
 
