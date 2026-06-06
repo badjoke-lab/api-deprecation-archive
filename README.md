@@ -26,8 +26,11 @@ The repository currently includes a plain white-background static shell:
 - `apis/[slug]/index.html` sample detail pages
 - `deadlines/index.html`
 - `deadlines/deadlines.js`
+- `deprecated/index.html`
+- `removed/index.html`
+- `shared/lifecycle-list.js`
 
-The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records. Each sample record has a basic detail page, and the deadlines page groups records by deadline status.
+The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records. Each sample record has a basic detail page, the deadlines page groups records by deadline status, and deprecated / removed pages split records by lifecycle state.
 
 ## Scope
 
@@ -79,4 +82,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, basic sample detail pages, and a deadlines page. Next work focuses on deprecated and removed pages.
+The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, basic sample detail pages, a deadlines page, and deprecated / removed record pages. Next work focuses on the replacement matrix.
