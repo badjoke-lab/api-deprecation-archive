@@ -22,7 +22,9 @@ body {
 
 a { color: var(--text); text-decoration: none; }
 a:hover { text-decoration: underline; }
-a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+a:focus-visible,
+input:focus-visible,
+select:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 .site-header {
   display: flex;
@@ -55,6 +57,7 @@ main {
 }
 
 .hero { max-width: 860px; padding: 32px 0 24px; }
+.compact-hero { padding-bottom: 8px; }
 .eyebrow { margin: 0 0 10px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 
 h1, h2 { margin: 0; line-height: 1.08; letter-spacing: -0.04em; }
@@ -98,13 +101,22 @@ h2 { font-size: clamp(24px, 4vw, 38px); }
 .summary-card,
 .link-card { display: grid; gap: 8px; padding: 18px; }
 .summary-label,
-.link-card small { color: var(--muted); font-size: 13px; }
+.link-card small,
+.muted { color: var(--muted); font-size: 13px; }
 .summary-card strong { font-size: 22px; letter-spacing: -0.03em; }
 .link-card span { font-weight: 750; }
 
 .panel { margin-top: 28px; overflow: hidden; }
 .section-heading { padding: 24px; border-bottom: 1px solid var(--border); background: var(--surface); }
 .section-heading p:last-child { max-width: 760px; margin-bottom: 0; color: var(--muted); }
+.results-heading { display: flex; justify-content: space-between; gap: 16px; align-items: end; }
+.result-count { margin: 0; color: var(--muted); font-size: 14px; }
+.panel-footer { padding: 18px 24px; border-top: 1px solid var(--border); background: var(--surface); }
+
+.filters { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 12px; padding: 18px 24px; }
+.filters label { display: grid; gap: 6px; color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.filters input,
+.filters select { width: 100%; min-height: 42px; padding: 9px 10px; border: 1px solid var(--strong-border); border-radius: 10px; background: var(--bg); color: var(--text); font: inherit; text-transform: none; letter-spacing: 0; }
 
 .table-wrap { width: 100%; overflow-x: auto; }
 table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 14px; }
@@ -129,6 +141,11 @@ tr:last-child td { border-bottom: 0; }
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 13px;
+}
+
+@media (max-width: 860px) {
+  .filters { grid-template-columns: 1fr; }
+  .results-heading { display: grid; align-items: start; }
 }
 
 @media (max-width: 760px) {
