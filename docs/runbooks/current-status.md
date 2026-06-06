@@ -4,7 +4,7 @@ Last updated: 2026-06-06
 
 ## Current phase
 
-PR-008: deadlines page.
+PR-009: deprecated / removed pages.
 
 ## Completed so far
 
@@ -75,6 +75,14 @@ PR-008: deadlines page.
 - Home and API list navigation updated
 - CSS updated for deadline groups
 
+### PR-009
+
+- `/deprecated/` page added
+- `/removed/` page added
+- Shared lifecycle list renderer added
+- Home and API list navigation updated
+- README updated for deprecated / removed pages
+
 ## Current sample entities
 
 - Google PaLM API
@@ -85,9 +93,9 @@ PR-008: deadlines page.
 
 ## Next planned PRs
 
-- PR-009: deprecated / removed pages
 - PR-010: replacement matrix
 - PR-011: provider index and provider pages
+- PR-012: timeline page
 
 ## v0 target
 
