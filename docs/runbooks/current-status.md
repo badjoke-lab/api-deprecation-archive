@@ -4,7 +4,7 @@ Last updated: 2026-06-06
 
 ## Current phase
 
-PR-007: API detail pages.
+PR-008: deadlines page.
 
 ## Completed so far
 
@@ -67,6 +67,14 @@ PR-007: API detail pages.
 - CSS updated for detail cards, timeline, and detail sections
 - README updated for detail pages
 
+### PR-008
+
+- `/deadlines/` page added
+- Deadline status grouping added
+- Deadline cards added
+- Home and API list navigation updated
+- CSS updated for deadline groups
+
 ## Current sample entities
 
 - Google PaLM API
@@ -77,9 +85,9 @@ PR-007: API detail pages.
 
 ## Next planned PRs
 
-- PR-008: deadlines page
 - PR-009: deprecated / removed pages
 - PR-010: replacement matrix
+- PR-011: provider index and provider pages
 
 ## v0 target
 
