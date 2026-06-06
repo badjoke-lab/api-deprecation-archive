@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deprecated but Still Usable | API Deprecation Archive</title>
+    <meta name="description" content="Browse deprecated API records that may still be usable but require migration planning." />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-lifecycle-page="deprecated">
+    <header class="site-header">
+      <a class="brand" href="../"><span class="brand-title">API Deprecation Archive</span><span class="brand-subtitle">Evidence-based developer lifecycle registry</span></a>
+      <nav class="site-nav" aria-label="Primary navigation"><a href="../apis/">APIs</a><a href="../deadlines/">Deadlines</a><a href="./">Deprecated</a><a href="../removed/">Removed</a><a href="../docs/methodology.md">Methodology</a></nav>
+    </header>
+
+    <main>
+      <section class="hero compact-hero">
+        <p class="eyebrow">Deprecated but still usable</p>
+        <h1>APIs that still need migration planning.</h1>
+        <p class="hero-copy">This page lists records that are deprecated, partially usable, or marked for migration but are not confirmed as fully removed.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="deprecated-title">
+        <div class="section-heading results-heading">
+          <div><p class="eyebrow">Records</p><h2 id="deprecated-title">Deprecated records</h2></div>
+          <p id="lifecycle-count" class="result-count">Loading records...</p>
+        </div>
+        <div id="lifecycle-records" class="deadline-groups"><p class="detail-content">Loading records...</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>API Deprecation Archive summarizes public-source information. Always verify with official provider documentation before making production changes.</p></footer>
+    <script src="../app.js" defer></script>
+    <script src="../shared/lifecycle-list.js" defer></script>
+  </body>
+</html>
