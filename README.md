@@ -21,8 +21,10 @@ The repository currently includes a plain white-background static shell:
 - `index.html`
 - `styles.css`
 - `app.js`
+- `apis/index.html`
+- `apis/api-list.js`
 
-The shell is intentionally simple and table-first. Data-driven list and detail pages will be added in later PRs.
+The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records.
 
 ## Scope
 
@@ -74,4 +76,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, sample records, and a static site shell. Next work focuses on data-driven list and detail pages.
+The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, and a searchable API list page. Next work focuses on data-driven detail pages.
