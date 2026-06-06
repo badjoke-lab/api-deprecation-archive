@@ -18,7 +18,7 @@
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="apis/">APIs</a>
-        <a href="#deadlines">Deadlines</a>
+        <a href="deadlines/">Deadlines</a>
         <a href="#deprecated">Deprecated</a>
         <a href="#removed">Removed</a>
         <a href="#replacements">Replacements</a>
@@ -37,6 +37,7 @@
         </p>
         <div class="hero-actions" aria-label="Primary actions">
           <a class="button button-primary" href="apis/">Browse API records</a>
+          <a class="button" href="deadlines/">View deadlines</a>
           <a class="button" href="docs/spec/api-deprecation-archive-v0.1-spec.md">Read the v0.1 spec</a>
         </div>
       </section>
@@ -52,7 +53,7 @@
         </article>
         <article class="summary-card">
           <span class="summary-label">Current phase</span>
-          <strong>API list page</strong>
+          <strong>Deadlines page</strong>
         </article>
       </section>
 
@@ -62,7 +63,7 @@
           <h2 id="apis-title">Initial sample records</h2>
           <p>
             Five sample records are present across the initial v0 priority categories.
-            A searchable API list page is now available.
+            Searchable API and deadline pages are now available.
           </p>
         </div>
         <div class="table-wrap">
@@ -78,58 +79,24 @@
               </tr>
             </thead>
             <tbody id="sample-records">
-              <tr>
-                <td>Google PaLM API</td>
-                <td>Google AI</td>
-                <td><span class="badge">Removed</span></td>
-                <td>No</td>
-                <td>Migrate</td>
-                <td>Critical</td>
-              </tr>
-              <tr>
-                <td>Firebase Dynamic Links</td>
-                <td>Firebase</td>
-                <td><span class="badge">Removed</span></td>
-                <td>No</td>
-                <td>Migrate</td>
-                <td>Critical</td>
-              </tr>
-              <tr>
-                <td>Slack files.upload API method</td>
-                <td>Slack</td>
-                <td><span class="badge">Deprecated</span></td>
-                <td>Partial</td>
-                <td>Replace endpoint</td>
-                <td>High</td>
-              </tr>
-              <tr>
-                <td>Shopify REST Admin API</td>
-                <td>Shopify</td>
-                <td><span class="badge">Deprecated</span></td>
-                <td>Partial</td>
-                <td>Migrate</td>
-                <td>High</td>
-              </tr>
-              <tr>
-                <td>Kubernetes v1.22 Removed APIs</td>
-                <td>Kubernetes</td>
-                <td><span class="badge">Removed</span></td>
-                <td>No</td>
-                <td>Migrate</td>
-                <td>Critical</td>
-              </tr>
+              <tr><td>Google PaLM API</td><td>Google AI</td><td><span class="badge">Removed</span></td><td>No</td><td>Migrate</td><td>Critical</td></tr>
+              <tr><td>Firebase Dynamic Links</td><td>Firebase</td><td><span class="badge">Removed</span></td><td>No</td><td>Migrate</td><td>Critical</td></tr>
+              <tr><td>Slack files.upload API method</td><td>Slack</td><td><span class="badge">Deprecated</span></td><td>Partial</td><td>Replace endpoint</td><td>High</td></tr>
+              <tr><td>Shopify REST Admin API</td><td>Shopify</td><td><span class="badge">Deprecated</span></td><td>Partial</td><td>Migrate</td><td>High</td></tr>
+              <tr><td>Kubernetes v1.22 Removed APIs</td><td>Kubernetes</td><td><span class="badge">Removed</span></td><td>No</td><td>Migrate</td><td>Critical</td></tr>
             </tbody>
           </table>
         </div>
         <div class="panel-footer">
           <a class="button button-primary" href="apis/">Open searchable API list</a>
+          <a class="button" href="deadlines/">Open deadlines page</a>
         </div>
       </section>
 
       <section class="link-grid" aria-label="Planned registry pages">
-        <a class="link-card" id="deadlines" href="#deadlines">
-          <span>Upcoming Deadlines</span>
-          <small>Planned page for active migration deadlines.</small>
+        <a class="link-card" id="deadlines" href="deadlines/">
+          <span>Deadlines</span>
+          <small>Grouped deadline status for active, passed, and removed records.</small>
         </a>
         <a class="link-card" id="deprecated" href="#deprecated">
           <span>Deprecated but Still Usable</span>
