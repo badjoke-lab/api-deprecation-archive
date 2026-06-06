@@ -24,8 +24,10 @@ The repository currently includes a plain white-background static shell:
 - `apis/index.html`
 - `apis/api-list.js`
 - `apis/[slug]/index.html` sample detail pages
+- `deadlines/index.html`
+- `deadlines/deadlines.js`
 
-The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records, and each sample record now has a basic detail page.
+The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records. Each sample record has a basic detail page, and the deadlines page groups records by deadline status.
 
 ## Scope
 
@@ -77,4 +79,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, and basic sample detail pages. Next work focuses on the deadlines page.
+The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, basic sample detail pages, and a deadlines page. Next work focuses on deprecated and removed pages.
