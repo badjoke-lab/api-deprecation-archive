@@ -11,7 +11,7 @@
     <header class="site-header">
       <a class="brand" href="./" aria-label="API Deprecation Archive home"><span class="brand-title">API Deprecation Archive</span><span class="brand-subtitle">Evidence-based developer lifecycle registry</span></a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="apis/">APIs</a><a href="deadlines/">Deadlines</a><a href="deprecated/">Deprecated</a><a href="removed/">Removed</a><a href="#replacements">Replacements</a><a href="#providers">Providers</a><a href="docs/methodology.md">Methodology</a>
+        <a href="apis/">APIs</a><a href="deadlines/">Deadlines</a><a href="deprecated/">Deprecated</a><a href="removed/">Removed</a><a href="replacements/">Replacements</a><a href="#providers">Providers</a><a href="docs/methodology.md">Methodology</a>
       </nav>
     </header>
     <main>
@@ -19,23 +19,23 @@
         <p class="eyebrow">Public-source API lifecycle tracking</p>
         <h1 id="page-title">Track API deprecations, removals, and migration deadlines.</h1>
         <p class="hero-copy">API Deprecation Archive is a compact registry for developer-facing API, SDK, CLI, webhook, authentication, and platform lifecycle changes.</p>
-        <div class="hero-actions" aria-label="Primary actions"><a class="button button-primary" href="apis/">Browse API records</a><a class="button" href="deadlines/">View deadlines</a><a class="button" href="deprecated/">Deprecated records</a><a class="button" href="removed/">Removed records</a></div>
+        <div class="hero-actions" aria-label="Primary actions"><a class="button button-primary" href="apis/">Browse API records</a><a class="button" href="deadlines/">View deadlines</a><a class="button" href="replacements/">Replacement matrix</a></div>
       </section>
       <section class="summary-grid" aria-label="Registry summary">
         <article class="summary-card"><span class="summary-label">Sample records</span><strong id="summary-records">5</strong></article>
         <article class="summary-card"><span class="summary-label">Primary model</span><strong>entity / event / evidence</strong></article>
-        <article class="summary-card"><span class="summary-label">Current phase</span><strong>Deprecated / removed pages</strong></article>
+        <article class="summary-card"><span class="summary-label">Current phase</span><strong>Replacement matrix</strong></article>
       </section>
       <section class="panel" id="apis" aria-labelledby="apis-title">
-        <div class="section-heading"><p class="eyebrow">Sample data</p><h2 id="apis-title">Initial sample records</h2><p>Five sample records are present across the initial v0 priority categories. API list, deadline, deprecated, and removed pages are now available.</p></div>
+        <div class="section-heading"><p class="eyebrow">Sample data</p><h2 id="apis-title">Initial sample records</h2><p>Five sample records are present across the initial v0 priority categories. API list, deadline, deprecated, removed, and replacement pages are now available.</p></div>
         <div class="table-wrap"><table><thead><tr><th>API / Feature</th><th>Provider</th><th>Stage</th><th>Still usable</th><th>Action</th><th>Risk</th></tr></thead><tbody id="sample-records"><tr><td>Google PaLM API</td><td>Google AI</td><td><span class="badge">Removed</span></td><td>No</td><td>Migrate</td><td>Critical</td></tr><tr><td>Firebase Dynamic Links</td><td>Firebase</td><td><span class="badge">Removed</span></td><td>No</td><td>Migrate</td><td>Critical</td></tr><tr><td>Slack files.upload API method</td><td>Slack</td><td><span class="badge">Deprecated</span></td><td>Partial</td><td>Replace endpoint</td><td>High</td></tr><tr><td>Shopify REST Admin API</td><td>Shopify</td><td><span class="badge">Deprecated</span></td><td>Partial</td><td>Migrate</td><td>High</td></tr><tr><td>Kubernetes v1.22 Removed APIs</td><td>Kubernetes</td><td><span class="badge">Removed</span></td><td>No</td><td>Migrate</td><td>Critical</td></tr></tbody></table></div>
-        <div class="panel-footer"><a class="button button-primary" href="apis/">Open searchable API list</a><a class="button" href="deadlines/">Open deadlines page</a></div>
+        <div class="panel-footer"><a class="button button-primary" href="apis/">Open searchable API list</a><a class="button" href="deadlines/">Open deadlines page</a><a class="button" href="replacements/">Open replacement matrix</a></div>
       </section>
       <section class="link-grid" aria-label="Registry pages">
         <a class="link-card" id="deadlines" href="deadlines/"><span>Deadlines</span><small>Grouped deadline status for active, passed, and removed records.</small></a>
         <a class="link-card" id="deprecated" href="deprecated/"><span>Deprecated but Still Usable</span><small>Records that still need migration planning.</small></a>
         <a class="link-card" id="removed" href="removed/"><span>Removed APIs</span><small>Records that are no longer usable.</small></a>
-        <a class="link-card" id="replacements" href="#replacements"><span>Replacement Matrix</span><small>Planned old surface to new surface mapping.</small></a>
+        <a class="link-card" id="replacements" href="replacements/"><span>Replacement Matrix</span><small>Old API surfaces and their replacement paths.</small></a>
         <a class="link-card" id="providers" href="#providers"><span>Provider Index</span><small>Planned provider-level timeline and record grouping.</small></a>
         <a class="link-card" id="methodology" href="docs/methodology.md"><span>Methodology</span><small>Definitions, inclusion rules, evidence policy, and uncertainty handling.</small></a>
       </section>
