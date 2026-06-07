@@ -4,7 +4,7 @@ Last updated: 2026-06-06
 
 ## Current phase
 
-PR-010: replacement matrix.
+PR-011: provider index and provider pages.
 
 ## Completed so far
 
@@ -50,45 +50,42 @@ PR-010: replacement matrix.
 - `index.html` added
 - `styles.css` added
 - `app.js` added
-- README updated for static shell
 
 ### PR-006
 
 - `data/records.json` manifest added for the list page
 - `/apis/` page added
 - API list search and filters added
-- Home page links updated to point to the API list
-- CSS updated for filters and result count
 
 ### PR-007
 
 - Five sample API detail pages added
 - API list rows now link to detail pages
 - CSS updated for detail cards, timeline, and detail sections
-- README updated for detail pages
 
 ### PR-008
 
 - `/deadlines/` page added
 - Deadline status grouping added
 - Deadline cards added
-- Home and API list navigation updated
-- CSS updated for deadline groups
 
 ### PR-009
 
 - `/deprecated/` page added
 - `/removed/` page added
 - Shared lifecycle list renderer added
-- Home and API list navigation updated
-- README updated for deprecated / removed pages
 
 ### PR-010
 
 - `/replacements/` page added
 - Replacement matrix script added
-- Home and API list navigation updated
-- README updated for replacement matrix
+
+### PR-011
+
+- `/providers/` page added
+- Provider index script added
+- Five provider detail pages added
+- Home navigation updated for provider index
 
 ## Current sample entities
 
@@ -100,9 +97,9 @@ PR-010: replacement matrix.
 
 ## Next planned PRs
 
-- PR-011: provider index and provider pages
 - PR-012: timeline page
 - PR-013: seed records batch 1
+- PR-014: seed records batch 2
 
 ## v0 target
 
