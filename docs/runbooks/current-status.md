@@ -1,10 +1,10 @@
 # Current Status
 
-Last updated: 2026-06-06
+Last updated: 2026-06-07
 
 ## Current phase
 
-PR-011: provider index and provider pages.
+PR-012: timeline page.
 
 ## Completed so far
 
@@ -87,6 +87,14 @@ PR-011: provider index and provider pages.
 - Five provider detail pages added
 - Home navigation updated for provider index
 
+### PR-012
+
+- `data/timeline.json` added
+- `/timeline/` page added
+- Timeline rendering script added
+- Home navigation updated for timeline
+- README updated for timeline
+
 ## Current sample entities
 
 - Google PaLM API
@@ -97,9 +105,9 @@ PR-011: provider index and provider pages.
 
 ## Next planned PRs
 
-- PR-012: timeline page
 - PR-013: seed records batch 1
 - PR-014: seed records batch 2
+- PR-015: seed records batch 3 / v0 dataset complete
 
 ## v0 target
 

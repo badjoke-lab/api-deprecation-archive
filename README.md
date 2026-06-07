@@ -30,9 +30,14 @@ The repository currently includes a plain white-background static shell:
 - `removed/index.html`
 - `replacements/index.html`
 - `replacements/replacements.js`
+- `providers/index.html`
+- `providers/providers.js`
+- `providers/[slug]/index.html` sample provider pages
+- `timeline/index.html`
+- `timeline/timeline.js`
 - `shared/lifecycle-list.js`
 
-The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records. Each sample record has a basic detail page, the deadlines page groups records by deadline status, deprecated / removed pages split records by lifecycle state, and the replacement matrix maps old surfaces to replacement paths.
+The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records. Each sample record has a basic detail page, the deadlines page groups records by deadline status, deprecated / removed pages split records by lifecycle state, the replacement matrix maps old surfaces to replacement paths, provider pages group records by provider, and the timeline presents lifecycle events chronologically.
 
 ## Scope
 
@@ -84,4 +89,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, basic sample detail pages, a deadlines page, deprecated / removed pages, and a replacement matrix. Next work focuses on the provider index and provider pages.
+The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on expanding the seed dataset.
