@@ -4,7 +4,7 @@ Last updated: 2026-06-07
 
 ## Current phase
 
-PR-012: timeline page.
+PR-013: seed records batch 1.
 
 ## Completed so far
 
@@ -95,6 +95,16 @@ PR-012: timeline page.
 - Home navigation updated for timeline
 - README updated for timeline
 
+### PR-013
+
+- Display dataset expanded from 5 to 10 records
+- `data/timeline.json` expanded to 10 events
+- Added detail pages for AWS SDK for JavaScript v2
+- Added detail pages for GitHub password authentication for Git operations
+- Added detail pages for Google URL Shortener goo.gl links
+- Added detail pages for Azure AD Graph API
+- README updated for seed batch 1
+
 ## Current sample entities
 
 - Google PaLM API
@@ -102,12 +112,17 @@ PR-012: timeline page.
 - Slack files.upload API method
 - Shopify REST Admin API
 - Kubernetes v1.22 Removed APIs
+- AWS SDK for JavaScript v2
+- GitHub password authentication for Git operations
+- Heroku free product plans
+- Google URL Shortener goo.gl links
+- Azure AD Graph API
 
 ## Next planned PRs
 
-- PR-013: seed records batch 1
 - PR-014: seed records batch 2
 - PR-015: seed records batch 3 / v0 dataset complete
+- PR-016: v0 release readiness
 
 ## v0 target
 

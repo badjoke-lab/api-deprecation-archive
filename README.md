@@ -37,7 +37,19 @@ The repository currently includes a plain white-background static shell:
 - `timeline/timeline.js`
 - `shared/lifecycle-list.js`
 
-The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the initial sample records. Each sample record has a basic detail page, the deadlines page groups records by deadline status, deprecated / removed pages split records by lifecycle state, the replacement matrix maps old surfaces to replacement paths, provider pages group records by provider, and the timeline presents lifecycle events chronologically.
+The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the seed records. Records have basic detail pages where available, and registry pages group records by deadline, lifecycle state, replacement path, provider, and timeline.
+
+## Current dataset
+
+The display dataset currently contains 10 seed records.
+
+Batch 1 added:
+
+- AWS SDK for JavaScript v2
+- GitHub password authentication for Git operations
+- Heroku free product plans
+- Google URL Shortener goo.gl links
+- Azure AD Graph API
 
 ## Scope
 
@@ -89,4 +101,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, sample records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on expanding the seed dataset.
+The repository has public-safe docs, schemas, validation infrastructure, 10 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on seed records batch 2.
