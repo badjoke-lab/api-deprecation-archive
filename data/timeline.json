@@ -1,0 +1,8 @@
+[
+  {"date":"2025-08-25","year":"2025","provider":"Firebase","record":"Firebase Dynamic Links","slug":"firebase-dynamic-links","eventType":"api_removed","action":"migrate","risk":"critical","evidenceUrl":"https://firebase.google.com/support/dynamic-links-faq"},
+  {"date":"2025-04-01","year":"2025","provider":"Shopify","record":"Shopify REST Admin API","slug":"shopify-rest-admin-api","eventType":"migration_deadline","action":"migrate","risk":"high","evidenceUrl":"https://shopify.dev/docs/api/admin-rest"},
+  {"date":"2024-10-01","year":"2024","provider":"Shopify","record":"Shopify REST Admin API","slug":"shopify-rest-admin-api","eventType":"api_deprecated","action":"migrate","risk":"high","evidenceUrl":"https://shopify.dev/docs/api/admin-rest"},
+  {"date":"2024-08-15","year":"2024","provider":"Google AI","record":"Google PaLM API","slug":"google-palm-api","eventType":"api_removed","action":"migrate","risk":"critical","evidenceUrl":"https://ai.google.dev/palm_docs/deprecation"},
+  {"date":"2024-04-09","year":"2024","provider":"Slack","record":"Slack files.upload API method","slug":"slack-files-upload","eventType":"api_deprecated","action":"replace_endpoint","risk":"high","evidenceUrl":"https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay"},
+  {"date":"2021-08-04","year":"2021","provider":"Kubernetes","record":"Kubernetes v1.22 Removed APIs","slug":"kubernetes-v1-22-removed-apis","eventType":"api_removed","action":"migrate","risk":"critical","evidenceUrl":"https://kubernetes.io/docs/reference/using-api/deprecation-guide/"}
+]
