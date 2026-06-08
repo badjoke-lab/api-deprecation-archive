@@ -41,7 +41,7 @@ The shell is intentionally simple and table-first. The API list page loads a lig
 
 ## Current dataset
 
-The display dataset currently contains 10 seed records.
+The display dataset currently contains 15 seed records.
 
 Batch 1 added:
 
@@ -50,6 +50,14 @@ Batch 1 added:
 - Heroku free product plans
 - Google URL Shortener goo.gl links
 - Azure AD Graph API
+
+Batch 2 added:
+
+- Google Cloud IoT Core
+- Dropbox API v1
+- PayPal NVP/SOAP APIs
+- Meta Graph API older versions
+- Twilio Authy API
 
 ## Scope
 
@@ -101,4 +109,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, 10 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on seed records batch 2.
+The repository has public-safe docs, schemas, validation infrastructure, 15 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on seed records batch 3 and v0 dataset completion.
