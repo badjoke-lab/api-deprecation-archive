@@ -1,10 +1,10 @@
 # Current Status
 
-Last updated: 2026-06-07
+Last updated: 2026-06-08
 
 ## Current phase
 
-PR-013: seed records batch 1.
+PR-014: seed records batch 2.
 
 ## Completed so far
 
@@ -105,6 +105,17 @@ PR-013: seed records batch 1.
 - Added detail pages for Azure AD Graph API
 - README updated for seed batch 1
 
+### PR-014
+
+- Display dataset expanded from 10 to 15 records
+- `data/timeline.json` expanded to 15 events
+- Added detail pages for Google Cloud IoT Core
+- Added detail pages for Dropbox API v1
+- Added detail pages for PayPal NVP/SOAP APIs
+- Added detail pages for Meta Graph API older versions
+- Added detail pages for Twilio Authy API
+- README updated for seed batch 2
+
 ## Current sample entities
 
 - Google PaLM API
@@ -117,10 +128,14 @@ PR-013: seed records batch 1.
 - Heroku free product plans
 - Google URL Shortener goo.gl links
 - Azure AD Graph API
+- Google Cloud IoT Core
+- Dropbox API v1
+- PayPal NVP/SOAP APIs
+- Meta Graph API older versions
+- Twilio Authy API
 
 ## Next planned PRs
 
-- PR-014: seed records batch 2
 - PR-015: seed records batch 3 / v0 dataset complete
 - PR-016: v0 release readiness
 
