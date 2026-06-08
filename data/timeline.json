@@ -1,112 +1,17 @@
 [
-  {
-    "date": "2021-08-04",
-    "provider": "Kubernetes",
-    "name": "Kubernetes v1.22 Removed APIs",
-    "slug": "kubernetes-v1-22-removed-apis",
-    "event": "Deprecated API versions removed in Kubernetes v1.22",
-    "type": "api_removed",
-    "actionRequired": "migrate",
-    "productionRisk": "critical",
-    "evidenceUrl": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/"
-  },
-  {
-    "date": "2021-08-13",
-    "provider": "GitHub",
-    "name": "GitHub password authentication for Git operations",
-    "slug": "github-password-authentication-for-git",
-    "event": "Password authentication for Git operations removed",
-    "type": "auth_method_removed",
-    "actionRequired": "rotate_auth",
-    "productionRisk": "critical",
-    "evidenceUrl": "https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/"
-  },
-  {
-    "date": "2022-11-28",
-    "provider": "Heroku",
-    "name": "Heroku free product plans",
-    "slug": "heroku-free-product-plans",
-    "event": "Free product plans ended",
-    "type": "free_tier_removed",
-    "actionRequired": "migrate",
-    "productionRisk": "high",
-    "evidenceUrl": "https://blog.heroku.com/next-chapter"
-  },
-  {
-    "date": "2024-04-09",
-    "provider": "Slack",
-    "name": "Slack files.upload API method",
-    "slug": "slack-files-upload",
-    "event": "files.upload deprecation announced",
-    "type": "api_deprecated",
-    "actionRequired": "replace_endpoint",
-    "productionRisk": "high",
-    "evidenceUrl": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay"
-  },
-  {
-    "date": "2024-08-15",
-    "provider": "Google AI",
-    "name": "Google PaLM API",
-    "slug": "google-palm-api",
-    "event": "PaLM API decommissioned",
-    "type": "api_removed",
-    "actionRequired": "migrate",
-    "productionRisk": "critical",
-    "evidenceUrl": "https://ai.google.dev/palm_docs/deprecation"
-  },
-  {
-    "date": "2024-10-01",
-    "provider": "Shopify",
-    "name": "Shopify REST Admin API",
-    "slug": "shopify-rest-admin-api",
-    "event": "REST Admin API marked legacy",
-    "type": "api_deprecated",
-    "actionRequired": "migrate",
-    "productionRisk": "high",
-    "evidenceUrl": "https://shopify.dev/docs/api/admin-rest"
-  },
-  {
-    "date": "2025-08-25",
-    "provider": "Firebase",
-    "name": "Firebase Dynamic Links",
-    "slug": "firebase-dynamic-links",
-    "event": "Firebase Dynamic Links shut down",
-    "type": "api_removed",
-    "actionRequired": "migrate",
-    "productionRisk": "critical",
-    "evidenceUrl": "https://firebase.google.com/support/dynamic-links-faq"
-  },
-  {
-    "date": "2025-08-25",
-    "provider": "Google",
-    "name": "Google URL Shortener goo.gl links",
-    "slug": "google-url-shortener-goo-gl-links",
-    "event": "goo.gl links no longer available after deadline",
-    "type": "api_removed",
-    "actionRequired": "migrate",
-    "productionRisk": "high",
-    "evidenceUrl": "https://developers.googleblog.com/en/google-url-shortener-links-will-no-longer-be-available/"
-  },
-  {
-    "date": "2025-09-08",
-    "provider": "AWS",
-    "name": "AWS SDK for JavaScript v2",
-    "slug": "aws-sdk-javascript-v2",
-    "event": "End-of-support date for AWS SDK for JavaScript v2",
-    "type": "sdk_deprecated",
-    "actionRequired": "migrate",
-    "productionRisk": "high",
-    "evidenceUrl": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/"
-  },
-  {
-    "date": "2026-08-31",
-    "provider": "Microsoft",
-    "name": "Azure AD Graph API",
-    "slug": "azure-ad-graph-api",
-    "event": "Azure AD Graph migration deadline tracked",
-    "type": "migration_deadline",
-    "actionRequired": "migrate",
-    "productionRisk": "high",
-    "evidenceUrl": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview"
-  }
+  {"date":"2021-08-04","provider":"Kubernetes","name":"Kubernetes v1.22 Removed APIs","slug":"kubernetes-v1-22-removed-apis","event":"Deprecated API versions removed in Kubernetes v1.22","type":"api_removed","actionRequired":"migrate","productionRisk":"critical","evidenceUrl":"https://kubernetes.io/docs/reference/using-api/deprecation-guide/"},
+  {"date":"2021-08-13","provider":"GitHub","name":"GitHub password authentication for Git operations","slug":"github-password-authentication-for-git","event":"Password authentication for Git operations removed","type":"auth_method_removed","actionRequired":"rotate_auth","productionRisk":"critical","evidenceUrl":"https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/"},
+  {"date":"2022-11-28","provider":"Heroku","name":"Heroku free product plans","slug":"heroku-free-product-plans","event":"Free product plans ended","type":"free_tier_removed","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://blog.heroku.com/next-chapter"},
+  {"date":"2023-08-16","provider":"Google Cloud","name":"Google Cloud IoT Core","slug":"google-cloud-iot-core","event":"Cloud IoT Core retired","type":"api_removed","actionRequired":"migrate","productionRisk":"critical","evidenceUrl":"https://cloud.google.com/iot-core"},
+  {"date":"2024-04-09","provider":"Slack","name":"Slack files.upload API method","slug":"slack-files-upload","event":"files.upload deprecation announced","type":"api_deprecated","actionRequired":"replace_endpoint","productionRisk":"high","evidenceUrl":"https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay"},
+  {"date":"2024-08-15","provider":"Google AI","name":"Google PaLM API","slug":"google-palm-api","event":"PaLM API decommissioned","type":"api_removed","actionRequired":"migrate","productionRisk":"critical","evidenceUrl":"https://ai.google.dev/palm_docs/deprecation"},
+  {"date":"2024-10-01","provider":"Shopify","name":"Shopify REST Admin API","slug":"shopify-rest-admin-api","event":"REST Admin API marked legacy","type":"api_deprecated","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://shopify.dev/docs/api/admin-rest"},
+  {"date":"2025-08-25","provider":"Firebase","name":"Firebase Dynamic Links","slug":"firebase-dynamic-links","event":"Firebase Dynamic Links shut down","type":"api_removed","actionRequired":"migrate","productionRisk":"critical","evidenceUrl":"https://firebase.google.com/support/dynamic-links-faq"},
+  {"date":"2025-08-25","provider":"Google","name":"Google URL Shortener goo.gl links","slug":"google-url-shortener-goo-gl-links","event":"goo.gl links no longer available after deadline","type":"api_removed","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://developers.googleblog.com/en/google-url-shortener-links-will-no-longer-be-available/"},
+  {"date":"2025-09-08","provider":"AWS","name":"AWS SDK for JavaScript v2","slug":"aws-sdk-javascript-v2","event":"End-of-support date for AWS SDK for JavaScript v2","type":"sdk_deprecated","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/"},
+  {"date":"2026-08-31","provider":"Microsoft","name":"Azure AD Graph API","slug":"azure-ad-graph-api","event":"Azure AD Graph migration deadline tracked","type":"migration_deadline","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview"},
+  {"date":"2026-06-08","provider":"PayPal","name":"PayPal NVP/SOAP APIs","slug":"paypal-nvp-soap-apis","event":"Legacy NVP/SOAP APIs tracked as deprecated","type":"api_deprecated","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://developer.paypal.com/api/nvp-soap/"},
+  {"date":"2026-06-08","provider":"Meta","name":"Meta Graph API older versions","slug":"meta-graph-api-older-versions","event":"Older Graph API versions tracked for version deprecation review","type":"version_sunset","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://developers.facebook.com/docs/graph-api/changelog/"},
+  {"date":"2026-06-08","provider":"Dropbox","name":"Dropbox API v1","slug":"dropbox-api-v1","event":"Dropbox API v1 tracked as removed legacy API","type":"api_removed","actionRequired":"migrate","productionRisk":"critical","evidenceUrl":"https://dropbox.tech/developers/migrating-app-permissions-and-access-tokens"},
+  {"date":"2026-06-08","provider":"Twilio","name":"Twilio Authy API","slug":"twilio-authy-api","event":"Authy API tracked as deprecated with Verify migration path","type":"api_deprecated","actionRequired":"migrate","productionRisk":"high","evidenceUrl":"https://www.twilio.com/docs/authy"}
 ]
