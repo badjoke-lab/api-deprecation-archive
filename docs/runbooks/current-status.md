@@ -4,7 +4,7 @@ Last updated: 2026-06-08
 
 ## Current phase
 
-PR-016: v0 release readiness.
+PR-017: source/data quality pass.
 
 ## Completed so far
 
@@ -134,6 +134,13 @@ PR-016: v0 release readiness.
 - Home page updated for v0 public preview status
 - README updated for release readiness
 
+### PR-017
+
+- Heroku free product plans detail page added
+- First source/data quality pass runbook added
+- README linked to the source/data quality pass
+- Current status updated for the quality pass
+
 ## Current sample entities
 
 - Google PaLM API
@@ -159,9 +166,9 @@ PR-016: v0 release readiness.
 
 ## Next planned PRs
 
-- PR-017: source/data quality pass
 - PR-018: SEO basics
 - PR-019: canonical JSON backfill for all 20 records
+- PR-020: detail page consistency pass
 
 ## v0 target
 
