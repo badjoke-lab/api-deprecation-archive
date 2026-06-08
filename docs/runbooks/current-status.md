@@ -4,7 +4,7 @@ Last updated: 2026-06-08
 
 ## Current phase
 
-PR-014: seed records batch 2.
+PR-015: seed records batch 3 / v0 dataset complete.
 
 ## Completed so far
 
@@ -116,6 +116,17 @@ PR-014: seed records batch 2.
 - Added detail pages for Twilio Authy API
 - README updated for seed batch 2
 
+### PR-015
+
+- Display dataset expanded from 15 to 20 records
+- `data/timeline.json` expanded to 20 events
+- Added detail pages for FCM legacy HTTP and XMPP APIs
+- Added detail pages for Apple APNs binary provider API
+- Added detail pages for Exchange Online Basic authentication
+- Added detail pages for Google Container Registry
+- Added detail pages for Stripe Sources API
+- README updated for v0 seed completion
+
 ## Current sample entities
 
 - Google PaLM API
@@ -133,11 +144,17 @@ PR-014: seed records batch 2.
 - PayPal NVP/SOAP APIs
 - Meta Graph API older versions
 - Twilio Authy API
+- FCM legacy HTTP and XMPP APIs
+- Apple APNs binary provider API
+- Exchange Online Basic authentication
+- Google Container Registry
+- Stripe Sources API
 
 ## Next planned PRs
 
-- PR-015: seed records batch 3 / v0 dataset complete
 - PR-016: v0 release readiness
+- PR-017: source/data quality pass
+- PR-018: SEO basics
 
 ## v0 target
 
