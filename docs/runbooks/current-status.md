@@ -4,7 +4,7 @@ Last updated: 2026-06-08
 
 ## Current phase
 
-PR-015: seed records batch 3 / v0 dataset complete.
+PR-016: v0 release readiness.
 
 ## Completed so far
 
@@ -127,6 +127,13 @@ PR-015: seed records batch 3 / v0 dataset complete.
 - Added detail pages for Stripe Sources API
 - README updated for v0 seed completion
 
+### PR-016
+
+- v0 release readiness runbook added
+- `/release/` page added
+- Home page updated for v0 public preview status
+- README updated for release readiness
+
 ## Current sample entities
 
 - Google PaLM API
@@ -152,26 +159,26 @@ PR-015: seed records batch 3 / v0 dataset complete.
 
 ## Next planned PRs
 
-- PR-016: v0 release readiness
 - PR-017: source/data quality pass
 - PR-018: SEO basics
+- PR-019: canonical JSON backfill for all 20 records
 
 ## v0 target
 
-v0 should include:
+v0 minimum target is reached:
 
-- 20 high-confidence seed records
+- 20 seed records
 - API list page
 - API detail pages
-- Upcoming deadlines page
+- Deadlines page
 - Deprecated but still usable page
 - Removed APIs page
 - Replacement matrix
 - Provider pages
 - Timeline page
 - Methodology and report paths
-- Static build
-- readable mobile layout
+- Static site shell
+- Readable mobile layout baseline
 
 ## Public-safe note
 
