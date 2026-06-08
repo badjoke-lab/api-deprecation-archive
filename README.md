@@ -14,6 +14,17 @@ The project helps developers answer:
 
 This project is not a replacement for official provider documentation. It is a cross-provider index that points users to official notices, migration guides, changelogs, and archived sources.
 
+## Release state
+
+The site is currently a v0 public preview.
+
+The display dataset contains 20 seed records, which reaches the minimum v0 seed target. The archive is usable as an index, but users should always verify official provider documentation before production migration work.
+
+Release readiness docs:
+
+- [v0 release readiness](docs/runbooks/v0-release-readiness.md)
+- [Release status page](release/)
+
 ## Static site shell
 
 The repository currently includes a plain white-background static shell:
@@ -35,6 +46,7 @@ The repository currently includes a plain white-background static shell:
 - `providers/[slug]/index.html` sample provider pages
 - `timeline/index.html`
 - `timeline/timeline.js`
+- `release/index.html`
 - `shared/lifecycle-list.js`
 
 The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the seed records. Records have basic detail pages where available, and registry pages group records by deadline, lifecycle state, replacement path, provider, and timeline.
@@ -114,7 +126,8 @@ Records are designed to make migration decisions easier:
 - [Report corrections](docs/report-corrections.md)
 - [Disclaimer](docs/disclaimer.md)
 - [Current status](docs/runbooks/current-status.md)
+- [v0 release readiness](docs/runbooks/v0-release-readiness.md)
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on v0 release readiness.
+The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, a timeline, and a release status page. Next work focuses on source/data quality and SEO basics.
