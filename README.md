@@ -114,7 +114,8 @@ Records are designed to make migration decisions easier:
 - [Report corrections](docs/report-corrections.md)
 - [Disclaimer](docs/disclaimer.md)
 - [Current status](docs/runbooks/current-status.md)
+- [v0 release readiness](docs/runbooks/v0-release-readiness.md)
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on v0 release readiness.
+The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, and a timeline. Next work focuses on source/data quality and SEO basics.
