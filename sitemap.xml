@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://api-deprecation-archive.pages.dev/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/deadlines/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/deprecated/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/removed/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/replacements/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/providers/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/timeline/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/release/</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/google-palm-api/</loc><lastmod>2026-06-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/firebase-dynamic-links/</loc><lastmod>2026-06-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/slack-files-upload/</loc><lastmod>2026-06-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/shopify-rest-admin-api/</loc><lastmod>2026-06-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/kubernetes-v1-22-removed-apis/</loc><lastmod>2026-06-05</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/aws-sdk-javascript-v2/</loc><lastmod>2026-06-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/github-password-authentication-for-git/</loc><lastmod>2026-06-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/heroku-free-product-plans/</loc><lastmod>2026-06-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/google-url-shortener-goo-gl-links/</loc><lastmod>2026-06-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/azure-ad-graph-api/</loc><lastmod>2026-06-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/google-cloud-iot-core/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/dropbox-api-v1/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/paypal-nvp-soap-apis/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/meta-graph-api-older-versions/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/twilio-authy-api/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/fcm-legacy-http-xmpp-apis/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/apple-apns-binary-provider-api/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/exchange-online-basic-authentication/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/google-container-registry/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://api-deprecation-archive.pages.dev/apis/stripe-sources-api/</loc><lastmod>2026-06-08</lastmod><priority>0.7</priority></url>
+</urlset>
