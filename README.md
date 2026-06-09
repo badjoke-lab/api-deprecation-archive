@@ -23,6 +23,7 @@ The display dataset contains 20 seed records, which reaches the minimum v0 seed 
 Release readiness docs:
 
 - [v0 release readiness](docs/runbooks/v0-release-readiness.md)
+- [Source / data quality pass](docs/runbooks/source-data-quality-pass-2026-06-08.md)
 - [Release status page](release/)
 
 ## Static site shell
@@ -127,7 +128,8 @@ Records are designed to make migration decisions easier:
 - [Disclaimer](docs/disclaimer.md)
 - [Current status](docs/runbooks/current-status.md)
 - [v0 release readiness](docs/runbooks/v0-release-readiness.md)
+- [Source / data quality pass](docs/runbooks/source-data-quality-pass-2026-06-08.md)
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, a timeline, and a release status page. Next work focuses on source/data quality and SEO basics.
+The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, a timeline, a release status page, and an initial source/data quality pass. Next work focuses on SEO basics and canonical data backfill.
