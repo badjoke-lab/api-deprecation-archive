@@ -1,10 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>API List | API Deprecation Archive</title><meta name="description" content="Browse API deprecation, removal, migration, and replacement records." /><link rel="stylesheet" href="../styles.css" /></head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API Deprecation List — Removed APIs, SDK Sunsets, and Replacements</title>
+    <meta name="description" content="Browse 20 tracked API lifecycle records with provider, stage, usability, required action, replacement, production risk, and official evidence." />
+    <link rel="canonical" href="https://api-deprecation-archive.pages.dev/apis/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="API Deprecation List" />
+    <meta property="og:description" content="Search deprecated APIs, removed SDKs, replacements, and migration risks." />
+    <meta property="og:url" content="https://api-deprecation-archive.pages.dev/apis/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
   <body>
-    <header class="site-header"><a class="brand" href="../" aria-label="API Deprecation Archive home"><span class="brand-title">API Deprecation Archive</span><span class="brand-subtitle">Evidence-based developer lifecycle registry</span></a><nav class="site-nav" aria-label="Primary navigation"><a href="./">APIs</a><a href="../deadlines/">Deadlines</a><a href="../deprecated/">Deprecated</a><a href="../removed/">Removed</a><a href="../replacements/">Replacements</a><a href="../#providers">Providers</a><a href="../docs/methodology.md">Methodology</a></nav></header>
+    <header class="site-header"><a class="brand" href="../" aria-label="API Deprecation Archive home"><span class="brand-title">API Deprecation Archive</span><span class="brand-subtitle">Evidence-based developer lifecycle registry</span></a><nav class="site-nav" aria-label="Primary navigation"><a href="./">APIs</a><a href="../deadlines/">Deadlines</a><a href="../deprecated/">Deprecated</a><a href="../removed/">Removed</a><a href="../replacements/">Replacements</a><a href="../providers/">Providers</a><a href="../timeline/">Timeline</a></nav></header>
     <main>
-      <section class="hero compact-hero" aria-labelledby="page-title"><p class="eyebrow">API records</p><h1 id="page-title">Browse tracked API lifecycle records.</h1><p class="hero-copy">Search and filter the initial sample records by provider, category, lifecycle stage, still-usable status, action required, and production risk.</p><div class="hero-actions"><a class="button" href="../deadlines/">View deadlines</a><a class="button" href="../replacements/">Replacement matrix</a><a class="button" href="../removed/">Removed records</a></div></section>
+      <section class="hero compact-hero" aria-labelledby="page-title"><p class="eyebrow">API records</p><h1 id="page-title">Browse tracked API lifecycle records.</h1><p class="hero-copy">Search and filter records by provider, category, lifecycle stage, still-usable status, action required, replacement, and production risk.</p><div class="hero-actions"><a class="button" href="../deadlines/">View deadlines</a><a class="button" href="../replacements/">Replacement matrix</a><a class="button" href="../removed/">Removed records</a></div></section>
       <section class="panel filters-panel" aria-labelledby="filters-title"><div class="section-heading"><p class="eyebrow">Filters</p><h2 id="filters-title">Find a record</h2></div><form class="filters" id="api-filters"><label><span>Search</span><input id="search" type="search" placeholder="Search API, provider, replacement..." autocomplete="off" /></label><label><span>Category</span><select id="category"><option value="">All categories</option></select></label><label><span>Stage</span><select id="stage"><option value="">All stages</option></select></label><label><span>Production risk</span><select id="risk"><option value="">All risks</option></select></label></form></section>
       <section class="panel" aria-labelledby="results-title"><div class="section-heading results-heading"><div><p class="eyebrow">Results</p><h2 id="results-title">Records</h2></div><p id="result-count" class="result-count">Loading records...</p></div><div class="table-wrap"><table><thead><tr><th>API / Feature</th><th>Provider</th><th>Category</th><th>Stage</th><th>Still usable</th><th>Action</th><th>Replacement</th><th>Risk</th><th>Evidence</th></tr></thead><tbody id="records-body"><tr><td colspan="9">Loading records...</td></tr></tbody></table></div></section>
     </main>

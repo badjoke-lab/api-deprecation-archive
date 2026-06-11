@@ -1,7 +1,9 @@
+const params = new URLSearchParams(window.location.search);
+
 const state = {
   records: [],
   filters: {
-    search: '',
+    search: params.get('q') || '',
     category: '',
     stage: '',
     risk: ''
@@ -47,6 +49,13 @@ function fillSelect(select, values) {
   }
 }
 
+function syncSearchUrl() {
+  const url = new URL(window.location.href);
+  if (state.filters.search) url.searchParams.set('q', state.filters.search);
+  else url.searchParams.delete('q');
+  window.history.replaceState({}, '', url);
+}
+
 function recordMatches(record) {
   const search = normalize(state.filters.search);
   const haystack = normalize([
@@ -70,7 +79,6 @@ function recordMatches(record) {
 
 function render() {
   const records = state.records.filter(recordMatches);
-
   els.count.textContent = `${records.length} of ${state.records.length} records`;
 
   if (!records.length) {
@@ -98,7 +106,8 @@ function render() {
 
 function bindFilters() {
   els.search.addEventListener('input', (event) => {
-    state.filters.search = event.target.value;
+    state.filters.search = event.target.value.trim();
+    syncSearchUrl();
     render();
   });
   els.category.addEventListener('change', (event) => {
@@ -124,6 +133,7 @@ async function init() {
     fillSelect(els.category, unique(state.records, 'category'));
     fillSelect(els.stage, unique(state.records, 'stage'));
     fillSelect(els.risk, unique(state.records, 'productionRisk'));
+    els.search.value = state.filters.search;
     bindFilters();
     render();
   } catch (error) {
