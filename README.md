@@ -33,6 +33,8 @@ The repository currently includes a plain white-background static shell:
 - `index.html`
 - `styles.css`
 - `app.js`
+- `robots.txt`
+- `sitemap.xml`
 - `apis/index.html`
 - `apis/api-list.js`
 - `apis/[slug]/index.html` sample detail pages
@@ -51,6 +53,18 @@ The repository currently includes a plain white-background static shell:
 - `shared/lifecycle-list.js`
 
 The shell is intentionally simple and table-first. The API list page loads a lightweight `data/records.json` manifest for the seed records. Records have basic detail pages where available, and registry pages group records by deadline, lifecycle state, replacement path, provider, and timeline.
+
+## SEO basics
+
+The site includes initial search-engine basics:
+
+- `robots.txt`
+- `sitemap.xml`
+- canonical metadata on core public pages
+- Open Graph summary metadata on core public pages
+- Twitter summary metadata on core public pages
+- basic `WebSite` JSON-LD on the home page
+- query-string search support on `/apis/?q=...`
 
 ## Current dataset
 
@@ -132,4 +146,4 @@ Records are designed to make migration decisions easier:
 
 ## Status
 
-The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, a timeline, a release status page, and an initial source/data quality pass. Next work focuses on SEO basics and canonical data backfill.
+The repository has public-safe docs, schemas, validation infrastructure, 20 display seed records, a static site shell, a searchable API list page, sample detail pages, deadlines, deprecated / removed pages, a replacement matrix, provider pages, a timeline, a release status page, an initial source/data quality pass, and SEO basics. Next work focuses on canonical data backfill and detail page consistency.
