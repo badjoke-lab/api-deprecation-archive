@@ -1,10 +1,10 @@
 # Current Status
 
-Last updated: 2026-06-08
+Last updated: 2026-06-10
 
 ## Current phase
 
-PR-017: source/data quality pass.
+PR-018: SEO basics.
 
 ## Completed so far
 
@@ -141,6 +141,17 @@ PR-017: source/data quality pass.
 - README linked to the source/data quality pass
 - Current status updated for the quality pass
 
+### PR-018
+
+- `robots.txt` added
+- `sitemap.xml` added with core pages and 20 API detail pages
+- Canonical metadata added to core public pages
+- Open Graph / Twitter summary metadata added to core public pages
+- Home page `WebSite` JSON-LD added
+- API list now supports `/apis/?q=...` query search URLs
+- Provider index no longer links to missing provider detail pages
+- README updated for SEO basics
+
 ## Current sample entities
 
 - Google PaLM API
@@ -166,9 +177,9 @@ PR-017: source/data quality pass.
 
 ## Next planned PRs
 
-- PR-018: SEO basics
 - PR-019: canonical JSON backfill for all 20 records
 - PR-020: detail page consistency pass
+- PR-021: provider page coverage pass
 
 ## v0 target
 
