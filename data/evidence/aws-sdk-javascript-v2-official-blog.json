@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000006",
+  "entity_id": "apidep_entity_000006",
+  "event_id": "apidep_event_000006",
+  "type": "official_blog",
+  "url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/",
+  "title": "Announcing end-of-support for AWS SDK for JavaScript v2",
+  "publisher": "AWS Developer Tools Blog",
+  "published_at": "2024-03-06",
+  "archived_url": null,
+  "quote_or_summary": "AWS announced maintenance mode for v2 on September 8, 2024, end-of-support on September 8, 2025, and recommends migration to v3 while noting existing applications can continue to function.",
+  "reliability": "high",
+  "claim_scope": "deadline",
+  "last_checked_at": "2026-08-19",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Primary source for the end-of-support boundary and migration recommendation."
+}

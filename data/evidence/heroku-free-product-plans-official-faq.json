@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000008",
+  "entity_id": "apidep_entity_000008",
+  "event_id": "apidep_event_000008",
+  "type": "official_docs",
+  "url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+  "title": "Removal of Heroku Free Product Plans FAQ",
+  "publisher": "Heroku",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Heroku states that free dynos, free Heroku Postgres, and free Heroku Key-Value Store plans were removed starting November 28, 2022, with migration to paid plans required to avoid disruption or data loss.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-08-19",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
