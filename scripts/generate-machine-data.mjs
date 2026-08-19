@@ -100,6 +100,8 @@ function buildOutputs() {
       return byDate || a.data.id.localeCompare(b.data.id);
     });
     const entityEvidence = [...(evidenceByEntity.get(entity.id) ?? [])].sort((a, b) => a.data.id.localeCompare(b.data.id));
+    const eventTypes = [...new Set(entityEvents.map(({ data }) => data.type))].sort();
+    const primaryEvidenceCount = entityEvidence.filter(({ data }) => data.is_primary === true).length;
 
     const dossier = {
       schema_version: '1.0.0',
@@ -111,11 +113,11 @@ function buildOutputs() {
       events: entityEvents.map(({ data }) => data),
       evidence: entityEvidence.map(({ data }) => data),
       lifecycle_signals: {
-        event_types: [...new Set(entityEvents.map(({ data }) => data.type))].sort(),
+        event_types: eventTypes,
         removal_effective_date_recorded: Boolean(entity.removal_effective_at),
         migration_deadline_recorded: Boolean(entity.migration_deadline_at),
         replacement_recorded: Boolean(entity.replacement),
-        primary_evidence_count: entityEvidence.filter(({ data }) => data.is_primary === true).length
+        primary_evidence_count: primaryEvidenceCount
       },
       provenance: {
         display_manifest_used_as_authority: false,
@@ -142,9 +144,23 @@ function buildOutputs() {
       deadline_status: entity.deadline_status,
       still_usable: entity.still_usable,
       action_required: entity.action_required,
+      impact_level: entity.impact_level,
+      production_risk: entity.production_risk,
+      freshness_status: entity.freshness_status,
+      source_status: entity.source_status,
+      confidence: entity.confidence,
+      announced_at: entity.announced_at ?? null,
+      deprecated_at: entity.deprecated_at ?? null,
+      sunset_at: entity.sunset_at ?? null,
+      last_supported_at: entity.last_supported_at ?? null,
+      removal_effective_at: entity.removal_effective_at ?? null,
+      migration_deadline_at: entity.migration_deadline_at ?? null,
       replacement: entity.replacement ?? null,
       replacement_type: entity.replacement_type,
-      confidence: entity.confidence,
+      event_types: eventTypes,
+      event_count: entityEvents.length,
+      evidence_count: entityEvidence.length,
+      primary_evidence_count: primaryEvidenceCount,
       last_checked_at: entity.last_checked_at,
       human_url: `/apis/${entity.slug}/`,
       machine_url: `/data/machine/records/${entity.slug}.json`
@@ -285,6 +301,14 @@ function checkOutputs(outputs, entitySlugs) {
   const expectedRecords = expectedRecordPaths(entitySlugs);
   if (JSON.stringify(actualRecordFiles) !== JSON.stringify(expectedRecords)) {
     errors.push(`${RECORD_ROOT}: file-set mismatch; expected ${expectedRecords.length}, found ${actualRecordFiles.length}`);
+  }
+
+  const actualMachineJson = existsSync(join(ROOT, OUTPUT_ROOT))
+    ? readdirSync(join(ROOT, OUTPUT_ROOT)).filter((name) => name.endsWith('.json')).sort()
+    : [];
+  const expectedMachineJson = ['index.json', 'manifest.json'];
+  if (JSON.stringify(actualMachineJson) !== JSON.stringify(expectedMachineJson)) {
+    errors.push(`${OUTPUT_ROOT}: top-level JSON file-set mismatch`);
   }
 
   if (errors.length) {
