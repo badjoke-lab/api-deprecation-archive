@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "validate:data": "node scripts/validate-data.mjs",
-    "generate:machine": "node scripts/generate-machine-data.mjs && node scripts/project-stage3-index.mjs",
+    "generate:machine": "node scripts/generate-machine-data.mjs",
     "validate:machine": "npm run generate:machine && node scripts/validate-machine-tracked.mjs",
     "validate": "npm run validate:data && npm run validate:machine",
     "test": "npm run validate"
