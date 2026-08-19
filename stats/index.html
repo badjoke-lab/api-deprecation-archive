@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API Migration Stats | API Deprecation Archive</title>
+    <meta name="description" content="Canonical API lifecycle statistics for migration windows, providers, replacements, evidence quality, dates, and lifecycle coverage." />
+    <link rel="canonical" href="https://api-deprecation-archive.pages.dev/stats/" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="../"><span class="brand-title">API Deprecation Archive</span><span class="brand-subtitle">Evidence-based developer lifecycle registry</span></a><nav class="site-nav"><a href="../apis/">APIs</a><a href="../compare/">Compare</a><a href="./">Stats</a><a href="../deadlines/">Deadlines</a><a href="../timeline/">Timeline</a></nav></header>
+    <main>
+      <section class="hero compact-hero"><p class="eyebrow">Canonical Stats</p><h1>Measure the registry without inventing missing history.</h1><p class="hero-copy">These statistics are computed from the canonical machine index only. Unknown dates stay unknown, phased shutdowns remain phased, and no provider score or ranking is calculated.</p></section>
+
+      <section class="summary-grid" aria-label="Canonical dataset summary">
+        <article class="summary-card"><span class="summary-label">Canonical records</span><strong id="stat-records">—</strong></article>
+        <article class="summary-card"><span class="summary-label">Lifecycle events</span><strong id="stat-events">—</strong></article>
+        <article class="summary-card"><span class="summary-label">Evidence records</span><strong id="stat-evidence">—</strong></article>
+      </section>
+
+      <section class="panel"><div class="section-heading"><p class="eyebrow">Migration windows</p><h2>Recorded migration-window coverage</h2><p>Length is calculated only when a canonical start (`deprecated_at` or `announced_at`) and boundary (`migration_deadline_at`, `removal_effective_at`, or `sunset_at`) are both recorded.</p></div><div class="table-wrap"><table><thead><tr><th>Bucket</th><th>Records</th><th>Share</th></tr></thead><tbody id="migration-window-body"></tbody></table></div></section>
+
+      <section class="panel"><div class="section-heading"><p class="eyebrow">Lifecycle</p><h2>Status and replacement coverage</h2></div><div class="stats-columns"><div><h3>Canonical status</h3><div id="status-stats" class="stat-list"></div></div><div><h3>Replacement type</h3><div id="replacement-stats" class="stat-list"></div></div><div><h3>Event types</h3><div id="event-stats" class="stat-list"></div></div></div></section>
+
+      <section class="panel"><div class="section-heading"><p class="eyebrow">Providers</p><h2>Provider patterns in the reviewed dataset</h2><p>Counts describe registry coverage only. They are not provider quality scores.</p></div><div class="table-wrap"><table><thead><tr><th>Provider</th><th>Records</th><th>Removed / replaced</th><th>Still usable yes / partial</th></tr></thead><tbody id="provider-body"></tbody></table></div></section>
+
+      <section class="panel"><div class="section-heading"><p class="eyebrow">Data quality</p><h2>Evidence, freshness, and date coverage</h2></div><div class="stats-columns"><div><h3>Confidence</h3><div id="confidence-stats" class="stat-list"></div></div><div><h3>Freshness</h3><div id="freshness-stats" class="stat-list"></div></div><div><h3>Structured date coverage</h3><div id="date-stats" class="stat-list"></div></div></div><div class="panel-footer"><span class="muted" id="stats-note">Loading canonical machine index…</span></div></section>
+
+      <section class="panel"><div class="section-heading"><p class="eyebrow">Scope boundary</p><h2>What these Stats do not claim</h2></div><div class="detail-content"><p>There is no structured deprecation-reason field in the current canonical schema, so this page does not manufacture a “reason” distribution from prose. Provider counts are coverage counts, not rankings. Missing migration dates are reported as unknown rather than estimated.</p></div></section>
+    </main>
+    <footer class="site-footer"><p>Stats summarize the reviewed canonical dataset and do not replace official provider documentation.</p></footer>
+    <script src="stats.js" defer></script>
+  </body>
+</html>
