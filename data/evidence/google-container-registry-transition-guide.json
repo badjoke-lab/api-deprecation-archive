@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000019",
+  "entity_id": "apidep_entity_000019",
+  "event_id": "apidep_event_000019",
+  "type": "official_migration_guide",
+  "url": "https://docs.cloud.google.com/artifact-registry/docs/transition/transition-from-gcr",
+  "title": "Transition from Container Registry",
+  "publisher": "Google Cloud",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Google Cloud states that Container Registry is shut down effective March 18, 2025, image writes are unavailable, and Artifact Registry is the recommended replacement service.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
