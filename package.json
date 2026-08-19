@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "node scripts/validate-data.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "generate:machine": "node scripts/generate-machine-data.mjs",
+    "validate:machine": "node scripts/generate-machine-data.mjs --check",
+    "validate": "npm run validate:data && npm run validate:machine",
     "test": "npm run validate"
   }
 }
