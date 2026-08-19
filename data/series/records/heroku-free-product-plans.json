@@ -1,0 +1,105 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_removed",
+      "deprecation_stage": "removed",
+      "replacement": "Heroku Eco, Mini, or other paid plans",
+      "replacement_type": "official",
+      "status": "removed",
+      "still_usable": "no"
+    },
+    "status": "removed"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "pricing"
+        ],
+        "affected_versions": [],
+        "confidence": "high",
+        "date": "2022-11-28",
+        "deadline": "2022-11-28",
+        "entity_id": "apidep_entity_000008",
+        "evidence_ids": [
+          "apidep_evidence_000008"
+        ],
+        "id": "apidep_event_000008",
+        "impact_level": "high",
+        "migration_path": "Upgrade affected free resources to supported paid Heroku plans before the removal date.",
+        "notes": "Current Heroku help documentation confirms the 2022 removal boundary.",
+        "production_risk": "high",
+        "removal_date": "2022-11-28",
+        "replacement": "Heroku Eco, Mini, or other paid plans",
+        "replacement_type": "official",
+        "replacement_url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+        "summary": "Heroku ended the affected free dyno, Postgres, and Key-Value Store plans starting November 28, 2022.",
+        "title": "Heroku free product plans removed",
+        "type": "free_tier_removed",
+        "user_impact": "Free dynos could no longer run without a paid plan and affected free databases could be converted or deleted depending on account type."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "removal",
+        "entity_id": "apidep_entity_000008",
+        "event_id": "apidep_event_000008",
+        "id": "apidep_evidence_000008",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-19",
+        "notes": null,
+        "published_at": null,
+        "publisher": "Heroku",
+        "quote_or_summary": "Heroku states that free dynos, free Heroku Postgres, and free Heroku Key-Value Store plans were removed starting November 28, 2022, with migration to paid plans required to avoid disruption or data loss.",
+        "reliability": "high",
+        "title": "Removal of Heroku Free Product Plans FAQ",
+        "type": "official_docs",
+        "url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000008",
+  "identity": {
+    "aliases": [
+      "Heroku free dynos and data plans"
+    ],
+    "name": "Heroku free product plans"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/heroku-free-product-plans.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000008",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "heroku-free-product-plans"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/heroku-free-product-plans/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/heroku-free-product-plans.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/heroku-free-product-plans.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-19"
+  }
+}

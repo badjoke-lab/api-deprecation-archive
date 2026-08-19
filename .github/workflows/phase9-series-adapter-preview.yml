@@ -1,0 +1,34 @@
+name: Phase 9 Series Adapter Preview Verification
+
+on:
+  pull_request:
+    paths:
+      - 'data/series/**'
+      - 'scripts/generate-series-adapter.mjs'
+      - 'scripts/check-series-origin.mjs'
+      - '.github/workflows/phase9-series-adapter-preview.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase9-series-adapter-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-preview:
+    if: github.head_ref == 'agent/phase9-series-adapter-reference'
+    runs-on: ubuntu-latest
+    env:
+      SERIES_ORIGIN: https://agent-phase9-series-adapter.api-deprecation-archive.pages.dev
+      SERIES_VERIFY_ATTEMPTS: 20
+      SERIES_VERIFY_INTERVAL_MS: 15000
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify complete Series adapter on Cloudflare preview
+        run: node scripts/check-series-origin.mjs

@@ -1,0 +1,110 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_unverified",
+      "deprecation_stage": "deprecated",
+      "replacement": "AWS SDK for JavaScript v3",
+      "replacement_type": "official",
+      "status": "deprecated",
+      "still_usable": "yes"
+    },
+    "status": "deprecated"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [
+          "AWS SDK for JavaScript v2"
+        ],
+        "affected_surface": [
+          "sdk"
+        ],
+        "affected_versions": [
+          "v2"
+        ],
+        "confidence": "high",
+        "date": "2024-03-06",
+        "deadline": "2025-09-08",
+        "entity_id": "apidep_entity_000006",
+        "evidence_ids": [
+          "apidep_evidence_000006"
+        ],
+        "id": "apidep_event_000006",
+        "impact_level": "high",
+        "migration_path": "Migrate supported integrations from AWS SDK for JavaScript v2 to v3.",
+        "notes": "The deadline is an end-of-support boundary, not a runtime-removal claim.",
+        "production_risk": "high",
+        "removal_date": null,
+        "replacement": "AWS SDK for JavaScript v3",
+        "replacement_type": "official",
+        "replacement_url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/",
+        "summary": "AWS announced maintenance mode beginning September 8, 2024 and end-of-support on September 8, 2025, and recommended migration to v3.",
+        "title": "AWS SDK for JavaScript v2 end-of-support announced",
+        "type": "sdk_deprecated",
+        "user_impact": "Existing v2 applications can continue to run, but the SDK no longer receives updates or releases after end-of-support."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "deadline",
+        "entity_id": "apidep_entity_000006",
+        "event_id": "apidep_event_000006",
+        "id": "apidep_evidence_000006",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-19",
+        "notes": "Primary source for the end-of-support boundary and migration recommendation.",
+        "published_at": "2024-03-06",
+        "publisher": "AWS Developer Tools Blog",
+        "quote_or_summary": "AWS announced maintenance mode for v2 on September 8, 2024, end-of-support on September 8, 2025, and recommends migration to v3 while noting existing applications can continue to function.",
+        "reliability": "high",
+        "title": "Announcing end-of-support for AWS SDK for JavaScript v2",
+        "type": "official_blog",
+        "url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000006",
+  "identity": {
+    "aliases": [
+      "AWS SDK for JavaScript (v2)",
+      "aws-sdk v2"
+    ],
+    "name": "AWS SDK for JavaScript v2"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/aws-sdk-javascript-v2.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000006",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "aws-sdk-javascript-v2"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/aws-sdk-javascript-v2/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/aws-sdk-javascript-v2.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/aws-sdk-javascript-v2.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-19"
+  }
+}

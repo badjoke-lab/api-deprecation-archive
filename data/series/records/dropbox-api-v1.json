@@ -1,0 +1,108 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_removed",
+      "deprecation_stage": "removed",
+      "replacement": "Dropbox API v2",
+      "replacement_type": "official",
+      "status": "removed",
+      "still_usable": "no"
+    },
+    "status": "removed"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "api_version"
+        ],
+        "affected_versions": [
+          "v1"
+        ],
+        "confidence": "high",
+        "date": "2017-09-28",
+        "deadline": "2017-09-28",
+        "entity_id": "apidep_entity_000012",
+        "evidence_ids": [
+          "apidep_evidence_000012"
+        ],
+        "id": "apidep_event_000012",
+        "impact_level": "high",
+        "migration_path": "Migrate Dropbox API v1 integrations to API v2 using Dropbox's migration guidance.",
+        "notes": null,
+        "production_risk": "critical",
+        "removal_date": "2017-09-28",
+        "replacement": "Dropbox API v2",
+        "replacement_type": "official",
+        "replacement_url": "https://dropbox.tech/developers/announcing-the-v1-to-v2-migration-guide",
+        "summary": "Dropbox retired API v1 on September 28, 2017 and stated that v1 endpoints would return an error after shutdown.",
+        "title": "Dropbox API v1 endpoints turned off",
+        "type": "api_removed",
+        "user_impact": "Applications still calling Dropbox API v1 endpoints stop working until migrated to v2."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "removal",
+        "entity_id": "apidep_entity_000012",
+        "event_id": "apidep_event_000012",
+        "id": "apidep_evidence_000012",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": null,
+        "published_at": "2017-09-26",
+        "publisher": "Dropbox",
+        "quote_or_summary": "Dropbox states that API v1 was retired on September 28, 2017 and that integrations still relying on v1 endpoints would stop working.",
+        "reliability": "high",
+        "title": "API v1 Shutdown Details",
+        "type": "official_blog",
+        "url": "https://dropbox.tech/developers/api-v1-shutdown-details"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000012",
+  "identity": {
+    "aliases": [
+      "Dropbox Core API v1",
+      "Dropbox Business API v1"
+    ],
+    "name": "Dropbox API v1"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/dropbox-api-v1.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000012",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "dropbox-api-v1"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/dropbox-api-v1/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/dropbox-api-v1.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/dropbox-api-v1.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}
