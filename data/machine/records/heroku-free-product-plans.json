@@ -1,0 +1,131 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "pricing"
+    ],
+    "affected_users": [
+      "developers",
+      "app_operators"
+    ],
+    "aliases": [
+      "Heroku free dynos and data plans"
+    ],
+    "announced_at": null,
+    "canonical_name": "Heroku free product plans",
+    "category": "cloud_hosting_api",
+    "confidence": "high",
+    "current_state": "The tracked free plans are no longer available. Existing users had to move to paid resources to avoid app disruption or data loss.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+    "first_seen_at": "2026-06-07",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000008",
+    "impact_level": "high",
+    "known_unknowns": [],
+    "last_checked_at": "2026-08-19",
+    "last_supported_at": "2022-11-28",
+    "migration_deadline_at": "2022-11-28",
+    "migration_url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+    "next_check_recommended_at": null,
+    "notes": "Canonical backfill from current first-party Heroku help documentation.",
+    "official_url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+    "production_risk": "high",
+    "provider": "Heroku",
+    "provider_id": null,
+    "record_unit": "pricing_or_limit_change",
+    "related_records": [],
+    "removal_effective_at": "2022-11-28",
+    "replacement": "Heroku Eco, Mini, or other paid plans",
+    "replacement_type": "official",
+    "replacement_url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+    "slug": "heroku-free-product-plans",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Heroku ended the affected free dyno, Postgres, and Key-Value Store plans starting November 28, 2022.",
+    "summary": "Heroku removed its affected free product plans starting November 28, 2022 and directed users to paid replacement plans.",
+    "sunset_at": "2022-11-28"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "pricing"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2022-11-28",
+      "deadline": "2022-11-28",
+      "entity_id": "apidep_entity_000008",
+      "evidence_ids": [
+        "apidep_evidence_000008"
+      ],
+      "id": "apidep_event_000008",
+      "impact_level": "high",
+      "migration_path": "Upgrade affected free resources to supported paid Heroku plans before the removal date.",
+      "notes": "Current Heroku help documentation confirms the 2022 removal boundary.",
+      "production_risk": "high",
+      "removal_date": "2022-11-28",
+      "replacement": "Heroku Eco, Mini, or other paid plans",
+      "replacement_type": "official",
+      "replacement_url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq",
+      "summary": "Heroku ended the affected free dyno, Postgres, and Key-Value Store plans starting November 28, 2022.",
+      "title": "Heroku free product plans removed",
+      "type": "free_tier_removed",
+      "user_impact": "Free dynos could no longer run without a paid plan and affected free databases could be converted or deleted depending on account type."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000008",
+      "event_id": "apidep_event_000008",
+      "id": "apidep_evidence_000008",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-19",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Heroku",
+      "quote_or_summary": "Heroku states that free dynos, free Heroku Postgres, and free Heroku Key-Value Store plans were removed starting November 28, 2022, with migration to paid plans required to avoid disruption or data loss.",
+      "reliability": "high",
+      "title": "Removal of Heroku Free Product Plans FAQ",
+      "type": "official_docs",
+      "url": "https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "free_tier_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/heroku-free-product-plans.json",
+    "event_files": [
+      "data/events/heroku-free-product-plans-removed.json"
+    ],
+    "evidence_files": [
+      "data/evidence/heroku-free-product-plans-official-faq.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/heroku-free-product-plans/",
+    "machine": "/data/machine/records/heroku-free-product-plans.json"
+  }
+}

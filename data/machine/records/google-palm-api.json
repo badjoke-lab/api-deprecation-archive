@@ -1,0 +1,131 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "model"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators"
+    ],
+    "aliases": [
+      "PaLM API"
+    ],
+    "announced_at": null,
+    "canonical_name": "Google PaLM API",
+    "category": "ai_api",
+    "confidence": "high",
+    "current_state": "Removed according to official documentation.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://ai.google.dev/palm_docs/deprecation",
+    "first_seen_at": "2026-06-05",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000001",
+    "impact_level": "high",
+    "known_unknowns": [],
+    "last_checked_at": "2026-06-05",
+    "last_supported_at": "2024-08-15",
+    "migration_deadline_at": "2024-08-15",
+    "migration_url": "https://ai.google.dev/palm_docs/deprecation",
+    "next_check_recommended_at": "2026-09-05",
+    "notes": "Sample v0 record.",
+    "official_url": "https://ai.google.dev/palm_docs/deprecation",
+    "production_risk": "critical",
+    "provider": "Google AI",
+    "provider_id": "apidep_provider_000006",
+    "record_unit": "model_api",
+    "related_records": [],
+    "removal_effective_at": "2024-08-15",
+    "replacement": "Gemini API",
+    "replacement_type": "official",
+    "replacement_url": "https://ai.google.dev/palm_docs/deprecation",
+    "slug": "google-palm-api",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Official documentation lists decommissioning as of August 15, 2024.",
+    "summary": "AI API sample record with official replacement guidance.",
+    "sunset_at": null
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "model"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2024-08-15",
+      "deadline": "2024-08-15",
+      "entity_id": "apidep_entity_000001",
+      "evidence_ids": [
+        "apidep_evidence_000001"
+      ],
+      "id": "apidep_event_000001",
+      "impact_level": "high",
+      "migration_path": "Migrate PaLM API usage to Gemini API guidance from official documentation.",
+      "notes": "Sample v0 event.",
+      "production_risk": "critical",
+      "removal_date": "2024-08-15",
+      "replacement": "Gemini API",
+      "replacement_type": "official",
+      "replacement_url": "https://ai.google.dev/palm_docs/deprecation",
+      "summary": "Official documentation describes the PaLM API as decommissioned and points developers to Gemini API.",
+      "title": "Google PaLM API decommissioned",
+      "type": "api_removed",
+      "user_impact": "Existing PaLM API integrations require migration to continue using supported Google AI model APIs."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000001",
+      "event_id": "apidep_event_000001",
+      "id": "apidep_evidence_000001",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-06-05",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Google AI for Developers",
+      "quote_or_summary": "Official documentation describes the PaLM API deprecation and migration path to Gemini API.",
+      "reliability": "high",
+      "title": "PaLM API deprecation",
+      "type": "official_docs",
+      "url": "https://ai.google.dev/palm_docs/deprecation"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/google-palm-api.json",
+    "event_files": [
+      "data/events/google-palm-api-decommissioned.json"
+    ],
+    "evidence_files": [
+      "data/evidence/google-palm-api-official-docs.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/google-palm-api/",
+    "machine": "/data/machine/records/google-palm-api.json"
+  }
+}

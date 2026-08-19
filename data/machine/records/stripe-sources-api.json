@@ -1,0 +1,99 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "api_version"
+    ],
+    "affected_users": [
+      "developers",
+      "payment_integrators"
+    ],
+    "aliases": [
+      "Sources API"
+    ],
+    "announced_at": null,
+    "canonical_name": "Stripe Sources API",
+    "category": "payment_commerce_api",
+    "confidence": "high",
+    "current_state": "Deprecated and limited rather than universally removed; migration urgency depends on the payment-method scope used by the integration.",
+    "deadline_status": "unknown",
+    "deprecated_at": null,
+    "deprecation_stage": "deprecated",
+    "docs_url": "https://docs.stripe.com/api/sources",
+    "first_seen_at": "2026-06-08",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000020",
+    "impact_level": "high",
+    "known_unknowns": [
+      "Stripe's public documentation reviewed here does not state one universal Sources API shutdown date; local-payment-method and card-payment support have different lifecycle states."
+    ],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": null,
+    "migration_deadline_at": null,
+    "migration_url": "https://docs.stripe.com/payments/payment-methods/transitioning",
+    "next_check_recommended_at": "2026-11-20",
+    "notes": "No dated canonical event is created until a first-party announcement date or support-off date is established for a concrete Sources API scope.",
+    "official_url": "https://docs.stripe.com/payments/older-apis",
+    "production_risk": "high",
+    "provider": "Stripe",
+    "provider_id": null,
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": "Payment Methods and Payment Intents APIs",
+    "replacement_type": "official",
+    "replacement_url": "https://docs.stripe.com/payments/payment-methods/transitioning",
+    "slug": "stripe-sources-api",
+    "source_status": "official",
+    "status": "limited",
+    "still_usable": "partial",
+    "still_usable_note": "Stripe has deprecated the Sources API. Support for local payment methods is planned to be turned off, while Stripe currently says it does not plan to turn off Sources support for card payments.",
+    "summary": "Stripe Sources is a deprecated payment API with scope-dependent availability. Stripe recommends Payment Methods/Payment Intents and plans to remove local-payment-method support while retaining card support for now.",
+    "sunset_at": null
+  },
+  "events": [],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "status",
+      "entity_id": "apidep_entity_000020",
+      "event_id": null,
+      "id": "apidep_evidence_000020",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": "Supports a scope-dependent limited state; it does not establish one universal shutdown date.",
+      "published_at": null,
+      "publisher": "Stripe Documentation",
+      "quote_or_summary": "Stripe documents Sources as deprecated, plans to turn off local-payment-method support, does not currently plan to turn off card-payment support, and recommends migration to current Payment Methods and Payment Intents APIs.",
+      "reliability": "high",
+      "title": "Older payment APIs",
+      "type": "official_docs",
+      "url": "https://docs.stripe.com/payments/older-apis"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [],
+    "migration_deadline_recorded": false,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/stripe-sources-api.json",
+    "event_files": [],
+    "evidence_files": [
+      "data/evidence/stripe-sources-current-docs.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/stripe-sources-api/",
+    "machine": "/data/machine/records/stripe-sources-api.json"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "api_version"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators",
+      "cluster_operators"
+    ],
+    "aliases": [
+      "Kubernetes 1.22 Deprecated APIs"
+    ],
+    "announced_at": null,
+    "canonical_name": "Kubernetes v1.22 Removed APIs",
+    "category": "developer_tool_api",
+    "confidence": "high",
+    "current_state": "Removed in Kubernetes v1.22 according to official documentation.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+    "first_seen_at": "2026-06-05",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000005",
+    "impact_level": "high",
+    "known_unknowns": [],
+    "last_checked_at": "2026-06-05",
+    "last_supported_at": "2021-08-04",
+    "migration_deadline_at": "2021-08-04",
+    "migration_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+    "next_check_recommended_at": "2026-09-05",
+    "notes": "Sample v0 record.",
+    "official_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+    "production_risk": "critical",
+    "provider": "Kubernetes",
+    "provider_id": "apidep_provider_000005",
+    "record_unit": "api_version",
+    "related_records": [],
+    "removal_effective_at": "2021-08-04",
+    "replacement": "supported Kubernetes API versions listed in the migration guide",
+    "replacement_type": "official",
+    "replacement_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+    "slug": "kubernetes-v1-22-removed-apis",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Official Kubernetes documentation lists deprecated APIs no longer served in v1.22.",
+    "summary": "Kubernetes v1.22 removed several deprecated API versions and requires migration to supported versions.",
+    "sunset_at": "2021-08-04"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "api_version"
+      ],
+      "affected_versions": [
+        "v1.22"
+      ],
+      "confidence": "high",
+      "date": "2021-08-04",
+      "deadline": "2021-08-04",
+      "entity_id": "apidep_entity_000005",
+      "evidence_ids": [
+        "apidep_evidence_000005"
+      ],
+      "id": "apidep_event_000005",
+      "impact_level": "high",
+      "migration_path": "Migrate manifests and API usage to supported versions listed in the official migration guide.",
+      "notes": "Sample v0 event.",
+      "production_risk": "critical",
+      "removal_date": "2021-08-04",
+      "replacement": "supported API versions listed in the migration guide",
+      "replacement_type": "official",
+      "replacement_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+      "summary": "Official migration guide lists API versions no longer served in Kubernetes v1.22.",
+      "title": "Kubernetes v1.22 removed deprecated APIs",
+      "type": "api_removed",
+      "user_impact": "Users of removed API versions need migration before using Kubernetes v1.22 or later."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000005",
+      "event_id": "apidep_event_000005",
+      "id": "apidep_evidence_000005",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-06-05",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Kubernetes Documentation",
+      "quote_or_summary": "Official migration guide lists deprecated APIs removed in Kubernetes v1.22 and replacement API versions.",
+      "reliability": "high",
+      "title": "Deprecated API Migration Guide",
+      "type": "official_docs",
+      "url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/kubernetes-v1-22-removed-apis.json",
+    "event_files": [
+      "data/events/kubernetes-v1-22-removed-apis.json"
+    ],
+    "evidence_files": [
+      "data/evidence/kubernetes-v1-22-removed-apis-official-guide.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/kubernetes-v1-22-removed-apis/",
+    "machine": "/data/machine/records/kubernetes-v1-22-removed-apis.json"
+  }
+}

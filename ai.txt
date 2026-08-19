@@ -1,0 +1,12 @@
+API Deprecation Archive canonical migration-history registry
+Canonical only: true
+Entities: 19
+Events: 17
+Evidence: 19
+Data revision: 21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a
+Manifest: /data/machine/manifest.json
+Record index: /data/machine/index.json
+Per-API dossier: /data/machine/records/{slug}.json
+Source authority: data/entities + data/events + data/evidence
+Display manifest authority: false
+No AI-generated canonical dates or replacement claims.

@@ -1,0 +1,135 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "api_version"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators",
+      "identity_administrators"
+    ],
+    "aliases": [
+      "Azure Active Directory Graph API",
+      "Azure AD Graph"
+    ],
+    "announced_at": null,
+    "canonical_name": "Azure AD Graph API",
+    "category": "cloud_hosting_api",
+    "confidence": "high",
+    "current_state": "Fully retired according to current Microsoft migration documentation; Microsoft Graph is the supported replacement surface.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview",
+    "first_seen_at": "2026-06-07",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000010",
+    "impact_level": "high",
+    "known_unknowns": [
+      "The repository does not currently pin the exact calendar date of Microsoft's first 2019 deprecation announcement, so structured announcement/deprecation dates remain unknown."
+    ],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": "2025-08-31",
+    "migration_deadline_at": "2025-08-31",
+    "migration_url": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview",
+    "next_check_recommended_at": null,
+    "notes": "Corrects the older display state that treated August 31, 2026 as an upcoming boundary.",
+    "official_url": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview",
+    "production_risk": "critical",
+    "provider": "Microsoft",
+    "provider_id": null,
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": "2025-08-31",
+    "replacement": "Microsoft Graph",
+    "replacement_type": "official",
+    "replacement_url": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview",
+    "slug": "azure-ad-graph-api",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Microsoft states that extended access ended on August 31, 2025 and Azure AD Graph is fully retired.",
+    "summary": "Azure AD Graph completed retirement on August 31, 2025 after an extended-access period. Microsoft directs integrations to Microsoft Graph.",
+    "sunset_at": "2025-08-31"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "api_version"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2025-08-31",
+      "deadline": "2025-08-31",
+      "entity_id": "apidep_entity_000010",
+      "evidence_ids": [
+        "apidep_evidence_000010"
+      ],
+      "id": "apidep_event_000010",
+      "impact_level": "high",
+      "migration_path": "Migrate Azure AD Graph application calls and permissions to Microsoft Graph using Microsoft's migration guidance.",
+      "notes": "Current Microsoft documentation confirms the final retirement boundary.",
+      "production_risk": "critical",
+      "removal_date": "2025-08-31",
+      "replacement": "Microsoft Graph",
+      "replacement_type": "official",
+      "replacement_url": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview",
+      "summary": "Microsoft ended extended access to Azure AD Graph on August 31, 2025 and describes the API as fully retired.",
+      "title": "Azure AD Graph fully retired",
+      "type": "api_removed",
+      "user_impact": "Integrations that still depend on Azure AD Graph cannot rely on the retired API and must use Microsoft Graph."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000010",
+      "event_id": "apidep_event_000010",
+      "id": "apidep_evidence_000010",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Microsoft Learn",
+      "quote_or_summary": "Microsoft's migration guide states that extended access to Azure AD Graph ended on August 31, 2025 and the API is fully retired, with Microsoft Graph as the migration target.",
+      "reliability": "high",
+      "title": "Migrate from Azure Active Directory (Azure AD) Graph to Microsoft Graph",
+      "type": "official_migration_guide",
+      "url": "https://learn.microsoft.com/en-us/graph/migrate-azure-ad-graph-overview"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/azure-ad-graph-api.json",
+    "event_files": [
+      "data/events/azure-ad-graph-api-retired.json"
+    ],
+    "evidence_files": [
+      "data/evidence/azure-ad-graph-microsoft-migration-guide.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/azure-ad-graph-api/",
+    "machine": "/data/machine/records/azure-ad-graph-api.json"
+  }
+}

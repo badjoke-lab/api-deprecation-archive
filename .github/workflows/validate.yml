@@ -9,6 +9,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -21,5 +25,5 @@ jobs:
         with:
           node-version: 22
 
-      - name: Validate canonical data
+      - name: Validate canonical and machine data
         run: npm test

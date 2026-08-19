@@ -1,0 +1,131 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "endpoint",
+      "sdk"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators"
+    ],
+    "aliases": [],
+    "announced_at": null,
+    "canonical_name": "Firebase Dynamic Links",
+    "category": "cloud_hosting_api",
+    "confidence": "high",
+    "current_state": "Removed according to the official FAQ.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://firebase.google.com/support/dynamic-links-faq",
+    "first_seen_at": "2026-06-05",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000002",
+    "impact_level": "high",
+    "known_unknowns": [],
+    "last_checked_at": "2026-06-05",
+    "last_supported_at": "2025-08-25",
+    "migration_deadline_at": "2025-08-25",
+    "migration_url": "https://firebase.google.com/support/dynamic-links-faq",
+    "next_check_recommended_at": "2026-09-05",
+    "notes": "Sample v0 record.",
+    "official_url": "https://firebase.google.com/support/dynamic-links-faq",
+    "production_risk": "critical",
+    "provider": "Firebase",
+    "provider_id": "apidep_provider_000002",
+    "record_unit": "developer_feature",
+    "related_records": [],
+    "removal_effective_at": "2025-08-25",
+    "replacement": null,
+    "replacement_type": "partial",
+    "replacement_url": "https://firebase.google.com/support/dynamic-links-faq",
+    "slug": "firebase-dynamic-links",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Official FAQ states Firebase Dynamic Links shut down on August 25, 2025.",
+    "summary": "Firebase Dynamic Links is tracked as a removed developer feature with official shutdown notice.",
+    "sunset_at": "2025-08-25"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "endpoint",
+        "sdk"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2025-08-25",
+      "deadline": "2025-08-25",
+      "entity_id": "apidep_entity_000002",
+      "evidence_ids": [
+        "apidep_evidence_000002"
+      ],
+      "id": "apidep_event_000002",
+      "impact_level": "high",
+      "migration_path": "Review official FAQ guidance and migrate away from Firebase Dynamic Links.",
+      "notes": "Sample v0 event.",
+      "production_risk": "critical",
+      "removal_date": "2025-08-25",
+      "replacement": null,
+      "replacement_type": "partial",
+      "replacement_url": "https://firebase.google.com/support/dynamic-links-faq",
+      "summary": "Official FAQ describes Firebase Dynamic Links shutdown timing and related migration considerations.",
+      "title": "Firebase Dynamic Links shut down",
+      "type": "api_removed",
+      "user_impact": "Existing Dynamic Links usage required migration before shutdown."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000002",
+      "event_id": "apidep_event_000002",
+      "id": "apidep_evidence_000002",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-06-05",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Firebase",
+      "quote_or_summary": "Official FAQ describes Firebase Dynamic Links shutdown timing and related migration guidance.",
+      "reliability": "high",
+      "title": "Firebase Dynamic Links FAQ",
+      "type": "official_docs",
+      "url": "https://firebase.google.com/support/dynamic-links-faq"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": false
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/firebase-dynamic-links.json",
+    "event_files": [
+      "data/events/firebase-dynamic-links-shutdown.json"
+    ],
+    "evidence_files": [
+      "data/evidence/firebase-dynamic-links-official-faq.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/firebase-dynamic-links/",
+    "machine": "/data/machine/records/firebase-dynamic-links.json"
+  }
+}
