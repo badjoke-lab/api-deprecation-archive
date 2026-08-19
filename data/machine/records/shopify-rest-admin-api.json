@@ -1,6 +1,6 @@
 {
   "canonical_only": true,
-  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "data_revision": "b9a00ec4b5440d0d5ae41c8747e191cfe2033186d072fd0a4ed6a0a050551d00",
   "entity": {
     "action_required": "migrate",
     "affected_surface": [
@@ -29,12 +29,12 @@
     "known_unknowns": [
       "The record tracks legacy status and migration guidance, not complete removal of every REST surface."
     ],
-    "last_checked_at": "2026-06-05",
+    "last_checked_at": "2026-08-20",
     "last_supported_at": null,
     "migration_deadline_at": "2025-04-01",
     "migration_url": "https://shopify.dev/docs/api/admin-rest",
-    "next_check_recommended_at": "2026-09-05",
-    "notes": "Sample v0 record.",
+    "next_check_recommended_at": "2026-11-20",
+    "notes": "Stage 7 first-party follow-up reconfirmed legacy status and GraphQL migration guidance on 2026-08-20.",
     "official_url": "https://shopify.dev/docs/api/admin-rest",
     "production_risk": "high",
     "provider": "Shopify",
@@ -93,11 +93,11 @@
       "id": "apidep_evidence_000004",
       "is_official_domain": true,
       "is_primary": true,
-      "last_checked_at": "2026-06-05",
-      "notes": null,
+      "last_checked_at": "2026-08-20",
+      "notes": "Stage 7 no-change first-party follow-up.",
       "published_at": null,
       "publisher": "Shopify Developers",
-      "quote_or_summary": "Official documentation describes REST Admin API legacy status and migration direction to GraphQL Admin API.",
+      "quote_or_summary": "Current official documentation continues to describe REST Admin API as legacy as of October 1, 2024 and directs new app development to GraphQL Admin API.",
       "reliability": "high",
       "title": "REST Admin API reference",
       "type": "official_docs",

@@ -1,6 +1,6 @@
 {
   "canonical_only": true,
-  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "data_revision": "b9a00ec4b5440d0d5ae41c8747e191cfe2033186d072fd0a4ed6a0a050551d00",
   "entity": {
     "action_required": "replace_endpoint",
     "affected_surface": [
@@ -17,40 +17,38 @@
     "canonical_name": "Slack files.upload API method",
     "category": "social_platform_api",
     "confidence": "high",
-    "current_state": "Deprecated with a passed deadline that should be rechecked before public v0 launch.",
-    "deadline_status": "passed_unverified",
-    "deprecated_at": "2024-05-08",
-    "deprecation_stage": "deprecated",
-    "docs_url": "https://api.slack.com/methods/files.upload",
+    "current_state": "Removed after the November 12, 2025 sunset according to current Slack developer documentation.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": "2024-05-16",
+    "deprecation_stage": "removed",
+    "docs_url": "https://docs.slack.dev/reference/methods/files.upload/",
     "first_seen_at": "2026-06-05",
     "freshness_status": "fresh",
     "id": "apidep_entity_000003",
-    "impact_level": "medium",
-    "known_unknowns": [
-      "Current retirement status should be rechecked before public v0 launch."
-    ],
-    "last_checked_at": "2026-06-05",
-    "last_supported_at": null,
+    "impact_level": "high",
+    "known_unknowns": [],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": "2025-11-12",
     "migration_deadline_at": "2025-11-12",
-    "migration_url": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay",
-    "next_check_recommended_at": "2026-07-05",
-    "notes": "Sample v0 record.",
-    "official_url": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay",
-    "production_risk": "high",
+    "migration_url": "https://docs.slack.dev/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay/",
+    "next_check_recommended_at": "2027-02-20",
+    "notes": "Stage 7 first-party follow-up advanced the record from deprecated/partial to removed after official sunset confirmation.",
+    "official_url": "https://docs.slack.dev/reference/methods/files.upload/",
+    "production_risk": "critical",
     "provider": "Slack",
     "provider_id": "apidep_provider_000003",
     "record_unit": "api_group",
     "related_records": [],
-    "removal_effective_at": null,
-    "replacement": "external upload flow",
+    "removal_effective_at": "2025-11-12",
+    "replacement": "files.getUploadURLExternal + files.completeUploadExternal",
     "replacement_type": "official",
-    "replacement_url": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay",
+    "replacement_url": "https://docs.slack.dev/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay/",
     "slug": "slack-files-upload",
     "source_status": "official",
-    "status": "deprecated",
-    "still_usable": "partial",
-    "still_usable_note": "Official Slack changelog describes files.upload deprecation and a retirement timeline.",
-    "summary": "Slack files.upload is tracked as a deprecated API method with replacement upload flow guidance.",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Current official Slack method documentation states files.upload stopped functioning and was sunset on November 12, 2025.",
+    "summary": "Slack files.upload is a removed API method with an official replacement upload flow.",
     "sunset_at": "2025-11-12"
   },
   "events": [
@@ -84,6 +82,37 @@
       "title": "Slack files.upload deprecation announced",
       "type": "api_deprecated",
       "user_impact": "Apps using files.upload should migrate before retirement."
+    },
+    {
+      "action_required": "replace_endpoint",
+      "affected_endpoints": [
+        "files.upload"
+      ],
+      "affected_sdks": [],
+      "affected_surface": [
+        "endpoint"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2025-11-12",
+      "deadline": "2025-11-12",
+      "entity_id": "apidep_entity_000003",
+      "evidence_ids": [
+        "apidep_evidence_900001"
+      ],
+      "id": "apidep_event_900001",
+      "impact_level": "high",
+      "migration_path": "Replace files.upload with files.getUploadURLExternal followed by files.completeUploadExternal, or an official SDK v2 upload helper.",
+      "notes": "Stage 7 lifecycle follow-up event.",
+      "production_risk": "critical",
+      "removal_date": "2025-11-12",
+      "replacement": "files.getUploadURLExternal + files.completeUploadExternal",
+      "replacement_type": "official",
+      "replacement_url": "https://docs.slack.dev/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay/",
+      "summary": "Current Slack developer documentation states files.upload stopped functioning and was officially sunset on November 12, 2025.",
+      "title": "Slack files.upload sunset became effective",
+      "type": "api_removed",
+      "user_impact": "Calls to files.upload are no longer available after the sunset date."
     }
   ],
   "evidence": [
@@ -95,24 +124,43 @@
       "id": "apidep_evidence_000003",
       "is_official_domain": true,
       "is_primary": true,
-      "last_checked_at": "2026-06-05",
-      "notes": null,
+      "last_checked_at": "2026-08-20",
+      "notes": "Stage 7 follow-up confirmed the final sunset date after the earlier retirement-date extension.",
       "published_at": "2024-04-09",
-      "publisher": "Slack API",
-      "quote_or_summary": "Official changelog describes files.upload deprecation and replacement upload flow guidance.",
+      "publisher": "Slack Developer Docs",
+      "quote_or_summary": "Slack's official changelog records the files.upload deprecation, replacement upload flow, and final November 12, 2025 sunset date.",
       "reliability": "high",
-      "title": "A better way to upload files is here to stay",
+      "title": "The files.upload method is retiring, to be replaced by sequenced Web API methods",
       "type": "official_changelog",
-      "url": "https://api.slack.com/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay"
+      "url": "https://docs.slack.dev/changelog/2024-04-a-better-way-to-upload-files-is-here-to-stay/"
+    },
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000003",
+      "event_id": "apidep_event_900001",
+      "id": "apidep_evidence_900001",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": "Stage 7 first-party confirmation of completed removal.",
+      "published_at": null,
+      "publisher": "Slack Developer Docs",
+      "quote_or_summary": "Current official method documentation states files.upload has been deprecated, stopped functioning, and was officially sunset on November 12, 2025; it directs integrations to the external upload flow.",
+      "reliability": "high",
+      "title": "files.upload method",
+      "type": "official_docs",
+      "url": "https://docs.slack.dev/reference/methods/files.upload/"
     }
   ],
   "lifecycle_signals": {
     "event_types": [
-      "api_deprecated"
+      "api_deprecated",
+      "api_removed"
     ],
     "migration_deadline_recorded": true,
-    "primary_evidence_count": 1,
-    "removal_effective_date_recorded": false,
+    "primary_evidence_count": 2,
+    "removal_effective_date_recorded": true,
     "replacement_recorded": true
   },
   "project_id": "api-deprecation-archive",
@@ -120,10 +168,12 @@
     "display_manifest_used_as_authority": false,
     "entity_file": "data/entities/slack-files-upload.json",
     "event_files": [
-      "data/events/slack-files-upload-deprecated.json"
+      "data/events/slack-files-upload-deprecated.json",
+      "data/events/slack-files-upload-removed.json"
     ],
     "evidence_files": [
-      "data/evidence/slack-files-upload-official-changelog.json"
+      "data/evidence/slack-files-upload-official-changelog.json",
+      "data/evidence/slack-files-upload-current-method-docs.json"
     ]
   },
   "record_type": "api_lifecycle_dossier",
