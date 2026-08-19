@@ -1,0 +1,43 @@
+name: Phase 9 Series Adapter Contract
+
+on:
+  pull_request:
+    paths:
+      - 'data/series/**'
+      - 'data/machine/**'
+      - 'version.json'
+      - 'scripts/generate-series-adapter.mjs'
+      - 'scripts/check-series-origin.mjs'
+      - '.github/workflows/phase9-series-adapter-contract.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/series/**'
+      - 'data/machine/**'
+      - 'version.json'
+      - 'scripts/generate-series-adapter.mjs'
+      - 'scripts/check-series-origin.mjs'
+      - '.github/workflows/phase9-series-adapter-contract.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase9-series-adapter-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-series-adapter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate native registry
+        run: npm test
+      - name: Validate deterministic Series adapter
+        run: node scripts/generate-series-adapter.mjs --check
