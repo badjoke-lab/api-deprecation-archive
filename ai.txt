@@ -3,7 +3,7 @@ Canonical only: true
 Entities: 19
 Events: 18
 Evidence: 20
-Data revision: b9a00ec4b5440d0d5ae41c8747e191cfe2033186d072fd0a4ed6a0a050551d00
+Data revision: 8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c
 Manifest: /data/machine/manifest.json
 Record index: /data/machine/index.json
 Per-API dossier: /data/machine/records/{slug}.json

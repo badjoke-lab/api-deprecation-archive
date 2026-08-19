@@ -1,6 +1,6 @@
 {
   "canonical_only": true,
-  "data_revision": "b9a00ec4b5440d0d5ae41c8747e191cfe2033186d072fd0a4ed6a0a050551d00",
+  "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
   "project_id": "api-deprecation-archive",
   "record_count": 19,
   "records": [
@@ -533,7 +533,7 @@
       "canonical_name": "Shopify REST Admin API",
       "category": "payment_commerce_api",
       "confidence": "high",
-      "deadline_status": "passed_unverified",
+      "deadline_status": "no_deadline",
       "deprecated_at": "2024-10-01",
       "deprecation_stage": "deprecated",
       "event_count": 1,
@@ -548,7 +548,7 @@
       "last_checked_at": "2026-08-20",
       "last_supported_at": null,
       "machine_url": "/data/machine/records/shopify-rest-admin-api.json",
-      "migration_deadline_at": "2025-04-01",
+      "migration_deadline_at": null,
       "primary_evidence_count": 1,
       "production_risk": "high",
       "provider": "Shopify",
