@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compare API Migration History | API Deprecation Archive</title>
+    <meta name="description" content="Compare two canonical API lifecycle records by migration dates, replacement path, current usability, risk, events, evidence, and known unknowns." />
+    <link rel="canonical" href="https://api-deprecation-archive.pages.dev/compare/" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="../"><span class="brand-title">API Deprecation Archive</span><span class="brand-subtitle">Evidence-based developer lifecycle registry</span></a><nav class="site-nav"><a href="../apis/">APIs</a><a href="./">Compare</a><a href="../deadlines/">Deadlines</a><a href="../replacements/">Replacements</a><a href="../timeline/">Timeline</a></nav></header>
+    <main>
+      <section class="hero compact-hero"><p class="eyebrow">Canonical Compare</p><h1>Compare migration history, not vendors.</h1><p class="hero-copy">Choose two reviewed canonical records to compare lifecycle dates, current usability, required action, replacement guidance, evidence, and unresolved facts. This surface does not rank providers or infer missing dates.</p></section>
+      <section class="panel"><div class="section-heading"><p class="eyebrow">Selection</p><h2>Choose two canonical records</h2></div><form class="filters" id="compare-form"><label><span>Record A</span><select id="record-a"><option value="">Choose a record</option></select></label><label><span>Record B</span><select id="record-b"><option value="">Choose a record</option></select></label></form><div class="filters-actions"><span class="muted" id="compare-note">Loading canonical machine index…</span></div></section>
+      <section class="panel" aria-labelledby="compare-title"><div class="section-heading"><p class="eyebrow">Lifecycle facts</p><h2 id="compare-title">Comparison</h2></div><div class="table-wrap"><table class="compare-table"><thead><tr><th>Field</th><th id="heading-a">Record A</th><th id="heading-b">Record B</th></tr></thead><tbody id="compare-body"><tr><td colspan="3">Choose two records to compare.</td></tr></tbody></table></div></section>
+    </main>
+    <footer class="site-footer"><p>Compare presents recorded lifecycle facts only. It is not a vendor ranking or migration recommendation.</p></footer>
+    <script src="compare.js" defer></script>
+  </body>
+</html>
