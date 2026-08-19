@@ -1,0 +1,41 @@
+name: Stage 5 Compare Contract
+
+on:
+  pull_request:
+    paths:
+      - 'compare/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'scripts/validate-stage5-compare.mjs'
+      - '.github/workflows/stage5-compare-contract.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'compare/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'scripts/validate-stage5-compare.mjs'
+      - '.github/workflows/stage5-compare-contract.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage5-compare-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate Compare JavaScript syntax
+        run: node --check compare/compare.js
+      - name: Validate canonical Compare contract
+        run: node scripts/validate-stage5-compare.mjs
