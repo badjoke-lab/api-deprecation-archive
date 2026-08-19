@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000009",
+  "entity_id": "apidep_entity_000009",
+  "event_id": "apidep_event_000009",
+  "type": "official_blog",
+  "url": "https://developers.googleblog.com/google-url-shortener-links-will-no-longer-be-available/",
+  "title": "Google URL Shortener links will no longer be available [updated]",
+  "publisher": "Google Developers Blog",
+  "published_at": "2024-07-18",
+  "archived_url": null,
+  "quote_or_summary": "Google's August 1, 2025 update says it reversed the plan to discontinue all goo.gl URLs: only a specific inactive subset would be deactivated after August 25, while other goo.gl links would continue to function.",
+  "reliability": "high",
+  "claim_scope": "status",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Primary evidence for the narrowed deactivation scope."
+}
