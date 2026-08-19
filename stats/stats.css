@@ -1,0 +1,44 @@
+.stats-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 22px 24px;
+}
+
+.stats-columns h3 {
+  margin-bottom: 12px;
+}
+
+.stat-list {
+  display: grid;
+  gap: 8px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 10px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.stat-row:last-child {
+  border-bottom: 0;
+}
+
+.stat-row span {
+  text-transform: capitalize;
+}
+
+.stat-row small {
+  min-width: 54px;
+  text-align: right;
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .stats-columns {
+    grid-template-columns: 1fr;
+  }
+}
