@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000020",
+  "entity_id": "apidep_entity_000020",
+  "event_id": null,
+  "type": "official_docs",
+  "url": "https://docs.stripe.com/payments/older-apis",
+  "title": "Older payment APIs",
+  "publisher": "Stripe Documentation",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Stripe documents Sources as deprecated, plans to turn off local-payment-method support, does not currently plan to turn off card-payment support, and recommends migration to current Payment Methods and Payment Intents APIs.",
+  "reliability": "high",
+  "claim_scope": "status",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Supports a scope-dependent limited state; it does not establish one universal shutdown date."
+}

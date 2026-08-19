@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000017",
+  "entity_id": "apidep_entity_000017",
+  "event_id": "apidep_event_000017",
+  "type": "official_blog",
+  "url": "https://developer.apple.com/news/?id=c88acm2b",
+  "title": "Updated APNs provider API deadline",
+  "publisher": "Apple Developer",
+  "published_at": "2020-10-09",
+  "archived_url": null,
+  "quote_or_summary": "Apple states that the deadline to upgrade to the APNs provider API was extended to March 31, 2021 and that the legacy binary protocol would no longer be supported after that date.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
