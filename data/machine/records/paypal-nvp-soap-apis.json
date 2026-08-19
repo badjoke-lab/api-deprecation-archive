@@ -1,0 +1,100 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "api_version"
+    ],
+    "affected_users": [
+      "developers",
+      "payment_integrators"
+    ],
+    "aliases": [
+      "PayPal NVP APIs",
+      "PayPal SOAP APIs"
+    ],
+    "announced_at": null,
+    "canonical_name": "PayPal NVP/SOAP APIs",
+    "category": "payment_commerce_api",
+    "confidence": "high",
+    "current_state": "Supported legacy APIs with no shutdown date asserted by the current official documentation reviewed for this record.",
+    "deadline_status": "no_deadline",
+    "deprecated_at": null,
+    "deprecation_stage": "deprecated",
+    "docs_url": "https://developer.paypal.com/api/nvp-soap/",
+    "first_seen_at": "2026-06-08",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000013",
+    "impact_level": "medium",
+    "known_unknowns": [
+      "The exact original deprecation announcement date was not recovered in this review; no shutdown deadline is stated in the current official NVP/SOAP documentation."
+    ],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": null,
+    "migration_deadline_at": null,
+    "migration_url": "https://developer.paypal.com/api/nvp-soap/",
+    "next_check_recommended_at": null,
+    "notes": "No dated lifecycle event is added until a primary source establishes an event date.",
+    "official_url": "https://developer.paypal.com/api/nvp-soap/",
+    "production_risk": "medium",
+    "provider": "PayPal",
+    "provider_id": null,
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": "PayPal current APIs and latest integration tools",
+    "replacement_type": "recommended",
+    "replacement_url": "https://developer.paypal.com/api/nvp-soap/",
+    "slug": "paypal-nvp-soap-apis",
+    "source_status": "official",
+    "status": "deprecated",
+    "still_usable": "yes",
+    "still_usable_note": "Current PayPal developer documentation labels NVP/SOAP as legacy/deprecated but explicitly says PayPal continues to support these APIs and accepts new integrations.",
+    "summary": "PayPal NVP/SOAP APIs are legacy/deprecated integration methods that remain supported. PayPal recommends current tools for new integrations and its upgrade path for existing integrations.",
+    "sunset_at": null
+  },
+  "events": [],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "status",
+      "entity_id": "apidep_entity_000013",
+      "event_id": null,
+      "id": "apidep_evidence_000013",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": "No shutdown date is asserted by this evidence.",
+      "published_at": null,
+      "publisher": "PayPal Developer",
+      "quote_or_summary": "PayPal labels NVP/SOAP as legacy/deprecated while stating that it continues to support the APIs and recommending current tools for new integrations and its upgrade path for existing integrations.",
+      "reliability": "high",
+      "title": "NVP and SOAP API reference",
+      "type": "official_docs",
+      "url": "https://developer.paypal.com/api/nvp-soap/"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [],
+    "migration_deadline_recorded": false,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/paypal-nvp-soap-apis.json",
+    "event_files": [],
+    "evidence_files": [
+      "data/evidence/paypal-nvp-soap-current-docs.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/paypal-nvp-soap-apis/",
+    "machine": "/data/machine/records/paypal-nvp-soap-apis.json"
+  }
+}

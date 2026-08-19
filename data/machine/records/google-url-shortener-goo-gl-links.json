@@ -1,0 +1,135 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "docs"
+    ],
+    "affected_users": [
+      "developers",
+      "site_operators",
+      "content_publishers"
+    ],
+    "aliases": [
+      "goo.gl links",
+      "Google URL Shortener links"
+    ],
+    "announced_at": "2024-07-18",
+    "canonical_name": "Google URL Shortener goo.gl links",
+    "category": "cloud_hosting_api",
+    "confidence": "high",
+    "current_state": "Link behavior is scope-dependent: targeted inactive links no longer work after the 2025 boundary, while other goo.gl links continue functioning.",
+    "deadline_status": "no_deadline",
+    "deprecated_at": null,
+    "deprecation_stage": "deprecated",
+    "docs_url": "https://developers.googleblog.com/google-url-shortener-links-will-no-longer-be-available/",
+    "first_seen_at": "2026-06-07",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000009",
+    "impact_level": "high",
+    "known_unknowns": [
+      "Whether a particular goo.gl URL is disabled depends on the link-specific activity/deactivation condition described by Google."
+    ],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": null,
+    "migration_deadline_at": null,
+    "migration_url": "https://developers.googleblog.com/google-url-shortener-links-will-no-longer-be-available/",
+    "next_check_recommended_at": null,
+    "notes": "Corrects the older display assumption that all goo.gl links would stop working.",
+    "official_url": "https://developers.googleblog.com/google-url-shortener-links-will-no-longer-be-available/",
+    "production_risk": "high",
+    "provider": "Google",
+    "provider_id": null,
+    "record_unit": "developer_feature",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": null,
+    "replacement_type": "none",
+    "replacement_url": null,
+    "slug": "google-url-shortener-goo-gl-links",
+    "source_status": "official",
+    "status": "limited",
+    "still_usable": "partial",
+    "still_usable_note": "Google revised its earlier universal shutdown plan: only links that showed no activity in late 2024 and received the deactivation interstitial were targeted for deactivation after August 25, 2025; other goo.gl links continue to function.",
+    "summary": "Google no longer treats all goo.gl links as universally shutting down. A defined inactive subset was targeted for deactivation, while other existing goo.gl links remain supported.",
+    "sunset_at": null
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "docs"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2025-08-01",
+      "deadline": "2025-08-25",
+      "entity_id": "apidep_entity_000009",
+      "evidence_ids": [
+        "apidep_evidence_000009"
+      ],
+      "id": "apidep_event_000009",
+      "impact_level": "high",
+      "migration_path": "Migrate any link that displays Google's deactivation warning to another URL before relying on it after the stated boundary.",
+      "notes": "This event records the scope correction, not universal removal.",
+      "production_risk": "high",
+      "removal_date": null,
+      "replacement": null,
+      "replacement_type": "none",
+      "replacement_url": null,
+      "summary": "Google revised its earlier plan to discontinue all goo.gl URLs and limited deactivation to links that had shown no activity in late 2024 and had received the deactivation warning interstitial.",
+      "title": "Google narrows planned goo.gl deactivation scope",
+      "type": "scope_changed",
+      "user_impact": "Only the targeted inactive-link subset is deactivated; other goo.gl links continue functioning, so universal removal must not be inferred."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "status",
+      "entity_id": "apidep_entity_000009",
+      "event_id": "apidep_event_000009",
+      "id": "apidep_evidence_000009",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": "Primary evidence for the narrowed deactivation scope.",
+      "published_at": "2024-07-18",
+      "publisher": "Google Developers Blog",
+      "quote_or_summary": "Google's August 1, 2025 update says it reversed the plan to discontinue all goo.gl URLs: only a specific inactive subset would be deactivated after August 25, while other goo.gl links would continue to function.",
+      "reliability": "high",
+      "title": "Google URL Shortener links will no longer be available [updated]",
+      "type": "official_blog",
+      "url": "https://developers.googleblog.com/google-url-shortener-links-will-no-longer-be-available/"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "scope_changed"
+    ],
+    "migration_deadline_recorded": false,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": false
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/google-url-shortener-goo-gl-links.json",
+    "event_files": [
+      "data/events/google-url-shortener-scope-revised.json"
+    ],
+    "evidence_files": [
+      "data/evidence/google-url-shortener-official-update.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/google-url-shortener-goo-gl-links/",
+    "machine": "/data/machine/records/google-url-shortener-goo-gl-links.json"
+  }
+}

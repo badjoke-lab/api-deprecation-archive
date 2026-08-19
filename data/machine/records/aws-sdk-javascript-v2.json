@@ -1,0 +1,138 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "sdk"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators"
+    ],
+    "aliases": [
+      "AWS SDK for JavaScript (v2)",
+      "aws-sdk v2"
+    ],
+    "announced_at": "2024-03-06",
+    "canonical_name": "AWS SDK for JavaScript v2",
+    "category": "developer_tool_api",
+    "confidence": "high",
+    "current_state": "End-of-support has passed. Published v2 releases remain available, but AWS no longer provides updates or releases and recommends v3.",
+    "deadline_status": "passed_unverified",
+    "deprecated_at": "2024-09-08",
+    "deprecation_stage": "deprecated",
+    "docs_url": "https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/",
+    "first_seen_at": "2026-06-07",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000006",
+    "impact_level": "high",
+    "known_unknowns": [
+      "End-of-support is not the same as runtime removal; already-published v2 releases remain available."
+    ],
+    "last_checked_at": "2026-08-19",
+    "last_supported_at": "2025-09-08",
+    "migration_deadline_at": "2025-09-08",
+    "migration_url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/",
+    "next_check_recommended_at": null,
+    "notes": "Canonical backfill from current first-party AWS lifecycle documentation.",
+    "official_url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/",
+    "production_risk": "high",
+    "provider": "AWS",
+    "provider_id": null,
+    "record_unit": "sdk",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": "AWS SDK for JavaScript v3",
+    "replacement_type": "official",
+    "replacement_url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/",
+    "slug": "aws-sdk-javascript-v2",
+    "source_status": "official",
+    "status": "deprecated",
+    "still_usable": "yes",
+    "still_usable_note": "AWS states that existing applications can continue to function, but v2 reached end-of-support and no longer receives updates or releases.",
+    "summary": "AWS SDK for JavaScript v2 reached end-of-support on September 8, 2025. AWS recommends migration to v3 while published v2 releases remain available.",
+    "sunset_at": "2025-09-08"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [
+        "AWS SDK for JavaScript v2"
+      ],
+      "affected_surface": [
+        "sdk"
+      ],
+      "affected_versions": [
+        "v2"
+      ],
+      "confidence": "high",
+      "date": "2024-03-06",
+      "deadline": "2025-09-08",
+      "entity_id": "apidep_entity_000006",
+      "evidence_ids": [
+        "apidep_evidence_000006"
+      ],
+      "id": "apidep_event_000006",
+      "impact_level": "high",
+      "migration_path": "Migrate supported integrations from AWS SDK for JavaScript v2 to v3.",
+      "notes": "The deadline is an end-of-support boundary, not a runtime-removal claim.",
+      "production_risk": "high",
+      "removal_date": null,
+      "replacement": "AWS SDK for JavaScript v3",
+      "replacement_type": "official",
+      "replacement_url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/",
+      "summary": "AWS announced maintenance mode beginning September 8, 2024 and end-of-support on September 8, 2025, and recommended migration to v3.",
+      "title": "AWS SDK for JavaScript v2 end-of-support announced",
+      "type": "sdk_deprecated",
+      "user_impact": "Existing v2 applications can continue to run, but the SDK no longer receives updates or releases after end-of-support."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "deadline",
+      "entity_id": "apidep_entity_000006",
+      "event_id": "apidep_event_000006",
+      "id": "apidep_evidence_000006",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-19",
+      "notes": "Primary source for the end-of-support boundary and migration recommendation.",
+      "published_at": "2024-03-06",
+      "publisher": "AWS Developer Tools Blog",
+      "quote_or_summary": "AWS announced maintenance mode for v2 on September 8, 2024, end-of-support on September 8, 2025, and recommends migration to v3 while noting existing applications can continue to function.",
+      "reliability": "high",
+      "title": "Announcing end-of-support for AWS SDK for JavaScript v2",
+      "type": "official_blog",
+      "url": "https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "sdk_deprecated"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/aws-sdk-javascript-v2.json",
+    "event_files": [
+      "data/events/aws-sdk-javascript-v2-end-of-support.json"
+    ],
+    "evidence_files": [
+      "data/evidence/aws-sdk-javascript-v2-official-blog.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/aws-sdk-javascript-v2/",
+    "machine": "/data/machine/records/aws-sdk-javascript-v2.json"
+  }
+}

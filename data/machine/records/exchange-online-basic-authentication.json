@@ -1,0 +1,135 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "rotate_auth",
+    "affected_surface": [
+      "auth"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators",
+      "exchange_administrators"
+    ],
+    "aliases": [
+      "Exchange Online Basic Auth",
+      "Exchange Online legacy authentication"
+    ],
+    "announced_at": "2019-09-20",
+    "canonical_name": "Exchange Online Basic authentication",
+    "category": "cloud_hosting_api",
+    "confidence": "high",
+    "current_state": "Basic authentication is disabled in all tenants for the affected protocols; applications must use Modern authentication or another supported method.",
+    "deadline_status": "passed_unverified",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online",
+    "first_seen_at": "2026-06-08",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000018",
+    "impact_level": "high",
+    "known_unknowns": [
+      "The service-wide disablement was phased across tenants and cloud environments, so October 1, 2022 is recorded as the main rollout boundary rather than a fabricated universal completion date."
+    ],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": null,
+    "migration_deadline_at": "2022-10-01",
+    "migration_url": "https://learn.microsoft.com/en-us/exchange/client-developer/exchange-server-development",
+    "next_check_recommended_at": null,
+    "notes": "Current Microsoft documentation confirms the present all-tenants disabled state.",
+    "official_url": "https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online",
+    "production_risk": "critical",
+    "provider": "Microsoft",
+    "provider_id": null,
+    "record_unit": "auth_method",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": "Modern authentication (OAuth 2.0)",
+    "replacement_type": "official",
+    "replacement_url": "https://learn.microsoft.com/en-us/exchange/client-developer/exchange-server-development",
+    "slug": "exchange-online-basic-authentication",
+    "source_status": "official",
+    "status": "replaced",
+    "still_usable": "no",
+    "still_usable_note": "Microsoft states that Basic authentication is now disabled in all tenants for the affected Exchange Online protocols. Disablement was phased, so this record does not invent one universal final-completion date.",
+    "summary": "Microsoft removed Basic authentication from affected Exchange Online protocols and requires Modern authentication/OAuth-based access instead.",
+    "sunset_at": "2022-10-01"
+  },
+  "events": [
+    {
+      "action_required": "rotate_auth",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "auth"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2022-10-01",
+      "deadline": "2022-10-01",
+      "entity_id": "apidep_entity_000018",
+      "evidence_ids": [
+        "apidep_evidence_000018"
+      ],
+      "id": "apidep_event_000018",
+      "impact_level": "high",
+      "migration_path": "Update affected Exchange Online clients and applications to Modern authentication/OAuth 2.0 or supported newer interfaces.",
+      "notes": "October 1, 2022 is the documented main disablement boundary, not an inferred universal final-completion date.",
+      "production_risk": "critical",
+      "removal_date": null,
+      "replacement": "Modern authentication (OAuth 2.0)",
+      "replacement_type": "official",
+      "replacement_url": "https://learn.microsoft.com/en-us/exchange/client-developer/exchange-server-development",
+      "summary": "Microsoft began permanently disabling Basic authentication in Exchange Online tenants from October 1, 2022 for the affected protocols, with later phased completion across tenants and environments.",
+      "title": "Exchange Online Basic authentication permanent disablement rollout begins",
+      "type": "auth_method_removed",
+      "user_impact": "Applications that depended on username/password Basic authentication for affected Exchange Online protocols must change authentication or stop working."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "auth",
+      "entity_id": "apidep_entity_000018",
+      "event_id": "apidep_event_000018",
+      "id": "apidep_evidence_000018",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Microsoft Learn",
+      "quote_or_summary": "Microsoft states that Basic authentication is now disabled in all tenants for the affected Exchange Online protocols and documents the phased disablement that began from the October 2022 boundary.",
+      "reliability": "high",
+      "title": "Deprecation of Basic authentication in Exchange Online",
+      "type": "official_docs",
+      "url": "https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "auth_method_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/exchange-online-basic-authentication.json",
+    "event_files": [
+      "data/events/exchange-online-basic-auth-disablement.json"
+    ],
+    "evidence_files": [
+      "data/evidence/exchange-online-basic-auth-official-docs.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/exchange-online-basic-authentication/",
+    "machine": "/data/machine/records/exchange-online-basic-authentication.json"
+  }
+}

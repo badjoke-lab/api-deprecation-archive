@@ -1,0 +1,134 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "endpoint"
+    ],
+    "affected_users": [
+      "developers",
+      "push_notification_operators"
+    ],
+    "aliases": [
+      "APNs binary interface",
+      "APNs legacy binary protocol"
+    ],
+    "announced_at": "2020-10-09",
+    "canonical_name": "Apple APNs legacy binary provider API",
+    "category": "developer_tool_api",
+    "confidence": "high",
+    "current_state": "Removed legacy provider interface; push providers must use the HTTP/2-based APNs provider API.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://developer.apple.com/news/upcoming-requirements/?id=03312021a",
+    "first_seen_at": "2026-06-08",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000017",
+    "impact_level": "high",
+    "known_unknowns": [],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": "2021-03-31",
+    "migration_deadline_at": "2021-03-31",
+    "migration_url": "https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns",
+    "next_check_recommended_at": null,
+    "notes": "Apple first announced an earlier deadline and later extended it to March 31, 2021; this record uses the final official boundary.",
+    "official_url": "https://developer.apple.com/news/?id=c88acm2b",
+    "production_risk": "critical",
+    "provider": "Apple",
+    "provider_id": null,
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": "2021-03-31",
+    "replacement": "HTTP/2-based APNs provider API",
+    "replacement_type": "official",
+    "replacement_url": "https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns",
+    "slug": "apple-apns-binary-provider-api",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Apple states that APNs no longer supports the legacy binary protocol after March 31, 2021.",
+    "summary": "Apple ended support for the legacy APNs binary provider protocol after March 31, 2021 and requires the HTTP/2-based APNs provider API.",
+    "sunset_at": "2021-03-31"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "endpoint"
+      ],
+      "affected_versions": [
+        "legacy binary protocol"
+      ],
+      "confidence": "high",
+      "date": "2021-03-31",
+      "deadline": "2021-03-31",
+      "entity_id": "apidep_entity_000017",
+      "evidence_ids": [
+        "apidep_evidence_000017"
+      ],
+      "id": "apidep_event_000017",
+      "impact_level": "high",
+      "migration_path": "Move push-provider connections from the legacy binary interface to the HTTP/2-based APNs provider API.",
+      "notes": null,
+      "production_risk": "critical",
+      "removal_date": "2021-03-31",
+      "replacement": "HTTP/2-based APNs provider API",
+      "replacement_type": "official",
+      "replacement_url": "https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns",
+      "summary": "Apple ended support for the legacy binary APNs provider protocol after March 31, 2021.",
+      "title": "APNs legacy binary protocol support ended",
+      "type": "api_removed",
+      "user_impact": "Push providers using the legacy binary interface can no longer rely on that protocol to deliver notifications."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000017",
+      "event_id": "apidep_event_000017",
+      "id": "apidep_evidence_000017",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": null,
+      "published_at": "2020-10-09",
+      "publisher": "Apple Developer",
+      "quote_or_summary": "Apple states that the deadline to upgrade to the APNs provider API was extended to March 31, 2021 and that the legacy binary protocol would no longer be supported after that date.",
+      "reliability": "high",
+      "title": "Updated APNs provider API deadline",
+      "type": "official_blog",
+      "url": "https://developer.apple.com/news/?id=c88acm2b"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/apple-apns-binary-provider-api.json",
+    "event_files": [
+      "data/events/apple-apns-binary-provider-removed.json"
+    ],
+    "evidence_files": [
+      "data/evidence/apple-apns-official-news.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/apple-apns-binary-provider-api/",
+    "machine": "/data/machine/records/apple-apns-binary-provider-api.json"
+  }
+}

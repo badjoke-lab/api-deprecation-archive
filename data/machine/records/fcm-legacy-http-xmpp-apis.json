@@ -1,0 +1,140 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "endpoint"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators",
+      "push_notification_operators"
+    ],
+    "aliases": [
+      "Firebase Cloud Messaging legacy HTTP API",
+      "FCM legacy XMPP API"
+    ],
+    "announced_at": null,
+    "canonical_name": "FCM legacy HTTP and XMPP APIs",
+    "category": "cloud_hosting_api",
+    "confidence": "high",
+    "current_state": "Legacy FCM sending paths are no longer the supported interface; HTTP v1 is the supported migration target.",
+    "deadline_status": "passed_unverified",
+    "deprecated_at": "2023-06-20",
+    "deprecation_stage": "removed",
+    "docs_url": "https://firebase.google.com/docs/cloud-messaging/send/v1-api",
+    "first_seen_at": "2026-06-08",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000016",
+    "impact_level": "high",
+    "known_unknowns": [
+      "July 22, 2024 is documented as the start of shutdown, not necessarily the exact completion date for every legacy path."
+    ],
+    "last_checked_at": "2026-08-20",
+    "last_supported_at": null,
+    "migration_deadline_at": "2024-07-22",
+    "migration_url": "https://firebase.google.cn/docs/cloud-messaging/migrate-v1?hl=zh-tw",
+    "next_check_recommended_at": null,
+    "notes": "Avoids converting the documented shutdown-start date into an unsupported universal completion date.",
+    "official_url": "https://firebase.google.cn/docs/cloud-messaging/migrate-v1?hl=zh-tw",
+    "production_risk": "critical",
+    "provider": "Firebase",
+    "provider_id": null,
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": "FCM HTTP v1 API",
+    "replacement_type": "official",
+    "replacement_url": "https://firebase.google.com/docs/cloud-messaging/send/v1-api",
+    "slug": "fcm-legacy-http-xmpp-apis",
+    "source_status": "official",
+    "status": "replaced",
+    "still_usable": "no",
+    "still_usable_note": "Firebase documents the legacy HTTP/XMPP sending APIs as deprecated with shutdown beginning July 22, 2024, while current Firebase references describe legacy upstream messaging as decommissioned. The exact date on which every legacy path became unavailable is not inferred.",
+    "summary": "Firebase replaced the legacy FCM HTTP/XMPP sending APIs with the HTTP v1 API. Deprecation took effect June 20, 2023 and shutdown began July 22, 2024.",
+    "sunset_at": "2024-07-22"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [
+        "https://fcm.googleapis.com/fcm/send",
+        "fcm-xmpp.googleapis.com:5235"
+      ],
+      "affected_sdks": [],
+      "affected_surface": [
+        "endpoint"
+      ],
+      "affected_versions": [
+        "legacy"
+      ],
+      "confidence": "high",
+      "date": "2023-06-20",
+      "deadline": "2024-07-22",
+      "entity_id": "apidep_entity_000016",
+      "evidence_ids": [
+        "apidep_evidence_000016"
+      ],
+      "id": "apidep_event_000016",
+      "impact_level": "high",
+      "migration_path": "Migrate legacy HTTP/XMPP send requests to the OAuth 2.0-based FCM HTTP v1 endpoint.",
+      "notes": "The deadline marks shutdown start; no universal completion date is inferred.",
+      "production_risk": "critical",
+      "removal_date": null,
+      "replacement": "FCM HTTP v1 API",
+      "replacement_type": "official",
+      "replacement_url": "https://firebase.google.com/docs/cloud-messaging/send/v1-api",
+      "summary": "Firebase deprecated sending messages with the legacy HTTP and XMPP FCM APIs on June 20, 2023 and directed developers to HTTP v1, with shutdown beginning July 22, 2024.",
+      "title": "FCM legacy HTTP/XMPP sending APIs deprecated",
+      "type": "api_deprecated",
+      "user_impact": "Legacy server-side sending integrations require migration to HTTP v1 to remain on the supported FCM interface."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "migration",
+      "entity_id": "apidep_entity_000016",
+      "event_id": "apidep_event_000016",
+      "id": "apidep_evidence_000016",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-08-20",
+      "notes": "The primary Firebase documentation is served from the official firebase.google.cn mirror during this review.",
+      "published_at": null,
+      "publisher": "Firebase",
+      "quote_or_summary": "Firebase documents legacy HTTP/XMPP message sending as deprecated from June 20, 2023, with shutdown beginning July 22, 2024, and provides migration guidance to HTTP v1.",
+      "reliability": "high",
+      "title": "Migrate from legacy FCM APIs to HTTP v1",
+      "type": "official_migration_guide",
+      "url": "https://firebase.google.cn/docs/cloud-messaging/migrate-v1?hl=zh-tw"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_deprecated"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/fcm-legacy-http-xmpp-apis.json",
+    "event_files": [
+      "data/events/fcm-legacy-http-xmpp-deprecated.json"
+    ],
+    "evidence_files": [
+      "data/evidence/fcm-legacy-http-xmpp-migration-guide.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/fcm-legacy-http-xmpp-apis/",
+    "machine": "/data/machine/records/fcm-legacy-http-xmpp-apis.json"
+  }
+}

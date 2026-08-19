@@ -1,0 +1,20 @@
+# API Deprecation Archive
+
+Evidence-based developer lifecycle and migration-history registry.
+
+Canonical only: true
+Canonical entities: 19
+Lifecycle events: 17
+Evidence records: 19
+Data revision: 21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a
+Last checked: 2026-08-20
+
+Machine-readable files:
+- /version.json
+- /data/machine/manifest.json
+- /data/machine/index.json
+- /data/machine/records/{slug}.json
+
+The machine layer is generated only from schema-validated canonical entity/event/evidence directories.
+Display-only rows and unreviewed candidates are excluded.
+Unknown lifecycle facts remain unknown; phased or scope-dependent shutdowns are not converted into unsupported universal dates.

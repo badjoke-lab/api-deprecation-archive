@@ -1,0 +1,133 @@
+{
+  "canonical_only": true,
+  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "api_version"
+    ],
+    "affected_users": [
+      "developers",
+      "api_integrators"
+    ],
+    "aliases": [
+      "REST Admin API"
+    ],
+    "announced_at": null,
+    "canonical_name": "Shopify REST Admin API",
+    "category": "payment_commerce_api",
+    "confidence": "high",
+    "current_state": "Legacy API surface according to official documentation.",
+    "deadline_status": "passed_unverified",
+    "deprecated_at": "2024-10-01",
+    "deprecation_stage": "deprecated",
+    "docs_url": "https://shopify.dev/docs/api/admin-rest",
+    "first_seen_at": "2026-06-05",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000004",
+    "impact_level": "high",
+    "known_unknowns": [
+      "The record tracks legacy status and migration guidance, not complete removal of every REST surface."
+    ],
+    "last_checked_at": "2026-06-05",
+    "last_supported_at": null,
+    "migration_deadline_at": "2025-04-01",
+    "migration_url": "https://shopify.dev/docs/api/admin-rest",
+    "next_check_recommended_at": "2026-09-05",
+    "notes": "Sample v0 record.",
+    "official_url": "https://shopify.dev/docs/api/admin-rest",
+    "production_risk": "high",
+    "provider": "Shopify",
+    "provider_id": "apidep_provider_000004",
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": null,
+    "replacement": "GraphQL Admin API",
+    "replacement_type": "official",
+    "replacement_url": "https://shopify.dev/docs/api/admin-rest",
+    "slug": "shopify-rest-admin-api",
+    "source_status": "official",
+    "status": "deprecated",
+    "still_usable": "partial",
+    "still_usable_note": "Official documentation describes REST Admin API as legacy and gives GraphQL Admin API as the preferred path.",
+    "summary": "Shopify REST Admin API is tracked as a legacy commerce API surface with migration guidance to GraphQL Admin API.",
+    "sunset_at": null
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [],
+      "affected_sdks": [],
+      "affected_surface": [
+        "api_version"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2024-10-01",
+      "deadline": "2025-04-01",
+      "entity_id": "apidep_entity_000004",
+      "evidence_ids": [
+        "apidep_evidence_000004"
+      ],
+      "id": "apidep_event_000004",
+      "impact_level": "high",
+      "migration_path": "Use GraphQL Admin API where possible according to official Shopify guidance.",
+      "notes": "Sample v0 event.",
+      "production_risk": "high",
+      "removal_date": null,
+      "replacement": "GraphQL Admin API",
+      "replacement_type": "official",
+      "replacement_url": "https://shopify.dev/docs/api/admin-rest",
+      "summary": "Official Shopify documentation describes the REST Admin API as legacy and directs developers toward GraphQL Admin API.",
+      "title": "Shopify REST Admin API marked legacy",
+      "type": "api_deprecated",
+      "user_impact": "Developers using REST Admin API should plan migration and check current Shopify requirements."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "migration",
+      "entity_id": "apidep_entity_000004",
+      "event_id": "apidep_event_000004",
+      "id": "apidep_evidence_000004",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-06-05",
+      "notes": null,
+      "published_at": null,
+      "publisher": "Shopify Developers",
+      "quote_or_summary": "Official documentation describes REST Admin API legacy status and migration direction to GraphQL Admin API.",
+      "reliability": "high",
+      "title": "REST Admin API reference",
+      "type": "official_docs",
+      "url": "https://shopify.dev/docs/api/admin-rest"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_deprecated"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": false,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/shopify-rest-admin-api.json",
+    "event_files": [
+      "data/events/shopify-rest-admin-api-legacy.json"
+    ],
+    "evidence_files": [
+      "data/evidence/shopify-rest-admin-api-official-docs.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/shopify-rest-admin-api/",
+    "machine": "/data/machine/records/shopify-rest-admin-api.json"
+  }
+}
