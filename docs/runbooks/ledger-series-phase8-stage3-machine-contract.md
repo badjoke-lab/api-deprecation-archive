@@ -81,19 +81,30 @@ The generator must not infer:
 
 ## Drift gate
 
-`npm run validate:machine` rebuilds the expected output in memory and compares it byte-for-byte with tracked machine files.
+`npm run validate:machine` regenerates the complete deterministic machine layer in the CI checkout, then `scripts/validate-machine-tracked.mjs` inspects Git status for tracked changes and untracked generated files.
 
 CI must fail if:
 
 - an expected machine file is missing;
 - a tracked machine file differs from canonical inputs;
+- a newly generated dossier is not committed;
 - an extra stale dossier remains after canonical removal or renaming;
+- version / manifest / index / llms / ai output differs from the deterministic generator;
 - an event/evidence record references an entity outside the accepted canonical set.
 
-Canonical data validation runs before the machine drift check.
+Canonical data validation runs before the machine regeneration and tracked-output check.
 
 ## Bootstrap boundary
 
-The temporary Stage 3 bootstrap workflow exists only to generate the initial tracked output from the reviewed canonical source. It must be removed before Stage 3 is accepted and merged.
+A temporary Stage 3 bootstrap workflow was used only to create the initial tracked machine output. It has been removed and must not be merged or restored.
 
-After bootstrap, normal repository CI must validate tracked output without silently regenerating it first.
+Normal repository CI now validates canonical data, regenerates the machine layer in an ephemeral checkout, and fails if the resulting tracked state differs from the reviewed repository output.
+
+## HTTP verification boundary
+
+Cloudflare Pages can serve an HTML fallback with HTTP 200 for an unknown static path. Therefore absence of a noncanonical dossier is verified by both:
+
+- exclusion from the canonical machine index; and
+- confirming that the unknown dossier path does not return a canonical JSON lifecycle dossier.
+
+A Pages HTML fallback is not treated as a leaked canonical record.
