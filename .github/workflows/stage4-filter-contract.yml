@@ -1,0 +1,42 @@
+name: Stage 4 Filter Contract
+
+on:
+  pull_request:
+    paths:
+      - 'apis/**'
+      - 'styles.css'
+      - 'scripts/validate-stage4-filters.mjs'
+      - '.github/workflows/stage4-filter-contract.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'apis/**'
+      - 'styles.css'
+      - 'scripts/validate-stage4-filters.mjs'
+      - '.github/workflows/stage4-filter-contract.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage4-filters-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-filters:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate JavaScript syntax
+        run: node --check apis/api-list.js
+
+      - name: Validate canonical structured-filter contract
+        run: node scripts/validate-stage4-filters.mjs
