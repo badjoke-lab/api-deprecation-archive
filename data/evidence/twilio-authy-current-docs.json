@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000015",
+  "entity_id": "apidep_entity_000015",
+  "event_id": "apidep_event_000015",
+  "type": "official_docs",
+  "url": "https://www.twilio.com/docs/authy/quickstart",
+  "title": "Authy Two-factor Authentication Quickstarts",
+  "publisher": "Twilio",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Twilio states that Authy API is closed to new customers, qualifying existing TOTP/Push customers remain supported for now, and new development should use Verify v2; no exact End-of-Life date is given.",
+  "reliability": "high",
+  "claim_scope": "status",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Primary evidence for limited current availability and migration direction."
+}

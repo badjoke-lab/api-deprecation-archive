@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000012",
+  "entity_id": "apidep_entity_000012",
+  "event_id": "apidep_event_000012",
+  "type": "official_blog",
+  "url": "https://dropbox.tech/developers/api-v1-shutdown-details",
+  "title": "API v1 Shutdown Details",
+  "publisher": "Dropbox",
+  "published_at": "2017-09-26",
+  "archived_url": null,
+  "quote_or_summary": "Dropbox states that API v1 was retired on September 28, 2017 and that integrations still relying on v1 endpoints would stop working.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}

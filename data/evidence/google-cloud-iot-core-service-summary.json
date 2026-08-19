@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000011",
+  "entity_id": "apidep_entity_000011",
+  "event_id": "apidep_event_000011",
+  "type": "official_docs",
+  "url": "https://cloud.google.com/terms/services/index-20230607",
+  "title": "Google Cloud Platform Services Summary",
+  "publisher": "Google Cloud",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Google Cloud's service summary states that IoT Core would be discontinued on August 16, 2023 and was no longer accepting new customers.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
