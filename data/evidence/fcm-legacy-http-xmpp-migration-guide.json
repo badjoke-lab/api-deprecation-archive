@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000016",
+  "entity_id": "apidep_entity_000016",
+  "event_id": "apidep_event_000016",
+  "type": "official_migration_guide",
+  "url": "https://firebase.google.cn/docs/cloud-messaging/migrate-v1?hl=zh-tw",
+  "title": "Migrate from legacy FCM APIs to HTTP v1",
+  "publisher": "Firebase",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Firebase documents legacy HTTP/XMPP message sending as deprecated from June 20, 2023, with shutdown beginning July 22, 2024, and provides migration guidance to HTTP v1.",
+  "reliability": "high",
+  "claim_scope": "migration",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "The primary Firebase documentation is served from the official firebase.google.cn mirror during this review."
+}
