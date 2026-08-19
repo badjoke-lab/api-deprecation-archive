@@ -8,11 +8,11 @@
   "publisher": "Firebase",
   "published_at": null,
   "archived_url": null,
-  "quote_or_summary": "Official FAQ describes Firebase Dynamic Links shutdown timing and related migration guidance.",
+  "quote_or_summary": "Current official FAQ states Firebase Dynamic Links shut down on August 25, 2025 and its APIs are no longer available after that date.",
   "reliability": "high",
   "claim_scope": "removal",
-  "last_checked_at": "2026-06-05",
+  "last_checked_at": "2026-08-20",
   "is_primary": true,
   "is_official_domain": true,
-  "notes": null
+  "notes": "Stage 7 no-change first-party follow-up."
 }
