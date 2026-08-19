@@ -1,0 +1,27 @@
+name: Stage 3 One-shot Production Verification
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-production:
+    if: github.head_ref == 'agent/phase8-stage3-production-check'
+    runs-on: ubuntu-latest
+    env:
+      API_DEP_ORIGIN: https://api-deprecation-archive.pages.dev
+      API_DEP_VERIFY_ATTEMPTS: 20
+      API_DEP_VERIFY_INTERVAL_MS: 15000
+    steps:
+      - name: Checkout reviewed main plus one-shot workflow
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify production machine layer
+        run: node scripts/check-machine-origin.mjs
