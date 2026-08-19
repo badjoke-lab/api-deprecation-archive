@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "project": "API Deprecation Archive",
+  "repository": "badjoke-lab/api-deprecation-archive",
+  "authority": "LEDGER_SERIES_PHASE8",
+  "status": "active_after_merge",
+  "activation_base_sha": "c86b1011f9cbea642b311ed97bb8e718427da02f",
+  "goal": "Strengthen the existing API Deprecation Archive into a deterministic migration-history registry without discarding its v0.1 entity/event/evidence model or existing public lifecycle surfaces.",
+  "required_references": [
+    "docs/spec/api-deprecation-archive-v0.1-spec.md",
+    "docs/data-schema.md",
+    "docs/status-definitions.md",
+    "docs/methodology.md",
+    "docs/source-policy.md",
+    "docs/ai-era-registry-spec.md",
+    "docs/ai-era-execution-schedule.md",
+    "schemas/entity.schema.json",
+    "schemas/event.schema.json",
+    "schemas/evidence.schema.json",
+    "schemas/provider.schema.json"
+  ],
+  "stages": [
+    "1-current-main-gap-audit",
+    "2-canonical-backfill-and-schema-gate",
+    "3-per-api-machine-readable-json",
+    "4-structured-migration-filters",
+    "5-migration-history-compare",
+    "6-migration-and-quality-stats",
+    "7-reviewed-lifecycle-followup-and-production-verification",
+    "8-closeout"
+  ],
+  "stage2_prerequisite": {
+    "display_seed_records": 20,
+    "schema_validated_canonical_entities_observed": 5,
+    "problem": "The public display seed is ahead of the schema-validated canonical entity/event/evidence layer. Deterministic AI-era surfaces must not promote the lightweight display manifest into canonical authority.",
+    "rule": "Complete or explicitly resolve the missing canonical backfill before machine JSON, Compare or Stats can be treated as canonical registry outputs."
+  },
+  "legacy_pr_handling": {
+    "pull_request": 22,
+    "title_at_audit": "placeholder",
+    "head": "canonical-json-backfill-pr-019",
+    "role": "reference_only_until_stage2_rebuild",
+    "rule": "Do not merge the two aggregate canonical staging bundles wholesale. Reuse only reviewed facts/IDs that can be mapped into the current schema-validated per-file entity/event/evidence model and source policy."
+  },
+  "safety": {
+    "preserve_v0_1_model": true,
+    "canonical_mutation_requires_reviewed_pr": true,
+    "display_manifest_is_not_canonical_authority": true,
+    "unknown_values_remain_unknown": true,
+    "future_deadlines_are_not_completion_evidence": true,
+    "unreviewed_candidate_auto_publish": false,
+    "ai_generated_canonical_dates_or_replacements": false,
+    "subjective_vendor_ranking": false,
+    "chatbot_first_surface": false
+  },
+  "implementation_rule": "Audit current main first; preserve existing public API/deadline/deprecated/removed/replacement/provider/timeline surfaces; fix the canonical 20-vs-5 split before building deterministic machine outputs; implement only verified gaps; require validation green and production verification for public runtime changes.",
+  "automatic_continuation_after_stage8": false
+}
