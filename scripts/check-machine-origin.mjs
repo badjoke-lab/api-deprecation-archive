@@ -36,6 +36,29 @@ function requireEqual(actual, expectedValue, label) {
   if (actual !== expectedValue) fail(`${label}: expected ${JSON.stringify(expectedValue)}, got ${JSON.stringify(actual)}`);
 }
 
+async function requireNoCanonicalDossier(path, slug) {
+  const response = await fetchResponse(path);
+  if (response.status === 404) return;
+  if (!response.ok) fail(`${path}: unexpected HTTP ${response.status}`);
+
+  const contentType = response.headers.get('content-type') ?? '';
+  const body = await response.text();
+  let parsed = null;
+  try {
+    parsed = JSON.parse(body);
+  } catch {
+    // Cloudflare Pages can serve the HTML site fallback with HTTP 200 for an
+    // unknown static path. That is absence of a machine dossier, not a leak.
+  }
+
+  if (parsed?.entity?.slug === slug || parsed?.record_type === 'api_lifecycle_dossier') {
+    fail(`${path}: noncanonical dossier exists in production`);
+  }
+  if (contentType.includes('application/json') || parsed !== null) {
+    fail(`${path}: unexpected JSON response for noncanonical dossier path`);
+  }
+}
+
 async function verifyOnce() {
   const version = await fetchJson('/version.json');
   requireEqual(version.canonical_only, true, 'version canonical_only');
@@ -79,8 +102,7 @@ async function verifyOnce() {
   requireEqual(stripe.entity?.deadline_status, 'unknown', 'Stripe deadline status');
   requireEqual(stripe.events?.length, 0, 'Stripe dated event count');
 
-  const metaResponse = await fetchResponse('/data/machine/records/meta-graph-api-older-versions.json');
-  requireEqual(metaResponse.status, 404, 'Meta noncanonical dossier HTTP status');
+  await requireNoCanonicalDossier('/data/machine/records/meta-graph-api-older-versions.json', 'meta-graph-api-older-versions');
 
   const llms = await fetchText('/llms.txt');
   if (!llms.includes('Canonical entities: 19')) fail('llms.txt canonical count missing');
