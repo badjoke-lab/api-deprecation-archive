@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_900001",
+  "entity_id": "apidep_entity_000003",
+  "event_id": "apidep_event_900001",
+  "type": "official_docs",
+  "url": "https://docs.slack.dev/reference/methods/files.upload/",
+  "title": "files.upload method",
+  "publisher": "Slack Developer Docs",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Current official method documentation states files.upload has been deprecated, stopped functioning, and was officially sunset on November 12, 2025; it directs integrations to the external upload flow.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Stage 7 first-party confirmation of completed removal."
+}
