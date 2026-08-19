@@ -8,11 +8,11 @@
   "publisher": "Shopify Developers",
   "published_at": null,
   "archived_url": null,
-  "quote_or_summary": "Official documentation describes REST Admin API legacy status and migration direction to GraphQL Admin API.",
+  "quote_or_summary": "Current official documentation continues to describe REST Admin API as legacy as of October 1, 2024 and directs new app development to GraphQL Admin API.",
   "reliability": "high",
   "claim_scope": "migration",
-  "last_checked_at": "2026-06-05",
+  "last_checked_at": "2026-08-20",
   "is_primary": true,
   "is_official_domain": true,
-  "notes": null
+  "notes": "Stage 7 no-change first-party follow-up."
 }
