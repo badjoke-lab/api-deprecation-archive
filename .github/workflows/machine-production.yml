@@ -1,0 +1,54 @@
+name: Machine Production Verification
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/entities/**'
+      - 'data/events/**'
+      - 'data/evidence/**'
+      - 'data/machine/**'
+      - 'version.json'
+      - 'llms.txt'
+      - 'ai.txt'
+      - 'scripts/generate-machine-data.mjs'
+      - 'scripts/check-machine-origin.mjs'
+      - '.github/workflows/machine-production.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: api-deprecation-machine-production
+  cancel-in-progress: true
+
+env:
+  API_DEP_ORIGIN: https://api-deprecation-archive.pages.dev
+  API_DEP_VERIFY_ATTEMPTS: 20
+  API_DEP_VERIFY_INTERVAL_MS: 15000
+
+jobs:
+  verify-production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout reviewed main
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify reviewed production machine layer
+        run: |
+          set -o pipefail
+          node scripts/check-machine-origin.mjs 2>&1 | tee machine-production.log
+
+      - name: Upload production evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-deprecation-machine-production-${{ github.sha }}
+          path: machine-production.log
+          if-no-files-found: warn
