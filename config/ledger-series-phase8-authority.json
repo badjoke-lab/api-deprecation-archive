@@ -3,8 +3,10 @@
   "project": "API Deprecation Archive",
   "repository": "badjoke-lab/api-deprecation-archive",
   "authority": "LEDGER_SERIES_PHASE8",
-  "status": "active_after_merge",
+  "status": "active_stage3",
+  "current_stage": "3-per-api-machine-readable-json",
   "activation_base_sha": "c86b1011f9cbea642b311ed97bb8e718427da02f",
+  "stage2_completion_main_sha": "2bdbe2fd1ad125d013ffec5329bc802ba57b66f2",
   "goal": "Strengthen the existing API Deprecation Archive into a deterministic migration-history registry without discarding its v0.1 entity/event/evidence model or existing public lifecycle surfaces.",
   "required_references": [
     "docs/spec/api-deprecation-archive-v0.1-spec.md",
@@ -29,23 +31,30 @@
     "7-reviewed-lifecycle-followup-and-production-verification",
     "8-closeout"
   ],
-  "stage2_prerequisite": {
-    "display_seed_records": 20,
-    "schema_validated_canonical_entities_observed": 5,
-    "problem": "The public display seed is ahead of the schema-validated canonical entity/event/evidence layer. Deterministic AI-era surfaces must not promote the lightweight display manifest into canonical authority.",
-    "rule": "Complete or explicitly resolve the missing canonical backfill before machine JSON, Compare or Stats can be treated as canonical registry outputs."
+  "stage2_result": {
+    "status": "complete_with_explicit_primary_evidence_gap",
+    "display_rows": 20,
+    "canonical_entities": 19,
+    "canonical_events": 17,
+    "canonical_evidence": 19,
+    "accepted_backfill_prs": [25, 26, 27],
+    "schema_expansion_required": false,
+    "pending_display_slug": "meta-graph-api-older-versions",
+    "pending_reason": "The display label is a moving set rather than a stable API-version entity, and version-specific first-party Meta lifecycle evidence could not be recovered during Stage 2. It is explicitly excluded from canonical and machine-readable outputs until a stable version boundary is reviewed.",
+    "rule": "Stage 3 may proceed from the 19 accepted canonical entities. Do not make machine output depend on the 20-row display manifest and do not synthesize a twentieth canonical record to satisfy a count target."
   },
   "legacy_pr_handling": {
     "pull_request": 22,
-    "title_at_audit": "placeholder",
-    "head": "canonical-json-backfill-pr-019",
-    "role": "reference_only_until_stage2_rebuild",
-    "rule": "Do not merge the two aggregate canonical staging bundles wholesale. Reuse only reviewed facts/IDs that can be mapped into the current schema-validated per-file entity/event/evidence model and source policy."
+    "title_at_close": "[Superseded] Canonical backfill staging bundle",
+    "state": "closed_unmerged",
+    "role": "historical_reference_only",
+    "rule": "Do not merge or restore the aggregate staging bundles. Current canonical authority is the reviewed per-file entity/event/evidence data on main."
   },
   "safety": {
     "preserve_v0_1_model": true,
     "canonical_mutation_requires_reviewed_pr": true,
     "display_manifest_is_not_canonical_authority": true,
+    "machine_output_uses_canonical_directories_only": true,
     "unknown_values_remain_unknown": true,
     "future_deadlines_are_not_completion_evidence": true,
     "unreviewed_candidate_auto_publish": false,
@@ -53,6 +62,6 @@
     "subjective_vendor_ranking": false,
     "chatbot_first_surface": false
   },
-  "implementation_rule": "Audit current main first; preserve existing public API/deadline/deprecated/removed/replacement/provider/timeline surfaces; fix the canonical 20-vs-5 split before building deterministic machine outputs; implement only verified gaps; require validation green and production verification for public runtime changes.",
+  "implementation_rule": "Use data/entities, data/events, and data/evidence as canonical authority. Stage 3 must generate deterministic per-API machine output only from accepted canonical records; the Meta moving-set placeholder remains excluded until version-specific first-party evidence supports a stable canonical entity. Require validation green and production verification for public runtime changes.",
   "automatic_continuation_after_stage8": false
 }
