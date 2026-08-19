@@ -1,0 +1,41 @@
+name: Stage 6 Stats Contract
+
+on:
+  pull_request:
+    paths:
+      - 'stats/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'scripts/validate-stage6-stats.mjs'
+      - '.github/workflows/stage6-stats-contract.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'stats/**'
+      - 'index.html'
+      - 'sitemap.xml'
+      - 'scripts/validate-stage6-stats.mjs'
+      - '.github/workflows/stage6-stats-contract.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stage6-stats-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate Stats JavaScript syntax
+        run: node --check stats/stats.js
+      - name: Validate canonical Stats contract
+        run: node scripts/validate-stage6-stats.mjs
