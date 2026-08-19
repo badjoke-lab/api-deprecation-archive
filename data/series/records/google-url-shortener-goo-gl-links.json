@@ -1,0 +1,106 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "no_deadline",
+      "deprecation_stage": "deprecated",
+      "replacement": null,
+      "replacement_type": "none",
+      "status": "limited",
+      "still_usable": "partial"
+    },
+    "status": "limited"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "docs"
+        ],
+        "affected_versions": [],
+        "confidence": "high",
+        "date": "2025-08-01",
+        "deadline": "2025-08-25",
+        "entity_id": "apidep_entity_000009",
+        "evidence_ids": [
+          "apidep_evidence_000009"
+        ],
+        "id": "apidep_event_000009",
+        "impact_level": "high",
+        "migration_path": "Migrate any link that displays Google's deactivation warning to another URL before relying on it after the stated boundary.",
+        "notes": "This event records the scope correction, not universal removal.",
+        "production_risk": "high",
+        "removal_date": null,
+        "replacement": null,
+        "replacement_type": "none",
+        "replacement_url": null,
+        "summary": "Google revised its earlier plan to discontinue all goo.gl URLs and limited deactivation to links that had shown no activity in late 2024 and had received the deactivation warning interstitial.",
+        "title": "Google narrows planned goo.gl deactivation scope",
+        "type": "scope_changed",
+        "user_impact": "Only the targeted inactive-link subset is deactivated; other goo.gl links continue functioning, so universal removal must not be inferred."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "status",
+        "entity_id": "apidep_entity_000009",
+        "event_id": "apidep_event_000009",
+        "id": "apidep_evidence_000009",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": "Primary evidence for the narrowed deactivation scope.",
+        "published_at": "2024-07-18",
+        "publisher": "Google Developers Blog",
+        "quote_or_summary": "Google's August 1, 2025 update says it reversed the plan to discontinue all goo.gl URLs: only a specific inactive subset would be deactivated after August 25, while other goo.gl links would continue to function.",
+        "reliability": "high",
+        "title": "Google URL Shortener links will no longer be available [updated]",
+        "type": "official_blog",
+        "url": "https://developers.googleblog.com/google-url-shortener-links-will-no-longer-be-available/"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000009",
+  "identity": {
+    "aliases": [
+      "goo.gl links",
+      "Google URL Shortener links"
+    ],
+    "name": "Google URL Shortener goo.gl links"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/google-url-shortener-goo-gl-links.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000009",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "google-url-shortener-goo-gl-links"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/google-url-shortener-goo-gl-links/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/google-url-shortener-goo-gl-links.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/google-url-shortener-goo-gl-links.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_removed",
+      "deprecation_stage": "removed",
+      "replacement": null,
+      "replacement_type": "none",
+      "status": "removed",
+      "still_usable": "no"
+    },
+    "status": "removed"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "api_version"
+        ],
+        "affected_versions": [],
+        "confidence": "high",
+        "date": "2023-08-16",
+        "deadline": "2023-08-16",
+        "entity_id": "apidep_entity_000011",
+        "evidence_ids": [
+          "apidep_evidence_000011"
+        ],
+        "id": "apidep_event_000011",
+        "impact_level": "high",
+        "migration_path": null,
+        "notes": "No single universal replacement is inferred.",
+        "production_risk": "critical",
+        "removal_date": "2023-08-16",
+        "replacement": null,
+        "replacement_type": "none",
+        "replacement_url": null,
+        "summary": "Google Cloud documentation identifies August 16, 2023 as the discontinuation date for IoT Core.",
+        "title": "Google Cloud IoT Core discontinued",
+        "type": "api_removed",
+        "user_impact": "Applications and device fleets depending on Cloud IoT Core required a different supported ingestion and device-management architecture."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "removal",
+        "entity_id": "apidep_entity_000011",
+        "event_id": "apidep_event_000011",
+        "id": "apidep_evidence_000011",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": null,
+        "published_at": null,
+        "publisher": "Google Cloud",
+        "quote_or_summary": "Google Cloud's service summary states that IoT Core would be discontinued on August 16, 2023 and was no longer accepting new customers.",
+        "reliability": "high",
+        "title": "Google Cloud Platform Services Summary",
+        "type": "official_docs",
+        "url": "https://cloud.google.com/terms/services/index-20230607"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000011",
+  "identity": {
+    "aliases": [
+      "Cloud IoT Core",
+      "Google Cloud IoT"
+    ],
+    "name": "Google Cloud IoT Core"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/google-cloud-iot-core.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000011",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "google-cloud-iot-core"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/google-cloud-iot-core/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/google-cloud-iot-core.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/google-cloud-iot-core.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

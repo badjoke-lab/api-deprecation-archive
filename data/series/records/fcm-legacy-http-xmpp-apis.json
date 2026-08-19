@@ -1,0 +1,111 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_unverified",
+      "deprecation_stage": "removed",
+      "replacement": "FCM HTTP v1 API",
+      "replacement_type": "official",
+      "status": "replaced",
+      "still_usable": "no"
+    },
+    "status": "replaced"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [
+          "https://fcm.googleapis.com/fcm/send",
+          "fcm-xmpp.googleapis.com:5235"
+        ],
+        "affected_sdks": [],
+        "affected_surface": [
+          "endpoint"
+        ],
+        "affected_versions": [
+          "legacy"
+        ],
+        "confidence": "high",
+        "date": "2023-06-20",
+        "deadline": "2024-07-22",
+        "entity_id": "apidep_entity_000016",
+        "evidence_ids": [
+          "apidep_evidence_000016"
+        ],
+        "id": "apidep_event_000016",
+        "impact_level": "high",
+        "migration_path": "Migrate legacy HTTP/XMPP send requests to the OAuth 2.0-based FCM HTTP v1 endpoint.",
+        "notes": "The deadline marks shutdown start; no universal completion date is inferred.",
+        "production_risk": "critical",
+        "removal_date": null,
+        "replacement": "FCM HTTP v1 API",
+        "replacement_type": "official",
+        "replacement_url": "https://firebase.google.com/docs/cloud-messaging/send/v1-api",
+        "summary": "Firebase deprecated sending messages with the legacy HTTP and XMPP FCM APIs on June 20, 2023 and directed developers to HTTP v1, with shutdown beginning July 22, 2024.",
+        "title": "FCM legacy HTTP/XMPP sending APIs deprecated",
+        "type": "api_deprecated",
+        "user_impact": "Legacy server-side sending integrations require migration to HTTP v1 to remain on the supported FCM interface."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "migration",
+        "entity_id": "apidep_entity_000016",
+        "event_id": "apidep_event_000016",
+        "id": "apidep_evidence_000016",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": "The primary Firebase documentation is served from the official firebase.google.cn mirror during this review.",
+        "published_at": null,
+        "publisher": "Firebase",
+        "quote_or_summary": "Firebase documents legacy HTTP/XMPP message sending as deprecated from June 20, 2023, with shutdown beginning July 22, 2024, and provides migration guidance to HTTP v1.",
+        "reliability": "high",
+        "title": "Migrate from legacy FCM APIs to HTTP v1",
+        "type": "official_migration_guide",
+        "url": "https://firebase.google.cn/docs/cloud-messaging/migrate-v1?hl=zh-tw"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000016",
+  "identity": {
+    "aliases": [
+      "Firebase Cloud Messaging legacy HTTP API",
+      "FCM legacy XMPP API"
+    ],
+    "name": "FCM legacy HTTP and XMPP APIs"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/fcm-legacy-http-xmpp-apis.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000016",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "fcm-legacy-http-xmpp-apis"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/fcm-legacy-http-xmpp-apis/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/fcm-legacy-http-xmpp-apis.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/fcm-legacy-http-xmpp-apis.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

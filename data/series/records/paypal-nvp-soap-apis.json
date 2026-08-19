@@ -1,0 +1,76 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "no_deadline",
+      "deprecation_stage": "deprecated",
+      "replacement": "PayPal current APIs and latest integration tools",
+      "replacement_type": "recommended",
+      "status": "deprecated",
+      "still_usable": "yes"
+    },
+    "status": "deprecated"
+  },
+  "events": {
+    "mode": "inline",
+    "records": []
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "status",
+        "entity_id": "apidep_entity_000013",
+        "event_id": null,
+        "id": "apidep_evidence_000013",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": "No shutdown date is asserted by this evidence.",
+        "published_at": null,
+        "publisher": "PayPal Developer",
+        "quote_or_summary": "PayPal labels NVP/SOAP as legacy/deprecated while stating that it continues to support the APIs and recommending current tools for new integrations and its upgrade path for existing integrations.",
+        "reliability": "high",
+        "title": "NVP and SOAP API reference",
+        "type": "official_docs",
+        "url": "https://developer.paypal.com/api/nvp-soap/"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000013",
+  "identity": {
+    "aliases": [
+      "PayPal NVP APIs",
+      "PayPal SOAP APIs"
+    ],
+    "name": "PayPal NVP/SOAP APIs"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/paypal-nvp-soap-apis.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000013",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "paypal-nvp-soap-apis"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/paypal-nvp-soap-apis/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/paypal-nvp-soap-apis.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/paypal-nvp-soap-apis.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

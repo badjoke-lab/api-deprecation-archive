@@ -1,0 +1,108 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_removed",
+      "deprecation_stage": "removed",
+      "replacement": "HTTP/2-based APNs provider API",
+      "replacement_type": "official",
+      "status": "removed",
+      "still_usable": "no"
+    },
+    "status": "removed"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "endpoint"
+        ],
+        "affected_versions": [
+          "legacy binary protocol"
+        ],
+        "confidence": "high",
+        "date": "2021-03-31",
+        "deadline": "2021-03-31",
+        "entity_id": "apidep_entity_000017",
+        "evidence_ids": [
+          "apidep_evidence_000017"
+        ],
+        "id": "apidep_event_000017",
+        "impact_level": "high",
+        "migration_path": "Move push-provider connections from the legacy binary interface to the HTTP/2-based APNs provider API.",
+        "notes": null,
+        "production_risk": "critical",
+        "removal_date": "2021-03-31",
+        "replacement": "HTTP/2-based APNs provider API",
+        "replacement_type": "official",
+        "replacement_url": "https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns",
+        "summary": "Apple ended support for the legacy binary APNs provider protocol after March 31, 2021.",
+        "title": "APNs legacy binary protocol support ended",
+        "type": "api_removed",
+        "user_impact": "Push providers using the legacy binary interface can no longer rely on that protocol to deliver notifications."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "removal",
+        "entity_id": "apidep_entity_000017",
+        "event_id": "apidep_event_000017",
+        "id": "apidep_evidence_000017",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": null,
+        "published_at": "2020-10-09",
+        "publisher": "Apple Developer",
+        "quote_or_summary": "Apple states that the deadline to upgrade to the APNs provider API was extended to March 31, 2021 and that the legacy binary protocol would no longer be supported after that date.",
+        "reliability": "high",
+        "title": "Updated APNs provider API deadline",
+        "type": "official_blog",
+        "url": "https://developer.apple.com/news/?id=c88acm2b"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000017",
+  "identity": {
+    "aliases": [
+      "APNs binary interface",
+      "APNs legacy binary protocol"
+    ],
+    "name": "Apple APNs legacy binary provider API"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/apple-apns-binary-provider-api.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000017",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "apple-apns-binary-provider-api"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/apple-apns-binary-provider-api/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/apple-apns-binary-provider-api.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/apple-apns-binary-provider-api.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

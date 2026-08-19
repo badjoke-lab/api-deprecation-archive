@@ -1,0 +1,65 @@
+{
+  "canonical_only": true,
+  "capabilities": {
+    "compare": true,
+    "events": "inline",
+    "evidence": "inline",
+    "record_json": true,
+    "relationships": "none",
+    "search": true,
+    "stats": true
+  },
+  "data_safety": {
+    "ai_generated_canonical_facts": false,
+    "canonical_only": true,
+    "includes_internal_monitoring": false,
+    "includes_private_notes": false,
+    "includes_unreviewed_candidates": false
+  },
+  "native_contract": {
+    "manifest_url": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "schema_version": "1.0.0",
+    "version_url": "https://api-deprecation-archive.pages.dev/version.json"
+  },
+  "object_type": "registry_descriptor",
+  "record_counts": {
+    "events": 18,
+    "evidence": 20,
+    "native": {
+      "entities": 19,
+      "events": 18,
+      "evidence": 20
+    },
+    "primary_records": 19
+  },
+  "record_types": [
+    {
+      "machine_template": "/data/series/records/{slug}.json",
+      "native_record_type": "api_lifecycle_dossier",
+      "series_record_type": "api_lifecycle"
+    }
+  ],
+  "registry": {
+    "id": "api-deprecation-archive",
+    "name": "API Deprecation Archive",
+    "native_project_id": "api-deprecation-archive",
+    "origin": "https://api-deprecation-archive.pages.dev",
+    "repository": "https://github.com/badjoke-lab/api-deprecation-archive",
+    "type": "developer_api_migration_history"
+  },
+  "routes": {
+    "compare": "/compare/",
+    "descriptor": "/data/series/registry.json",
+    "index": "/data/series/index.json",
+    "record_templates": [
+      "/data/series/records/{slug}.json"
+    ],
+    "search": "/apis/",
+    "stats": "/stats/"
+  },
+  "series_schema_version": "1.0.0",
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

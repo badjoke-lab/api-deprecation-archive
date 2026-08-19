@@ -1,0 +1,107 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_removed",
+      "deprecation_stage": "removed",
+      "replacement": "supported Kubernetes API versions listed in the migration guide",
+      "replacement_type": "official",
+      "status": "removed",
+      "still_usable": "no"
+    },
+    "status": "removed"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "api_version"
+        ],
+        "affected_versions": [
+          "v1.22"
+        ],
+        "confidence": "high",
+        "date": "2021-08-04",
+        "deadline": "2021-08-04",
+        "entity_id": "apidep_entity_000005",
+        "evidence_ids": [
+          "apidep_evidence_000005"
+        ],
+        "id": "apidep_event_000005",
+        "impact_level": "high",
+        "migration_path": "Migrate manifests and API usage to supported versions listed in the official migration guide.",
+        "notes": "Sample v0 event.",
+        "production_risk": "critical",
+        "removal_date": "2021-08-04",
+        "replacement": "supported API versions listed in the migration guide",
+        "replacement_type": "official",
+        "replacement_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/",
+        "summary": "Official migration guide lists API versions no longer served in Kubernetes v1.22.",
+        "title": "Kubernetes v1.22 removed deprecated APIs",
+        "type": "api_removed",
+        "user_impact": "Users of removed API versions need migration before using Kubernetes v1.22 or later."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "removal",
+        "entity_id": "apidep_entity_000005",
+        "event_id": "apidep_event_000005",
+        "id": "apidep_evidence_000005",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": "Stage 7 no-change first-party follow-up.",
+        "published_at": null,
+        "publisher": "Kubernetes Documentation",
+        "quote_or_summary": "Current official migration guide continues to list the deprecated API versions no longer served as of Kubernetes v1.22 and their supported replacements.",
+        "reliability": "high",
+        "title": "Deprecated API Migration Guide",
+        "type": "official_docs",
+        "url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000005",
+  "identity": {
+    "aliases": [
+      "Kubernetes 1.22 Deprecated APIs"
+    ],
+    "name": "Kubernetes v1.22 Removed APIs"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/kubernetes-v1-22-removed-apis.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000005",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "kubernetes-v1-22-removed-apis"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/kubernetes-v1-22-removed-apis/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/kubernetes-v1-22-removed-apis.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/kubernetes-v1-22-removed-apis.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

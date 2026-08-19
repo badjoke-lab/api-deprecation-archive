@@ -1,0 +1,105 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "no_deadline",
+      "deprecation_stage": "deprecated",
+      "replacement": "GraphQL Admin API",
+      "replacement_type": "official",
+      "status": "deprecated",
+      "still_usable": "partial"
+    },
+    "status": "deprecated"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [],
+        "affected_sdks": [],
+        "affected_surface": [
+          "api_version"
+        ],
+        "affected_versions": [],
+        "confidence": "high",
+        "date": "2024-10-01",
+        "deadline": null,
+        "entity_id": "apidep_entity_000004",
+        "evidence_ids": [
+          "apidep_evidence_000004"
+        ],
+        "id": "apidep_event_000004",
+        "impact_level": "high",
+        "migration_path": "Use GraphQL Admin API according to current Shopify guidance; verify version-specific REST support requirements for existing integrations.",
+        "notes": "Stage 7 corrected the earlier over-broad deadline interpretation.",
+        "production_risk": "high",
+        "removal_date": null,
+        "replacement": "GraphQL Admin API",
+        "replacement_type": "official",
+        "replacement_url": "https://shopify.dev/docs/api/admin-rest",
+        "summary": "Official Shopify documentation describes the REST Admin API as legacy and directs developers toward GraphQL Admin API. April 1, 2025 is an applicability date for new public apps, not a universal REST removal deadline.",
+        "title": "Shopify REST Admin API marked legacy",
+        "type": "api_deprecated",
+        "user_impact": "Developers using REST Admin API should plan migration and check current Shopify requirements."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "migration",
+        "entity_id": "apidep_entity_000004",
+        "event_id": "apidep_event_000004",
+        "id": "apidep_evidence_000004",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": "Stage 7 first-party follow-up corrected the earlier deadline scope.",
+        "published_at": null,
+        "publisher": "Shopify Developers",
+        "quote_or_summary": "Current official documentation describes REST Admin API as legacy as of October 1, 2024 and states that starting April 1, 2025 new public apps must use GraphQL Admin API; it does not establish that date as a universal removal deadline for all existing REST integrations.",
+        "reliability": "high",
+        "title": "REST Admin API reference",
+        "type": "official_docs",
+        "url": "https://shopify.dev/docs/api/admin-rest"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000004",
+  "identity": {
+    "aliases": [
+      "REST Admin API"
+    ],
+    "name": "Shopify REST Admin API"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/shopify-rest-admin-api.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000004",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "shopify-rest-admin-api"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/shopify-rest-admin-api/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/shopify-rest-admin-api.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/shopify-rest-admin-api.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}

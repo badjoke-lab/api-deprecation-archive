@@ -1,0 +1,219 @@
+{
+  "canonical_only": true,
+  "native_data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+  "object_type": "record_index",
+  "record_count": 19,
+  "records": [
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000017",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/apple-apns-binary-provider-api/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/apple-apns-binary-provider-api.json",
+      "name": "Apple APNs legacy binary provider API",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/apple-apns-binary-provider-api.json",
+      "native_record_id": "apidep_entity_000017",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "apple-apns-binary-provider-api",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000006",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/aws-sdk-javascript-v2/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/aws-sdk-javascript-v2.json",
+      "name": "AWS SDK for JavaScript v2",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/aws-sdk-javascript-v2.json",
+      "native_record_id": "apidep_entity_000006",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "aws-sdk-javascript-v2",
+      "status": "deprecated"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000010",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/azure-ad-graph-api/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/azure-ad-graph-api.json",
+      "name": "Azure AD Graph API",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/azure-ad-graph-api.json",
+      "native_record_id": "apidep_entity_000010",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "azure-ad-graph-api",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000012",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/dropbox-api-v1/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/dropbox-api-v1.json",
+      "name": "Dropbox API v1",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/dropbox-api-v1.json",
+      "native_record_id": "apidep_entity_000012",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "dropbox-api-v1",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000018",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/exchange-online-basic-authentication/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/exchange-online-basic-authentication.json",
+      "name": "Exchange Online Basic authentication",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/exchange-online-basic-authentication.json",
+      "native_record_id": "apidep_entity_000018",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "exchange-online-basic-authentication",
+      "status": "replaced"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000016",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/fcm-legacy-http-xmpp-apis/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/fcm-legacy-http-xmpp-apis.json",
+      "name": "FCM legacy HTTP and XMPP APIs",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/fcm-legacy-http-xmpp-apis.json",
+      "native_record_id": "apidep_entity_000016",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "fcm-legacy-http-xmpp-apis",
+      "status": "replaced"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000002",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/firebase-dynamic-links/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/firebase-dynamic-links.json",
+      "name": "Firebase Dynamic Links",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/firebase-dynamic-links.json",
+      "native_record_id": "apidep_entity_000002",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "firebase-dynamic-links",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000007",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/github-password-authentication-for-git/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/github-password-authentication-for-git.json",
+      "name": "GitHub password authentication for Git operations",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/github-password-authentication-for-git.json",
+      "native_record_id": "apidep_entity_000007",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "github-password-authentication-for-git",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000011",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/google-cloud-iot-core/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/google-cloud-iot-core.json",
+      "name": "Google Cloud IoT Core",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/google-cloud-iot-core.json",
+      "native_record_id": "apidep_entity_000011",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "google-cloud-iot-core",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000019",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/google-container-registry/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/google-container-registry.json",
+      "name": "Google Container Registry",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/google-container-registry.json",
+      "native_record_id": "apidep_entity_000019",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "google-container-registry",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000001",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/google-palm-api/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/google-palm-api.json",
+      "name": "Google PaLM API",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/google-palm-api.json",
+      "native_record_id": "apidep_entity_000001",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "google-palm-api",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000009",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/google-url-shortener-goo-gl-links/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/google-url-shortener-goo-gl-links.json",
+      "name": "Google URL Shortener goo.gl links",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/google-url-shortener-goo-gl-links.json",
+      "native_record_id": "apidep_entity_000009",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "google-url-shortener-goo-gl-links",
+      "status": "limited"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000008",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/heroku-free-product-plans/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/heroku-free-product-plans.json",
+      "name": "Heroku free product plans",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/heroku-free-product-plans.json",
+      "native_record_id": "apidep_entity_000008",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "heroku-free-product-plans",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000005",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/kubernetes-v1-22-removed-apis/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/kubernetes-v1-22-removed-apis.json",
+      "name": "Kubernetes v1.22 Removed APIs",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/kubernetes-v1-22-removed-apis.json",
+      "native_record_id": "apidep_entity_000005",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "kubernetes-v1-22-removed-apis",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000013",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/paypal-nvp-soap-apis/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/paypal-nvp-soap-apis.json",
+      "name": "PayPal NVP/SOAP APIs",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/paypal-nvp-soap-apis.json",
+      "native_record_id": "apidep_entity_000013",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "paypal-nvp-soap-apis",
+      "status": "deprecated"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000004",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/shopify-rest-admin-api/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/shopify-rest-admin-api.json",
+      "name": "Shopify REST Admin API",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/shopify-rest-admin-api.json",
+      "native_record_id": "apidep_entity_000004",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "shopify-rest-admin-api",
+      "status": "deprecated"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000003",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/slack-files-upload/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/slack-files-upload.json",
+      "name": "Slack files.upload API method",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/slack-files-upload.json",
+      "native_record_id": "apidep_entity_000003",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "slack-files-upload",
+      "status": "removed"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000020",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/stripe-sources-api/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/stripe-sources-api.json",
+      "name": "Stripe Sources API",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/stripe-sources-api.json",
+      "native_record_id": "apidep_entity_000020",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "stripe-sources-api",
+      "status": "limited"
+    },
+    {
+      "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000015",
+      "human_url": "https://api-deprecation-archive.pages.dev/apis/twilio-authy-api/",
+      "machine_url": "https://api-deprecation-archive.pages.dev/data/series/records/twilio-authy-api.json",
+      "name": "Twilio Authy API",
+      "native_machine_url": "https://api-deprecation-archive.pages.dev/data/machine/records/twilio-authy-api.json",
+      "native_record_id": "apidep_entity_000015",
+      "native_record_type": "api_lifecycle_dossier",
+      "slug": "twilio-authy-api",
+      "status": "limited"
+    }
+  ],
+  "registry_id": "api-deprecation-archive",
+  "series_schema_version": "1.0.0"
+}

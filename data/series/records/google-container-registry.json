@@ -1,0 +1,111 @@
+{
+  "current_state": {
+    "native": {
+      "action_required": "migrate",
+      "deadline_status": "passed_removed",
+      "deprecation_stage": "removed",
+      "replacement": "Artifact Registry",
+      "replacement_type": "official",
+      "status": "removed",
+      "still_usable": "no"
+    },
+    "status": "removed"
+  },
+  "events": {
+    "mode": "inline",
+    "records": [
+      {
+        "action_required": "migrate",
+        "affected_endpoints": [
+          "gcr.io",
+          "asia.gcr.io",
+          "eu.gcr.io",
+          "us.gcr.io"
+        ],
+        "affected_sdks": [],
+        "affected_surface": [
+          "api_version"
+        ],
+        "affected_versions": [],
+        "confidence": "high",
+        "date": "2025-03-18",
+        "deadline": "2025-03-18",
+        "entity_id": "apidep_entity_000019",
+        "evidence_ids": [
+          "apidep_evidence_000019"
+        ],
+        "id": "apidep_event_000019",
+        "impact_level": "high",
+        "migration_path": "Migrate Container Registry workloads and images to Artifact Registry; compatible gcr.io repositories can be hosted by Artifact Registry.",
+        "notes": null,
+        "production_risk": "critical",
+        "removal_date": "2025-03-18",
+        "replacement": "Artifact Registry",
+        "replacement_type": "official",
+        "replacement_url": "https://docs.cloud.google.com/artifact-registry/docs/transition/transition-from-gcr",
+        "summary": "Google Cloud states that Container Registry was shut down effective March 18, 2025 and writing images to Container Registry became unavailable.",
+        "title": "Google Container Registry shut down",
+        "type": "api_removed",
+        "user_impact": "Container Registry can no longer accept image writes; affected workloads must use Artifact Registry or its gcr.io compatibility path."
+      }
+    ]
+  },
+  "evidence": {
+    "mode": "inline",
+    "records": [
+      {
+        "archived_url": null,
+        "claim_scope": "removal",
+        "entity_id": "apidep_entity_000019",
+        "event_id": "apidep_event_000019",
+        "id": "apidep_evidence_000019",
+        "is_official_domain": true,
+        "is_primary": true,
+        "last_checked_at": "2026-08-20",
+        "notes": null,
+        "published_at": null,
+        "publisher": "Google Cloud",
+        "quote_or_summary": "Google Cloud states that Container Registry is shut down effective March 18, 2025, image writes are unavailable, and Artifact Registry is the recommended replacement service.",
+        "reliability": "high",
+        "title": "Transition from Container Registry",
+        "type": "official_migration_guide",
+        "url": "https://docs.cloud.google.com/artifact-registry/docs/transition/transition-from-gcr"
+      }
+    ]
+  },
+  "global_record_key": "api-deprecation-archive:api_lifecycle_dossier:apidep_entity_000019",
+  "identity": {
+    "aliases": [
+      "Container Registry",
+      "GCR"
+    ],
+    "name": "Google Container Registry"
+  },
+  "object_type": "record_envelope",
+  "provenance": {
+    "adapter": {
+      "id": "series-adapter-api-deprecation-archive",
+      "version": "1.0.0"
+    },
+    "canonical_only": true,
+    "native_manifest": "https://api-deprecation-archive.pages.dev/data/machine/manifest.json",
+    "native_record": "https://api-deprecation-archive.pages.dev/data/machine/records/google-container-registry.json"
+  },
+  "record_key": {
+    "native_record_id": "apidep_entity_000019",
+    "native_record_type": "api_lifecycle_dossier",
+    "slug": "google-container-registry"
+  },
+  "registry_id": "api-deprecation-archive",
+  "relationships": [],
+  "series_schema_version": "1.0.0",
+  "urls": {
+    "human": "https://api-deprecation-archive.pages.dev/apis/google-container-registry/",
+    "machine": "https://api-deprecation-archive.pages.dev/data/series/records/google-container-registry.json",
+    "native_machine": "https://api-deprecation-archive.pages.dev/data/machine/records/google-container-registry.json"
+  },
+  "verification": {
+    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+    "last_verified_at": "2026-08-20"
+  }
+}
