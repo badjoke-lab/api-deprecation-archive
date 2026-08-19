@@ -1,203 +1,95 @@
 # Current Status
 
-Last updated: 2026-06-10
+Last updated: 2026-08-20
 
 ## Current phase
 
-PR-018: SEO basics.
+Ledger Series Phase 8 — Stage 3: per-API machine-readable JSON.
 
-## Completed so far
+## Current reviewed state
 
-### PR-001
+- Public display rows: 20
+- Schema-validated canonical entities: 19
+- Canonical lifecycle events: 17
+- Canonical evidence records: 19
+- Explicit noncanonical display placeholder: 1 (`meta-graph-api-older-versions`)
+- Current accepted Stage 2 main: `2bdbe2fd1ad125d013ffec5329bc802ba57b66f2`
 
-- Repository initialized
-- Public README drafted
-- v0.1 specification added
-- Methodology draft added
-- Source policy draft added
-- Status definitions draft added
-- Report corrections guide added
-- Disclaimer added
-- Current status runbook added
+The Meta placeholder is intentionally not counted as canonical. `older versions` is not a stable API-version entity boundary, and version-specific first-party lifecycle evidence has not yet been recovered at the quality required for canonical acceptance.
 
-### PR-002
+## Ledger Series Phase 8 completed work
 
-- Entity JSON Schema drafted
-- Event JSON Schema drafted
-- Evidence JSON Schema drafted
-- Provider JSON Schema drafted
-- Data schema guide added
-- Domain enum guide added
-- Schema notes added
+### Stage 1 — current-main gap audit
 
-### PR-003
+Completed.
 
-- `package.json` scripts added
-- `scripts/validate-data.mjs` added
-- Data directory placeholders added
-- Validation guide added
+- Re-read the v0.1 specification, schemas, methodology, source policy, AI-era registry spec, and AI-era schedule.
+- Confirmed that the public display seed had 20 rows while the schema-validated canonical layer had only five entities.
+- Added the first repository validation workflow.
+- Established the fixed Phase 8 stage order and fail-closed canonical boundary.
 
-### PR-004
+### Stage 2 — canonical backfill and schema gate
 
-- Five sample entities added
-- Five matching lifecycle events added
-- Five official evidence records added
-- Provider records added for the sample set
+Completed with one explicit primary-evidence gap.
 
-### PR-005
+Reviewed canonical backfill PRs:
 
-- White-background static shell added
-- `index.html` added
-- `styles.css` added
-- `app.js` added
+- PR #25 — records 6–10
+- PR #26 — records 11–15
+- PR #27 — records 16–20
 
-### PR-006
+Result:
 
-- `data/records.json` manifest added for the list page
-- `/apis/` page added
-- API list search and filters added
+- 19 canonical entities accepted
+- 17 dated lifecycle events accepted
+- 19 first-party evidence records accepted
+- no schema expansion required
+- multiple stale display facts corrected against current first-party evidence
+- review/check dates removed where they had been presented as lifecycle events
+- broad Meta `older versions` row downgraded to review-required / unknown and excluded from canonical data
+- old draft PR #22 closed unmerged as superseded historical staging
 
-### PR-007
+See:
 
-- Five sample API detail pages added
-- API list rows now link to detail pages
-- CSS updated for detail cards, timeline, and detail sections
+- `docs/runbooks/ledger-series-phase8-stage2-closeout.md`
+- `docs/runbooks/phase8-meta-graph-version-split-review.md`
 
-### PR-008
+## Current implementation target — Stage 3
 
-- `/deadlines/` page added
-- Deadline status grouping added
-- Deadline cards added
+Build deterministic per-API machine-readable output from canonical directories only:
 
-### PR-009
+- `data/entities`
+- `data/events`
+- `data/evidence`
 
-- `/deprecated/` page added
-- `/removed/` page added
-- Shared lifecycle list renderer added
+Requirements:
 
-### PR-010
+- canonical-only per-API dossiers
+- deterministic index/manifest output
+- stable public file paths
+- entity/event/evidence linkage validation
+- generated-file completeness validation
+- CI drift detection
+- automatic exclusion of display-only/noncanonical rows, including the Meta placeholder
 
-- `/replacements/` page added
-- Replacement matrix script added
+`data/records.json` remains a public display manifest and is not canonical authority.
 
-### PR-011
+## Remaining Phase 8 sequence
 
-- `/providers/` page added
-- Provider index script added
-- Five provider detail pages added
-- Home navigation updated for provider index
+1. Stage 3 — per-API machine-readable JSON
+2. Stage 4 — structured migration filters
+3. Stage 5 — migration-history Compare
+4. Stage 6 — migration and quality Stats
+5. Stage 7 — reviewed lifecycle follow-up and production verification
+6. Stage 8 — closeout
 
-### PR-012
+## Safety boundary
 
-- `data/timeline.json` added
-- `/timeline/` page added
-- Timeline rendering script added
-- Home navigation updated for timeline
-- README updated for timeline
-
-### PR-013
-
-- Display dataset expanded from 5 to 10 records
-- `data/timeline.json` expanded to 10 events
-- Added detail pages for AWS SDK for JavaScript v2
-- Added detail pages for GitHub password authentication for Git operations
-- Added detail pages for Google URL Shortener goo.gl links
-- Added detail pages for Azure AD Graph API
-- README updated for seed batch 1
-
-### PR-014
-
-- Display dataset expanded from 10 to 15 records
-- `data/timeline.json` expanded to 15 events
-- Added detail pages for Google Cloud IoT Core
-- Added detail pages for Dropbox API v1
-- Added detail pages for PayPal NVP/SOAP APIs
-- Added detail pages for Meta Graph API older versions
-- Added detail pages for Twilio Authy API
-- README updated for seed batch 2
-
-### PR-015
-
-- Display dataset expanded from 15 to 20 records
-- `data/timeline.json` expanded to 20 events
-- Added detail pages for FCM legacy HTTP and XMPP APIs
-- Added detail pages for Apple APNs binary provider API
-- Added detail pages for Exchange Online Basic authentication
-- Added detail pages for Google Container Registry
-- Added detail pages for Stripe Sources API
-- README updated for v0 seed completion
-
-### PR-016
-
-- v0 release readiness runbook added
-- `/release/` page added
-- Home page updated for v0 public preview status
-- README updated for release readiness
-
-### PR-017
-
-- Heroku free product plans detail page added
-- First source/data quality pass runbook added
-- README linked to the source/data quality pass
-- Current status updated for the quality pass
-
-### PR-018
-
-- `robots.txt` added
-- `sitemap.xml` added with core pages and 20 API detail pages
-- Canonical metadata added to core public pages
-- Open Graph / Twitter summary metadata added to core public pages
-- Home page `WebSite` JSON-LD added
-- API list now supports `/apis/?q=...` query search URLs
-- Provider index no longer links to missing provider detail pages
-- README updated for SEO basics
-
-## Current sample entities
-
-- Google PaLM API
-- Firebase Dynamic Links
-- Slack files.upload API method
-- Shopify REST Admin API
-- Kubernetes v1.22 Removed APIs
-- AWS SDK for JavaScript v2
-- GitHub password authentication for Git operations
-- Heroku free product plans
-- Google URL Shortener goo.gl links
-- Azure AD Graph API
-- Google Cloud IoT Core
-- Dropbox API v1
-- PayPal NVP/SOAP APIs
-- Meta Graph API older versions
-- Twilio Authy API
-- FCM legacy HTTP and XMPP APIs
-- Apple APNs binary provider API
-- Exchange Online Basic authentication
-- Google Container Registry
-- Stripe Sources API
-
-## Next planned PRs
-
-- PR-019: canonical JSON backfill for all 20 records
-- PR-020: detail page consistency pass
-- PR-021: provider page coverage pass
-
-## v0 target
-
-v0 minimum target is reached:
-
-- 20 seed records
-- API list page
-- API detail pages
-- Deadlines page
-- Deprecated but still usable page
-- Removed APIs page
-- Replacement matrix
-- Provider pages
-- Timeline page
-- Methodology and report paths
-- Static site shell
-- Readable mobile layout baseline
-
-## Public-safe note
-
-This repository should contain public project documentation, public methodology, public data schemas, public records, evidence links, validation logic, and correction instructions only.
+- Unknown remains unknown.
+- Future deadlines are not completion evidence.
+- Phased shutdowns are not collapsed into fake universal completion dates.
+- Scope-dependent lifecycle states remain scope-dependent.
+- Canonical mutation requires reviewed changes.
+- Display manifests and candidate/staging files do not become canonical by reuse.
+- No AI-generated canonical dates, replacements, or lifecycle claims.
+- No subjective vendor ranking.
