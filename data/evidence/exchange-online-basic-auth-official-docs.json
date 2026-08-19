@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000018",
+  "entity_id": "apidep_entity_000018",
+  "event_id": "apidep_event_000018",
+  "type": "official_docs",
+  "url": "https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online",
+  "title": "Deprecation of Basic authentication in Exchange Online",
+  "publisher": "Microsoft Learn",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Microsoft states that Basic authentication is now disabled in all tenants for the affected Exchange Online protocols and documents the phased disablement that began from the October 2022 boundary.",
+  "reliability": "high",
+  "claim_scope": "auth",
+  "last_checked_at": "2026-08-20",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": null
+}
