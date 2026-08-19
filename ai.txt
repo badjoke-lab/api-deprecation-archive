@@ -1,9 +1,9 @@
 API Deprecation Archive canonical migration-history registry
 Canonical only: true
 Entities: 19
-Events: 17
-Evidence: 19
-Data revision: 21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a
+Events: 18
+Evidence: 20
+Data revision: 8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c
 Manifest: /data/machine/manifest.json
 Record index: /data/machine/index.json
 Per-API dossier: /data/machine/records/{slug}.json

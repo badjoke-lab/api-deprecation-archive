@@ -1,6 +1,6 @@
 {
   "canonical_only": true,
-  "data_revision": "21afb4a0a909071ac5309b80695be11838041dbb95a94d9c9489815f0a29b67a",
+  "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
   "entity": {
     "action_required": "migrate",
     "affected_surface": [
@@ -17,8 +17,8 @@
     "canonical_name": "Shopify REST Admin API",
     "category": "payment_commerce_api",
     "confidence": "high",
-    "current_state": "Legacy API surface according to official documentation.",
-    "deadline_status": "passed_unverified",
+    "current_state": "Legacy API surface according to current official documentation; no universal REST removal deadline is recorded in this canonical record.",
+    "deadline_status": "no_deadline",
     "deprecated_at": "2024-10-01",
     "deprecation_stage": "deprecated",
     "docs_url": "https://shopify.dev/docs/api/admin-rest",
@@ -27,14 +27,15 @@
     "id": "apidep_entity_000004",
     "impact_level": "high",
     "known_unknowns": [
-      "The record tracks legacy status and migration guidance, not complete removal of every REST surface."
+      "The record tracks REST Admin API legacy status and migration guidance, not complete removal of every REST surface.",
+      "April 1, 2025 is an applicability date for new public apps, not a universal removal deadline for all existing REST integrations."
     ],
-    "last_checked_at": "2026-06-05",
+    "last_checked_at": "2026-08-20",
     "last_supported_at": null,
-    "migration_deadline_at": "2025-04-01",
+    "migration_deadline_at": null,
     "migration_url": "https://shopify.dev/docs/api/admin-rest",
-    "next_check_recommended_at": "2026-09-05",
-    "notes": "Sample v0 record.",
+    "next_check_recommended_at": "2026-11-20",
+    "notes": "Stage 7 first-party follow-up corrected the earlier over-broad treatment of April 1, 2025 as a universal migration deadline.",
     "official_url": "https://shopify.dev/docs/api/admin-rest",
     "production_risk": "high",
     "provider": "Shopify",
@@ -49,8 +50,8 @@
     "source_status": "official",
     "status": "deprecated",
     "still_usable": "partial",
-    "still_usable_note": "Official documentation describes REST Admin API as legacy and gives GraphQL Admin API as the preferred path.",
-    "summary": "Shopify REST Admin API is tracked as a legacy commerce API surface with migration guidance to GraphQL Admin API.",
+    "still_usable_note": "Official documentation describes REST Admin API as legacy and continues to publish versioned REST references while directing new app development to GraphQL Admin API.",
+    "summary": "Shopify REST Admin API is a legacy commerce API surface with migration guidance to GraphQL Admin API.",
     "sunset_at": null
   },
   "events": [
@@ -64,21 +65,21 @@
       "affected_versions": [],
       "confidence": "high",
       "date": "2024-10-01",
-      "deadline": "2025-04-01",
+      "deadline": null,
       "entity_id": "apidep_entity_000004",
       "evidence_ids": [
         "apidep_evidence_000004"
       ],
       "id": "apidep_event_000004",
       "impact_level": "high",
-      "migration_path": "Use GraphQL Admin API where possible according to official Shopify guidance.",
-      "notes": "Sample v0 event.",
+      "migration_path": "Use GraphQL Admin API according to current Shopify guidance; verify version-specific REST support requirements for existing integrations.",
+      "notes": "Stage 7 corrected the earlier over-broad deadline interpretation.",
       "production_risk": "high",
       "removal_date": null,
       "replacement": "GraphQL Admin API",
       "replacement_type": "official",
       "replacement_url": "https://shopify.dev/docs/api/admin-rest",
-      "summary": "Official Shopify documentation describes the REST Admin API as legacy and directs developers toward GraphQL Admin API.",
+      "summary": "Official Shopify documentation describes the REST Admin API as legacy and directs developers toward GraphQL Admin API. April 1, 2025 is an applicability date for new public apps, not a universal REST removal deadline.",
       "title": "Shopify REST Admin API marked legacy",
       "type": "api_deprecated",
       "user_impact": "Developers using REST Admin API should plan migration and check current Shopify requirements."
@@ -93,11 +94,11 @@
       "id": "apidep_evidence_000004",
       "is_official_domain": true,
       "is_primary": true,
-      "last_checked_at": "2026-06-05",
-      "notes": null,
+      "last_checked_at": "2026-08-20",
+      "notes": "Stage 7 first-party follow-up corrected the earlier deadline scope.",
       "published_at": null,
       "publisher": "Shopify Developers",
-      "quote_or_summary": "Official documentation describes REST Admin API legacy status and migration direction to GraphQL Admin API.",
+      "quote_or_summary": "Current official documentation describes REST Admin API as legacy as of October 1, 2024 and states that starting April 1, 2025 new public apps must use GraphQL Admin API; it does not establish that date as a universal removal deadline for all existing REST integrations.",
       "reliability": "high",
       "title": "REST Admin API reference",
       "type": "official_docs",
@@ -108,7 +109,7 @@
     "event_types": [
       "api_deprecated"
     ],
-    "migration_deadline_recorded": true,
+    "migration_deadline_recorded": false,
     "primary_evidence_count": 1,
     "removal_effective_date_recorded": false,
     "replacement_recorded": true

@@ -8,11 +8,11 @@
   "publisher": "Kubernetes Documentation",
   "published_at": null,
   "archived_url": null,
-  "quote_or_summary": "Official migration guide lists deprecated APIs removed in Kubernetes v1.22 and replacement API versions.",
+  "quote_or_summary": "Current official migration guide continues to list the deprecated API versions no longer served as of Kubernetes v1.22 and their supported replacements.",
   "reliability": "high",
   "claim_scope": "removal",
-  "last_checked_at": "2026-06-05",
+  "last_checked_at": "2026-08-20",
   "is_primary": true,
   "is_official_domain": true,
-  "notes": null
+  "notes": "Stage 7 no-change first-party follow-up."
 }

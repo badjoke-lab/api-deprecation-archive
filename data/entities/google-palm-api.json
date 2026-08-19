@@ -35,9 +35,9 @@
   "removal_effective_at": "2024-08-15",
   "migration_deadline_at": "2024-08-15",
   "first_seen_at": "2026-06-05",
-  "last_checked_at": "2026-06-05",
-  "next_check_recommended_at": "2026-09-05",
+  "last_checked_at": "2026-08-20",
+  "next_check_recommended_at": "2027-02-20",
   "known_unknowns": [],
   "related_records": [],
-  "notes": "Sample v0 record."
+  "notes": "Stage 7 first-party follow-up reconfirmed decommissioned state and Gemini migration path on 2026-08-20."
 }

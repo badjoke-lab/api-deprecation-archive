@@ -36,6 +36,10 @@ function requireEqual(actual, expectedValue, label) {
   if (actual !== expectedValue) fail(`${label}: expected ${JSON.stringify(expectedValue)}, got ${JSON.stringify(actual)}`);
 }
 
+function requireIncludes(source, marker, label) {
+  if (!source.includes(marker)) fail(`${label}: missing ${JSON.stringify(marker)}`);
+}
+
 async function requireNoCanonicalDossier(path, slug) {
   const response = await fetchResponse(path);
   if (response.status === 404) return;
@@ -63,23 +67,25 @@ async function verifyOnce() {
   const version = await fetchJson('/version.json');
   requireEqual(version.canonical_only, true, 'version canonical_only');
   requireEqual(version.data_revision, expected.data_revision, 'version data_revision');
-  requireEqual(version.record_counts?.entities, 19, 'version entity count');
-  requireEqual(version.record_counts?.events, 17, 'version event count');
-  requireEqual(version.record_counts?.evidence, 19, 'version evidence count');
+  for (const key of ['entities', 'events', 'evidence']) {
+    requireEqual(version.record_counts?.[key], expected.record_counts?.[key], `version ${key} count`);
+  }
 
   const manifest = await fetchJson('/data/machine/manifest.json');
   requireEqual(manifest.canonical_only, true, 'manifest canonical_only');
   requireEqual(manifest.data_revision, expected.data_revision, 'manifest data_revision');
-  requireEqual(manifest.record_counts?.entities, 19, 'manifest entity count');
+  for (const key of ['entities', 'events', 'evidence']) {
+    requireEqual(manifest.record_counts?.[key], expected.record_counts?.[key], `manifest ${key} count`);
+  }
   requireEqual(manifest.data_safety?.display_only_rows_included, false, 'manifest display-only safety');
   requireEqual(manifest.data_safety?.ai_generated_facts_included, false, 'manifest AI-fact safety');
 
   const index = await fetchJson('/data/machine/index.json');
   requireEqual(index.canonical_only, true, 'index canonical_only');
   requireEqual(index.data_revision, expected.data_revision, 'index data_revision');
-  requireEqual(index.record_count, 19, 'index record count');
+  requireEqual(index.record_count, expected.record_counts?.entities, 'index record count');
   const slugs = new Set(index.records?.map((record) => record.slug) ?? []);
-  for (const slug of ['fcm-legacy-http-xmpp-apis', 'paypal-nvp-soap-apis', 'stripe-sources-api']) {
+  for (const slug of ['fcm-legacy-http-xmpp-apis', 'paypal-nvp-soap-apis', 'stripe-sources-api', 'slack-files-upload', 'shopify-rest-admin-api']) {
     if (!slugs.has(slug)) fail(`index missing representative canonical slug: ${slug}`);
   }
   if (slugs.has('meta-graph-api-older-versions')) fail('noncanonical Meta display placeholder leaked into machine index');
@@ -102,15 +108,34 @@ async function verifyOnce() {
   requireEqual(stripe.entity?.deadline_status, 'unknown', 'Stripe deadline status');
   requireEqual(stripe.events?.length, 0, 'Stripe dated event count');
 
+  const slack = await fetchJson('/data/machine/records/slack-files-upload.json');
+  requireEqual(slack.entity?.status, 'removed', 'Slack current status');
+  requireEqual(slack.entity?.still_usable, 'no', 'Slack current usability');
+  requireEqual(slack.entity?.removal_effective_at, '2025-11-12', 'Slack removal date');
+  if (!slack.events?.some((event) => event.type === 'api_removed' && event.date === '2025-11-12')) {
+    fail('Slack removal event missing');
+  }
+  if ((slack.evidence?.length ?? 0) < 2) fail('Slack evidence history is incomplete');
+
+  const shopify = await fetchJson('/data/machine/records/shopify-rest-admin-api.json');
+  requireEqual(shopify.entity?.status, 'deprecated', 'Shopify current status');
+  requireEqual(shopify.entity?.deadline_status, 'no_deadline', 'Shopify deadline status');
+  requireEqual(shopify.entity?.migration_deadline_at, null, 'Shopify universal migration deadline');
+  requireEqual(shopify.entity?.replacement, 'GraphQL Admin API', 'Shopify replacement');
+
   await requireNoCanonicalDossier('/data/machine/records/meta-graph-api-older-versions.json', 'meta-graph-api-older-versions');
 
   const llms = await fetchText('/llms.txt');
-  if (!llms.includes('Canonical entities: 19')) fail('llms.txt canonical count missing');
-  if (!llms.includes(`Data revision: ${expected.data_revision}`)) fail('llms.txt data revision mismatch');
+  requireIncludes(llms, `Canonical entities: ${expected.record_counts.entities}`, 'llms.txt canonical count');
+  requireIncludes(llms, `Lifecycle events: ${expected.record_counts.events}`, 'llms.txt event count');
+  requireIncludes(llms, `Evidence records: ${expected.record_counts.evidence}`, 'llms.txt evidence count');
+  requireIncludes(llms, `Data revision: ${expected.data_revision}`, 'llms.txt data revision');
 
   const ai = await fetchText('/ai.txt');
-  if (!ai.includes('Entities: 19')) fail('ai.txt canonical count missing');
-  if (!ai.includes(`Data revision: ${expected.data_revision}`)) fail('ai.txt data revision mismatch');
+  requireIncludes(ai, `Entities: ${expected.record_counts.entities}`, 'ai.txt canonical count');
+  requireIncludes(ai, `Events: ${expected.record_counts.events}`, 'ai.txt event count');
+  requireIncludes(ai, `Evidence: ${expected.record_counts.evidence}`, 'ai.txt evidence count');
+  requireIncludes(ai, `Data revision: ${expected.data_revision}`, 'ai.txt data revision');
 
   return version;
 }
