@@ -1,0 +1,40 @@
+name: Stage 3 Machine Output Bootstrap
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  bootstrap:
+    if: github.head_ref == 'agent/phase8-machine-json'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate canonical source
+        run: npm run validate:data
+
+      - name: Generate deterministic machine output
+        run: npm run generate:machine
+
+      - name: Recheck generated output
+        run: npm run validate:machine
+
+      - name: Upload bootstrap output
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-deprecation-stage3-machine-bootstrap
+          path: |
+            data/machine
+            version.json
+            llms.txt
+            ai.txt
+          if-no-files-found: error
