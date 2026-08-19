@@ -1,0 +1,25 @@
+name: Phase 9 Series Adapter Production One-shot
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-production:
+    if: github.head_ref == 'agent/phase9-series-adapter-production-check'
+    runs-on: ubuntu-latest
+    env:
+      SERIES_ORIGIN: https://api-deprecation-archive.pages.dev
+      SERIES_VERIFY_ATTEMPTS: 20
+      SERIES_VERIFY_INTERVAL_MS: 15000
+    steps:
+      - name: Checkout exact reviewed main plus verifier
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify complete Series adapter on production
+        run: node scripts/check-series-origin.mjs
