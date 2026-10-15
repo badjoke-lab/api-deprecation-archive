@@ -1,0 +1,55 @@
+{
+  "id": "apidep_entity_000021",
+  "slug": "magic-eden-bitcoin-api",
+  "canonical_name": "Magic Eden Bitcoin and Runes API",
+  "aliases": [
+    "Magic Eden Bitcoin API",
+    "Magic Eden Ordinals API",
+    "Magic Eden Runes API"
+  ],
+  "provider": "Magic Eden",
+  "provider_id": "apidep_provider_000007",
+  "category": "developer_tool_api",
+  "record_unit": "api_group",
+  "status": "removed",
+  "deprecation_stage": "removed",
+  "deadline_status": "passed_removed",
+  "still_usable": "no",
+  "still_usable_note": "Magic Eden states that its Bitcoin/Runes API and associated backend services were fully discontinued on 2026-03-27. This describes provider policy, not an independent test of every legacy endpoint.",
+  "action_required": "migrate",
+  "impact_level": "high",
+  "production_risk": "critical",
+  "freshness_status": "fresh",
+  "summary": "Magic Eden ended Bitcoin and Runes API/backend services effective March 27, 2026, while retaining its Solana API subject to ongoing review.",
+  "current_state": "The official Magic Eden Help Center identifies the Bitcoin and Runes API shutdown as effective March 27, 2026. Solana API remains operational and is not included in this removed status; EVM developer integration support is handled separately.",
+  "affected_surface": [
+    "endpoint"
+  ],
+  "affected_users": [
+    "Bitcoin NFT developers",
+    "Ordinals/Runes data integrators",
+    "Marketplace API partners"
+  ],
+  "official_url": "https://help.magiceden.io/en/articles/13885533-magic-eden-api-infrastructure-changes",
+  "docs_url": "https://docs.magiceden.io/",
+  "migration_url": "https://help.magiceden.io/en/articles/13885533-magic-eden-api-infrastructure-changes",
+  "replacement": "No official substitute or migration tooling offered by Magic Eden",
+  "replacement_type": "none",
+  "replacement_url": null,
+  "source_status": "official",
+  "confidence": "high",
+  "announced_at": null,
+  "deprecated_at": null,
+  "sunset_at": "2026-03-27",
+  "last_supported_at": "2026-03-27",
+  "removal_effective_at": "2026-03-27",
+  "migration_deadline_at": "2026-03-27",
+  "first_seen_at": "2026-10-16",
+  "last_checked_at": "2026-10-16",
+  "next_check_recommended_at": "2027-04-16",
+  "known_unknowns": [
+    "The exact final operational state of every legacy API endpoint was not independently tested; primary documentation states the service is fully shut down."
+  ],
+  "related_records": [],
+  "notes": "Magic Eden's 2026-06-30 retrospective Help Center notice uses March 27 as the deadline. Do not treat the Help Center publication date as the initial shutdown announcement date; and do not classify its Solana API as removed."
+}
