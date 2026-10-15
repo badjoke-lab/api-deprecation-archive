@@ -1,6 +1,6 @@
 {
   "canonical_only": true,
-  "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
+  "data_revision": "bf1fcb13c84a61a5799817caa2644f05dfc6554e1d17da50d07a50fc452129a9",
   "data_safety": {
     "ai_generated_facts_included": false,
     "canonical_directories_only": true,
@@ -8,7 +8,7 @@
     "unknown_values_preserved": true,
     "unreviewed_candidates_included": false
   },
-  "last_checked_at": "2026-08-20",
+  "last_checked_at": "2026-10-16",
   "project_id": "api-deprecation-archive",
   "public_files": {
     "ai": "/ai.txt",
@@ -18,14 +18,14 @@
     "version": "/version.json"
   },
   "record_counts": {
-    "entities": 19,
-    "events": 18,
-    "evidence": 20
+    "entities": 20,
+    "events": 19,
+    "evidence": 21
   },
   "record_level": {
     "enabled": true,
     "human_route_template": "/apis/{slug}/",
-    "record_count": 19,
+    "record_count": 20,
     "route_template": "/data/machine/records/{slug}.json"
   },
   "registry_type": "developer_api_migration_history",

@@ -1,0 +1,139 @@
+{
+  "canonical_only": true,
+  "data_revision": "bf1fcb13c84a61a5799817caa2644f05dfc6554e1d17da50d07a50fc452129a9",
+  "entity": {
+    "action_required": "migrate",
+    "affected_surface": [
+      "endpoint"
+    ],
+    "affected_users": [
+      "Bitcoin NFT developers",
+      "Ordinals/Runes data integrators",
+      "Marketplace API partners"
+    ],
+    "aliases": [
+      "Magic Eden Bitcoin API",
+      "Magic Eden Ordinals API",
+      "Magic Eden Runes API"
+    ],
+    "announced_at": null,
+    "canonical_name": "Magic Eden Bitcoin and Runes API",
+    "category": "developer_tool_api",
+    "confidence": "high",
+    "current_state": "The official Magic Eden Help Center identifies the Bitcoin and Runes API shutdown as effective March 27, 2026. Solana API remains operational and is not included in this removed status; EVM developer integration support is handled separately.",
+    "deadline_status": "passed_removed",
+    "deprecated_at": null,
+    "deprecation_stage": "removed",
+    "docs_url": "https://docs.magiceden.io/",
+    "first_seen_at": "2026-10-16",
+    "freshness_status": "fresh",
+    "id": "apidep_entity_000021",
+    "impact_level": "high",
+    "known_unknowns": [
+      "The exact final operational state of every legacy API endpoint was not independently tested; primary documentation states the service is fully shut down."
+    ],
+    "last_checked_at": "2026-10-16",
+    "last_supported_at": "2026-03-27",
+    "migration_deadline_at": "2026-03-27",
+    "migration_url": "https://help.magiceden.io/en/articles/13885533-magic-eden-api-infrastructure-changes",
+    "next_check_recommended_at": "2027-04-16",
+    "notes": "Magic Eden's 2026-06-30 retrospective Help Center notice uses March 27 as the deadline. Do not treat the Help Center publication date as the initial shutdown announcement date; and do not classify its Solana API as removed.",
+    "official_url": "https://help.magiceden.io/en/articles/13885533-magic-eden-api-infrastructure-changes",
+    "production_risk": "critical",
+    "provider": "Magic Eden",
+    "provider_id": "apidep_provider_000007",
+    "record_unit": "api_group",
+    "related_records": [],
+    "removal_effective_at": "2026-03-27",
+    "replacement": "No official substitute or migration tooling offered by Magic Eden",
+    "replacement_type": "none",
+    "replacement_url": null,
+    "slug": "magic-eden-bitcoin-api",
+    "source_status": "official",
+    "status": "removed",
+    "still_usable": "no",
+    "still_usable_note": "Magic Eden states that its Bitcoin/Runes API and associated backend services were fully discontinued on 2026-03-27. This describes provider policy, not an independent test of every legacy endpoint.",
+    "summary": "Magic Eden ended Bitcoin and Runes API/backend services effective March 27, 2026, while retaining its Solana API subject to ongoing review.",
+    "sunset_at": "2026-03-27"
+  },
+  "events": [
+    {
+      "action_required": "migrate",
+      "affected_endpoints": [
+        "Magic Eden Bitcoin API",
+        "Magic Eden Runes API"
+      ],
+      "affected_sdks": [],
+      "affected_surface": [
+        "endpoint"
+      ],
+      "affected_versions": [],
+      "confidence": "high",
+      "date": "2026-03-27",
+      "deadline": "2026-03-27",
+      "entity_id": "apidep_entity_000021",
+      "evidence_ids": [
+        "apidep_evidence_000021"
+      ],
+      "id": "apidep_event_000021",
+      "impact_level": "high",
+      "migration_path": "Export needed historical/API data and move integrations to an independently selected alternative. Magic Eden offers no official migration tooling.",
+      "notes": "The official source documenting the effective date was published on June 30; original announcement date not established.",
+      "production_risk": "critical",
+      "removal_date": "2026-03-27",
+      "replacement": "No official replacement offered",
+      "replacement_type": "none",
+      "replacement_url": null,
+      "summary": "The Magic Eden Help Center says the Bitcoin/Runes API and related backend services were fully shut down after March 27, 2026. Developers were directed to export data and migrate dependencies; Magic Eden did not offer alternative infrastructure.",
+      "title": "Magic Eden Bitcoin/Runes API and backend services discontinued",
+      "type": "api_removed",
+      "user_impact": "Bitcoin/Runes integrations dependent on Magic Eden backend services are no longer supported; remaining Solana API endpoints are outside this event."
+    }
+  ],
+  "evidence": [
+    {
+      "archived_url": null,
+      "claim_scope": "removal",
+      "entity_id": "apidep_entity_000021",
+      "event_id": "apidep_event_000021",
+      "id": "apidep_evidence_000021",
+      "is_official_domain": true,
+      "is_primary": true,
+      "last_checked_at": "2026-10-16",
+      "notes": "Primary policy notice retrospectively confirms a March 27 cutoff. Do not infer a shutdown of all Magic Eden APIs.",
+      "published_at": "2026-06-30",
+      "publisher": "Magic Eden Help Center",
+      "quote_or_summary": "Magic Eden states the Bitcoin API and all related backend services shut down after March 27, while Solana API remains operational pending further evaluation. No migration tooling or replacement infrastructure is offered.",
+      "reliability": "high",
+      "title": "Magic Eden API & Infrastructure Changes",
+      "type": "official_docs",
+      "url": "https://help.magiceden.io/en/articles/13885533-magic-eden-api-infrastructure-changes"
+    }
+  ],
+  "lifecycle_signals": {
+    "event_types": [
+      "api_removed"
+    ],
+    "migration_deadline_recorded": true,
+    "primary_evidence_count": 1,
+    "removal_effective_date_recorded": true,
+    "replacement_recorded": true
+  },
+  "project_id": "api-deprecation-archive",
+  "provenance": {
+    "display_manifest_used_as_authority": false,
+    "entity_file": "data/entities/magic-eden-bitcoin-api.json",
+    "event_files": [
+      "data/events/magic-eden-bitcoin-api-removed.json"
+    ],
+    "evidence_files": [
+      "data/evidence/magic-eden-bitcoin-api-official.json"
+    ]
+  },
+  "record_type": "api_lifecycle_dossier",
+  "schema_version": "1.0.0",
+  "urls": {
+    "human": "/apis/magic-eden-bitcoin-api/",
+    "machine": "/data/machine/records/magic-eden-bitcoin-api.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "apidep_provider_000007",
+  "slug": "magic-eden",
+  "name": "Magic Eden",
+  "aliases": [],
+  "categories": [
+    "developer_tool_api"
+  ],
+  "official_url": "https://magiceden.io/",
+  "developer_url": "https://docs.magiceden.io/",
+  "docs_url": "https://docs.magiceden.io/",
+  "changelog_url": null,
+  "summary": "NFT marketplace and developer API provider with Solana, historical Bitcoin/Runes and EVM integration surfaces.",
+  "last_checked_at": "2026-10-16",
+  "notes": "API lifecycle varies by chain; provider itself and ongoing Solana API are not classified as removed."
+}

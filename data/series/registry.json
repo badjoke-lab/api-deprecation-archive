@@ -23,14 +23,14 @@
   },
   "object_type": "registry_descriptor",
   "record_counts": {
-    "events": 18,
-    "evidence": 20,
+    "events": 19,
+    "evidence": 21,
     "native": {
-      "entities": 19,
-      "events": 18,
-      "evidence": 20
+      "entities": 20,
+      "events": 19,
+      "evidence": 21
     },
-    "primary_records": 19
+    "primary_records": 20
   },
   "record_types": [
     {
@@ -59,7 +59,7 @@
   },
   "series_schema_version": "1.0.0",
   "verification": {
-    "data_revision": "8da5be8df926ec754bf63c081e33f14ac19a6f89143c7e2d617b96c0304be47c",
-    "last_verified_at": "2026-08-20"
+    "data_revision": "bf1fcb13c84a61a5799817caa2644f05dfc6554e1d17da50d07a50fc452129a9",
+    "last_verified_at": "2026-10-16"
   }
 }
