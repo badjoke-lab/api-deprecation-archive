@@ -1,0 +1,32 @@
+{
+  "id": "apidep_event_000021",
+  "entity_id": "apidep_entity_000021",
+  "type": "api_removed",
+  "date": "2026-03-27",
+  "title": "Magic Eden Bitcoin/Runes API and backend services discontinued",
+  "summary": "The Magic Eden Help Center says the Bitcoin/Runes API and related backend services were fully shut down after March 27, 2026. Developers were directed to export data and migrate dependencies; Magic Eden did not offer alternative infrastructure.",
+  "affected_versions": [],
+  "affected_endpoints": [
+    "Magic Eden Bitcoin API",
+    "Magic Eden Runes API"
+  ],
+  "affected_sdks": [],
+  "affected_surface": [
+    "endpoint"
+  ],
+  "deadline": "2026-03-27",
+  "removal_date": "2026-03-27",
+  "replacement": "No official replacement offered",
+  "replacement_type": "none",
+  "replacement_url": null,
+  "migration_path": "Export needed historical/API data and move integrations to an independently selected alternative. Magic Eden offers no official migration tooling.",
+  "action_required": "migrate",
+  "user_impact": "Bitcoin/Runes integrations dependent on Magic Eden backend services are no longer supported; remaining Solana API endpoints are outside this event.",
+  "impact_level": "high",
+  "production_risk": "critical",
+  "evidence_ids": [
+    "apidep_evidence_000021"
+  ],
+  "confidence": "high",
+  "notes": "The official source documenting the effective date was published on June 30; original announcement date not established."
+}
