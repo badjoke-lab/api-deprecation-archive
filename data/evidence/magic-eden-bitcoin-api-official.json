@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000021",
+  "entity_id": "apidep_entity_000021",
+  "event_id": "apidep_event_000021",
+  "type": "official_docs",
+  "url": "https://help.magiceden.io/en/articles/13885533-magic-eden-api-infrastructure-changes",
+  "title": "Magic Eden API & Infrastructure Changes",
+  "publisher": "Magic Eden Help Center",
+  "published_at": "2026-06-30",
+  "archived_url": null,
+  "quote_or_summary": "Magic Eden states the Bitcoin API and all related backend services shut down after March 27, while Solana API remains operational pending further evaluation. No migration tooling or replacement infrastructure is offered.",
+  "reliability": "high",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-10-16",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Primary policy notice retrospectively confirms a March 27 cutoff. Do not infer a shutdown of all Magic Eden APIs."
+}
