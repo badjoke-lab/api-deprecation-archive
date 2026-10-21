@@ -1,0 +1,19 @@
+{
+  "id": "apidep_provider_000008",
+  "slug": "reservoir",
+  "name": "Reservoir",
+  "aliases": [
+    "Reservoir Protocol",
+    "Reservoir NFT"
+  ],
+  "categories": [
+    "developer_tool_api"
+  ],
+  "official_url": "https://reservoir.tools/",
+  "developer_url": "https://reservoirprotocol.readme.io/",
+  "docs_url": "https://reservoirprotocol.readme.io/reference/overview",
+  "changelog_url": null,
+  "summary": "Provider of the historically offered Reservoir NFT data, trading and marketplace integration APIs; the operator shifted focus to its Relay cross-chain product.",
+  "last_checked_at": "2026-10-22",
+  "notes": "Former NFT API offering is separate from ongoing Relay activities. Legacy NFT documentation being accessible is not proof of a working API."
+}
