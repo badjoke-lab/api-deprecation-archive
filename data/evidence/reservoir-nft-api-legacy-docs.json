@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000024",
+  "entity_id": "apidep_entity_000022",
+  "event_id": null,
+  "type": "official_docs",
+  "url": "https://reservoirprotocol.readme.io/reference/overview",
+  "title": "Reservoir API Overview",
+  "publisher": "Reservoir documentation",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Former operator documentation identifies NFT data APIs and order/trading functions. Its continued availability is not evidence of active API endpoint support.",
+  "reliability": "high",
+  "claim_scope": "entity",
+  "last_checked_at": "2026-10-22",
+  "is_primary": true,
+  "is_official_domain": true,
+  "notes": "Supports the identity and developer-facing scope of the original API group, not the historical retirement timeline."
+}
