@@ -1,0 +1,33 @@
+{
+  "id": "apidep_event_000022",
+  "entity_id": "apidep_entity_000022",
+  "type": "api_removed",
+  "date": "2025-10-15",
+  "title": "Reservoir NFT API group reaches announced retirement date",
+  "summary": "Contemporaneous reporting quoted Reservoir's announcement that NFT trading infrastructure and developer API services would terminate October 15, 2025. The operator's reported migration options included 0xSequence and Alchemy; the remaining Relay product is outside the retired API group.",
+  "affected_versions": [],
+  "affected_endpoints": [
+    "Reservoir NFT trading APIs",
+    "Reservoir NFT data APIs"
+  ],
+  "affected_sdks": [],
+  "affected_surface": [
+    "endpoint"
+  ],
+  "deadline": "2025-10-15",
+  "removal_date": "2025-10-15",
+  "replacement": "0xSequence or Alchemy alternatives reportedly coordinated for migration",
+  "replacement_type": "recommended",
+  "replacement_url": null,
+  "migration_path": "Review integration dependencies, export needed NFT metadata/ordering data where available, and migrate to a qualified alternative with endpoint-by-endpoint coverage validation.",
+  "action_required": "migrate",
+  "user_impact": "Historical Reservoir NFT API integrations were expected to lose hosted services after the announced October 15, 2025 deadline; actual state of every individual endpoint has not been probed.",
+  "impact_level": "high",
+  "production_risk": "critical",
+  "evidence_ids": [
+    "apidep_evidence_000022",
+    "apidep_evidence_000023"
+  ],
+  "confidence": "medium",
+  "notes": "The event records the announced effective retirement date, NOT an authenticated endpoint test. Published legacy docs remain accessible."
+}
