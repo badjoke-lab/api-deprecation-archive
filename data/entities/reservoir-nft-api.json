@@ -1,0 +1,58 @@
+{
+  "id": "apidep_entity_000022",
+  "slug": "reservoir-nft-api",
+  "canonical_name": "Reservoir NFT Trading and Data API",
+  "aliases": [
+    "Reservoir API",
+    "Reservoir NFT API",
+    "Reservoir NFT Data API",
+    "Reservoir NFT Trading API"
+  ],
+  "provider": "Reservoir",
+  "provider_id": "apidep_provider_000008",
+  "category": "developer_tool_api",
+  "record_unit": "api_group",
+  "status": "removed",
+  "deprecation_stage": "removed",
+  "deadline_status": "passed_unverified",
+  "still_usable": "unknown",
+  "still_usable_note": "The operator's publicly reported October 15, 2025 retirement deadline has passed; individual legacy REST/WebSocket endpoints and API-key account access were not independently tested in this review.",
+  "action_required": "migrate",
+  "impact_level": "high",
+  "production_risk": "critical",
+  "freshness_status": "fresh",
+  "summary": "Reservoir announced retirement of its NFT trading infrastructure and data APIs effective October 15, 2025, while the team pivoted to Relay. The actual runtime state of every old endpoint is unverified.",
+  "current_state": "Operator's announced shutdown date has passed. No current approved provider support is established for the legacy NFT API group; archived/legacy documentation may still load and must not be treated as service availability. Relay is a separate continuing product.",
+  "affected_surface": [
+    "endpoint"
+  ],
+  "affected_users": [
+    "Developers depending on Reservoir NFT trading or data APIs",
+    "NFT marketplace integrations using Reservoir API keys or SDK-backed endpoints"
+  ],
+  "official_url": "https://reservoir.tools/",
+  "docs_url": "https://reservoirprotocol.readme.io/reference/overview",
+  "migration_url": null,
+  "replacement": "0xSequence and Alchemy were reportedly suggested as alternatives; no equivalent drop-in replacement guaranteed",
+  "replacement_type": "recommended",
+  "replacement_url": null,
+  "source_status": "secondary_confirmed",
+  "confidence": "medium",
+  "announced_at": "2025-04-24",
+  "deprecated_at": null,
+  "sunset_at": "2025-10-15",
+  "last_supported_at": "2025-10-15",
+  "removal_effective_at": "2025-10-15",
+  "migration_deadline_at": "2025-10-15",
+  "first_seen_at": "2026-10-22",
+  "last_checked_at": "2026-10-22",
+  "next_check_recommended_at": "2027-01-22",
+  "known_unknowns": [
+    "Original operator sunset-post contents have not been independently retrieved; the posted permalink was identified from external references.",
+    "No independent API-key authenticated endpoint availability test was conducted.",
+    "Retained legacy API docs are still readable but do not establish that the old hosted infrastructure works.",
+    "No provider-approved guaranteed 1:1 replacement across all NFT data and order-routing endpoints was established."
+  ],
+  "related_records": [],
+  "notes": "2025-10-15 is the announced sunset effective date, not proof from endpoint-by-endpoint probes. A 2025-04-24 contemporary news report and a later independent API catalog agree on the date. Relay cross-chain products must not inherit the removed classification."
+}

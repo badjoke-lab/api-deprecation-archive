@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000022",
+  "entity_id": "apidep_entity_000022",
+  "event_id": "apidep_event_000022",
+  "type": "trusted_news",
+  "url": "https://panews.io/articles/y1qvisvy",
+  "title": "Reservoir will stop NFT and API services on October 15th and will focus on Relay Protocol in the future",
+  "publisher": "PANews",
+  "published_at": "2025-04-24",
+  "archived_url": null,
+  "quote_or_summary": "Contemporaneous report of Reservoir's official announcement: NFT trading and API services scheduled to terminate October 15, 2025, with new registrations halted, migration references and Relay continuation.",
+  "reliability": "medium",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-10-22",
+  "is_primary": false,
+  "is_official_domain": false,
+  "notes": "Covers provider's announced sunset date, not an independent post-sunset runtime probe."
+}

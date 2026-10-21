@@ -1,0 +1,18 @@
+{
+  "id": "apidep_evidence_000023",
+  "entity_id": "apidep_entity_000022",
+  "event_id": "apidep_event_000022",
+  "type": "secondary_source",
+  "url": "https://github.com/api-evangelist/reservoir/blob/main/README.md",
+  "title": "Reservoir - API Evangelist historical API catalog",
+  "publisher": "API Evangelist",
+  "published_at": null,
+  "archived_url": null,
+  "quote_or_summary": "Independent curated API profile retrospectively records the Reservoir NFT API and associated services as sunset October 15, 2025.",
+  "reliability": "medium",
+  "claim_scope": "removal",
+  "last_checked_at": "2026-10-22",
+  "is_primary": false,
+  "is_official_domain": false,
+  "notes": "Retrospective secondary database corroborates stated sunset date; not first-party proof of server-level endpoint availability."
+}
